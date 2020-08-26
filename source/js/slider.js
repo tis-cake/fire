@@ -1,69 +1,70 @@
-// слайдер врачей
-// $(document).ready(function () {
+// Как устроен двойной слайдер (пагинация-thumbs):
+//
+// 1) Рендерим параметры пагинации.
+// 2) Рендерим слайдер-пагинацию (thumbs).
+// 3) Рендерим параметры главного слайдера (c зависимостью от thumbs).
+// 4) Рендерим главный слайдер с параметрами.
 
-  // let mainSwiper = new Swiper('#main-swiper', {
-  //   slidesPerView: '1',
-  //   // spaceBetween: 25,
-  //   // touchRatio: 0,
+// параметры пагинации
+function renderSwiperThumbsParam() {
+  let swiperThumbsParam = {
+    slidesPerView: '3',
+    direction: 'vertical',
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  }
 
-  //   direction: 'vertical',
-  //   // loop: true,
+  return swiperThumbsParam;
+}
 
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     clickable: true,
+// параметры главного слайдера
+function renderSwiperMainParam(id, thumbsName) {
+  let swiperMainParam = {
+    slidesPerView: '1',
+    direction: 'vertical',
 
-  //     // dynamicBullets: true,
+    navigation: {
+      nextEl: id + ' .pagination-swiper-button-next',
+      prevEl: id + ' .pagination-swiper-button-prev',
+    },
 
-  //     renderBullet: function (index, className) {
-  //       return '<span class="' + className + '">' + '<i>' + (index + 1) + '</i>' + '</span>';
-  //     }
-  //   },
+    thumbs: {
+      swiper: thumbsName
+    }
+  }
 
-  //   // watchSlidesVisibility: true,
+  return swiperMainParam;
+}
 
-  //   navigation: {
-  //     nextEl: '.main-swiper__button-next',
-  //     prevEl: '.main-swiper__button-prev',
-  //   },
+function renderSwiper(id) {
+  let swiperThumbsParam = renderSwiperThumbsParam();
+  let swiperThumbs = new Swiper(id + ' .pagination-swiper-container', swiperThumbsParam);
 
-  //   // breakpoints: {
-  //   //   756: {
-  //   //     slidesPerView: '3',
-  //   //     spaceBetween: 20,
-  //   //   },
-  //   // }
-  // });
+  let swiperMainParam = renderSwiperMainParam(id, swiperThumbs);
+  let swiperMain = new Swiper(id + ' .main-swiper-container', swiperMainParam);
+}
+
+renderSwiper('#main-swiper')
+
+
+
+// let swiperThumbs = new Swiper('#main-swiper .pagination-swiper-container', {
+//   slidesPerView: '3',
+//   direction: 'vertical',
+//   watchSlidesVisibility: true,
+//   watchSlidesProgress: true,
 // });
 
-let mainSwiperPagination = new Swiper('#main-swiper .pagination-swiper-container', {
-  slidesPerView: '3',
-  direction: 'vertical',
-  // loop: true,
+// let mainSwiper = new Swiper('#main-swiper .-swiper-container', {
+//   slidesPerView: '1',
+//   direction: 'vertical',
 
-  // navigation: {
-  //   nextEl: '.pagination-swiper-button-next',
-  //   prevEl: '.pagination-swiper-button-prev',
-  // },
-});
+//   navigation: {
+//     nextEl: '.pagination-swiper-button-next',
+//     prevEl: '.pagination-swiper-button-prev',
+//   },
 
-
-let mainSwiper = new Swiper('#main-swiper .content-swiper-container', {
-  slidesPerView: '1',
-  direction: 'vertical',
-  // loop: true,
-
-  // navigation: {
-  //   nextEl: '.main-swiper__button-next',
-  //   prevEl: '.main-swiper__button-prev',
-  // },
-
-  navigation: {
-    nextEl: '.pagination-swiper-button-next',
-    prevEl: '.pagination-swiper-button-prev',
-  },
-
-  thumbs: {
-    swiper: mainSwiperPagination
-  }
-});
+//   thumbs: {
+//     swiper: swiperThumbs
+//   }
+// });
