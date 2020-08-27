@@ -22,6 +22,7 @@ function renderSwiperContentParam(id, thumbsName) {
   let swiperContentParam = {
     slidesPerView: '1',
     direction: 'vertical',
+    spaceBetween: 10,
 
     navigation: {
       nextEl: id + ' .pagination-swiper-button-next',
@@ -44,8 +45,10 @@ function renderSwiper(id) {
   let swiperContent = new Swiper(id + ' .content-swiper-container', swiperContentParam);
 }
 
-// главный слайдер (index, первый экран)
+// слайдер главный (index, первый экран)
 renderSwiper('#main-swiper');
+// слайдер проектов
+renderSwiper('#project-swiper');
 
 
 
