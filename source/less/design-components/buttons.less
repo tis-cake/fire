@@ -35,6 +35,40 @@
   }
 }
 
+.btn-go-link {
+  font-family: @circe;
+  &__icon {
+    margin-left: 2px;
+  }
+}
+
+.btn-decor-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 104px;
+  padding-left: 40px;
+
+  font-weight: @bold;
+  font-size: 40px;
+  &__icon {
+    margin-left: 10px;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 114px;
+    height: 94px;
+
+    background-image: url('../img/svg/red-line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 // @media (max-width: @tablet-width) {
 // }
 

@@ -330,6 +330,36 @@ html .desktop-flex {
   background-color: var(--color-second);
   border-radius: 10px;
 }
+.btn-go-link {
+  font-family: var(--font-text-desc);
+}
+.btn-go-link__icon {
+  margin-left: 2px;
+}
+.btn-decor-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 104px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.btn-decor-line__icon {
+  margin-left: 10px;
+}
+.btn-decor-line::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 114px;
+  height: 94px;
+  background-image: url('../img/svg/red-line.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /*header*/
 .header {
   position: absolute;
@@ -559,6 +589,73 @@ html .desktop-flex {
   }
 }
 /*main*/
+.product {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.product::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 238px;
+  background-image: linear-gradient(180deg, #F2F2F2 0%, rgba(255, 255, 255, 0) 100%);
+}
+.product__title-wrap {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 70px;
+}
+.product__go-link {
+  margin-left: 27px;
+}
+.product__list {
+  display: grid;
+  grid-template-columns: 370px 440px 340px 1fr;
+  /*grid-template-columns: repeat(4, 240px);*/
+  /*column-gap: 90px;*/
+}
+.product__caption {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.product__caption--red {
+  color: var(--color-second);
+}
+.product__link {
+  margin-bottom: 28px;
+}
+.product__sublist {
+  counter-reset: productItem;
+}
+.product__sublist li {
+  position: relative;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.product__sublist li::before {
+  counter-increment: productItem;
+  content: counter(productItem) '.';
+  margin-right: 3px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.product__img-wrap {
+  position: relative;
+  top: -37px;
+  width: 1470px;
+  height: 493;
+}
+.product__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*swiper*/
 .swiper-button {
   top: auto;
