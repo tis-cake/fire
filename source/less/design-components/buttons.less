@@ -1,13 +1,39 @@
 .btn-callback {
   display: inline-flex;
   align-items: center;
-  // font-size: ;
   text-decoration-line: underline;
   &__icon {
     margin-left: 15px;
   }
 }
 
+.btn-callback-decor {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+
+  width: 241px;
+  height: 54px;
+  padding-left: 27px;
+
+  font-family: @circe;
+
+  border: 2px solid @color-s;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  &__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    margin-left: auto;
+
+    background-color: @color-s;
+    border-radius: 10px;
+  }
+}
 
 // @media (max-width: @tablet-width) {
 // }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="«Очищение»">
-    <title>Очищение</title>
+    <title>«Пожарная Автоматика»</title>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
     <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="stylesheet" href="css/normalise.css">
@@ -78,50 +78,24 @@
             <div class="main-nav__decoration" id="nav-decoration"></div>
             <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
             Заказать звонок
-              <svg class="btn-callback__icon icon-arrow-short icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+              <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
                 <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
               </svg>
             </button>
           </nav>
           <div class="header__contacts-wrap">
             <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
-            <a class="header__mail" href="mailto: info@pozhavt.ru">info@pozhavt.ru</a>
+            <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="main-swiper">
-        <!-- <div class="swiper-container main-swiper__swiper-container" id="main-swiper">
-          <div class="swiper-wrapper main-swiper__swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 3</div>
 
-          </div>
+        <div class="two-swipers-wrap main-swiper__two-swipers-wrap" id="main-swiper">
 
-          <div class="swiper-pagination main-swiper__pagination"></div>
-
-          <div class="swiper-buttons-wrap main-swiper__buttons-wrap">
-            <div class="swiper-button swiper-button-prev main-swiper__button-prev">
-              <svg class="swiper-button-icon icon-arrow icon-arrow--long icon-arrow--top" width="38" height="12" role="img">
-                <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
-              </svg>
-            </div>
-
-            <div class="swiper-button swiper-button-next main-swiper__button-next">
-              <svg class="swiper-button-icon icon-arrow icon-arrow--long icon-arrow--bottom" width="38" height="12" role="img">
-                <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
-              </svg>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="two-swipers-wrap" id="main-swiper">
-
-          <div class="pagination-swiper">
+          <div class="pagination-swiper main-swiper__pagination-swiper">
             <div class="swiper-container pagination-swiper-container">
               <div class="swiper-wrapper pagination-swiper-wrapper">
                 <div class="swiper-slide pagination-swiper-slide"><span class="pagination-swiper-count">1</span></div>
@@ -133,28 +107,359 @@
               </div>
             </div>
 
-            <div class="swiper-button swiper-button-prev pagination-swiper-button-prev">
+            <div class="swiper-button swiper-button-prev pagination-swiper-button-prev main-swiper__button-prev">
               <svg class="swiper-button-icon icon-arrow icon-arrow--long icon-arrow--top" width="38" height="12" role="img">
                 <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
               </svg>
             </div>
 
-            <div class="swiper-button swiper-button-next pagination-swiper-button-next">
+            <div class="swiper-button swiper-button-next pagination-swiper-button-next main-swiper__button-next">
               <svg class="swiper-button-icon icon-arrow icon-arrow--long icon-arrow--bottom" width="38" height="12" role="img">
                 <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
               </svg>
             </div>
           </div>
 
-          <div class="content-swiper">
-            <div class="swiper-container main-swiper-container">
-              <div class="swiper-wrapper main-swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
+          <div class="content-swiper main-swiper__content-swiper">
+            <div class="swiper-container content-swiper-container">
+              <div class="swiper-wrapper content-swiper-wrapper">
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/1-2.png" alt="Изображение 1">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/3.png" alt="Изображение 2">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/4.png" alt="Изображение 3">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/1.png" alt="Изображение 1">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/1.png" alt="Изображение 1">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide main-swiper__slide">
+                  <div class="main-swiper__cards-wrap">
+                    <figure class="main-swiper__card-img">
+                      <figure class="main-swiper__img-wrap">
+                        <img class="main-swiper__img" src="img/swiper/main-swiper/1.png" alt="Изображение 1">
+                      </figure>
+                      <figcaption class="main-swiper__img-text-wrap">
+                        <p class="main-swiper__img-desc">
+                          Система пожаротушения нового типа
+                        </p>
+                        <p class="main-swiper__category">
+                          Автономные установки
+                        </p>
+                      </figcaption>
+                    </figure>
+
+                    <div class="main-swiper__card-detail">
+                      <div class="main-swiper__column-left">
+                        <p class="main-swiper__feature-title subtitle">
+                          100%
+                          <span class="main-swiper__feature-title-item">
+                            безопасно
+                          </span>
+                        </p>
+                        <p class="main-swiper__feature-desc desc">
+                          Автоматические установки газового пожаротушения
+                        </p>
+                        <div class="main-swiper__feature-img-wrap">
+                          <img class="main-swiper__feature-img" src="img/swiper/main-swiper/2.png" alt="Автоматические установки газового пожаротушения">
+                        </div>
+                      </div>
+
+                      <div class="main-swiper__column-right">
+                        <p class="main-swiper__card-title subtitle">
+                          Газовое пожаротушение от производителя
+                        </p>
+                        <p class="main-swiper__card-desc desc">
+                          Один из ведущих производителей оборудования для автоматических установок газового
+                        </p>
+                        <p class="main-swiper__card-desc main-swiper__card-desc--decor desc desc--light">
+                          Проектирование, поставка, монтаж и обслуживание
+                        </p>
+
+                        <button class="main-swiper__btn-callback btn-callback-decor js-modal-callback">
+                          Оставить заявку
+                          <i class="btn-callback-decor__icon">
+                            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                            </svg>
+                          </i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>

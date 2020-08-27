@@ -18,8 +18,8 @@ function renderSwiperThumbsParam() {
 }
 
 // параметры главного слайдера
-function renderSwiperMainParam(id, thumbsName) {
-  let swiperMainParam = {
+function renderSwiperContentParam(id, thumbsName) {
+  let swiperContentParam = {
     slidesPerView: '1',
     direction: 'vertical',
 
@@ -33,18 +33,19 @@ function renderSwiperMainParam(id, thumbsName) {
     }
   }
 
-  return swiperMainParam;
+  return swiperContentParam;
 }
 
 function renderSwiper(id) {
   let swiperThumbsParam = renderSwiperThumbsParam();
   let swiperThumbs = new Swiper(id + ' .pagination-swiper-container', swiperThumbsParam);
 
-  let swiperMainParam = renderSwiperMainParam(id, swiperThumbs);
-  let swiperMain = new Swiper(id + ' .main-swiper-container', swiperMainParam);
+  let swiperContentParam = renderSwiperContentParam(id, swiperThumbs);
+  let swiperContent = new Swiper(id + ' .content-swiper-container', swiperContentParam);
 }
 
-renderSwiper('#main-swiper')
+// главный слайдер (index, первый экран)
+renderSwiper('#main-swiper');
 
 
 
