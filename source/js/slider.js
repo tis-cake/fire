@@ -59,3 +59,6 @@ renderSwiper('#project-swiper', 'vertical');
 
 // слайдер событий
 renderSwiper('#event-swiper', 'horizontal');
+
+// слайдер детального проекта ("Салют")
+renderSwiper('#project-detail-swiper', 'horizontal');
