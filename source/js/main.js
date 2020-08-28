@@ -16,11 +16,16 @@ $(document).ready(function () {
       evt.preventDefault();
 
       let currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sublist');
-      $('.main-nav__sublist').not(currentSublist).slideUp();
-      currentSublist.slideToggle();
+      // $('.main-nav__sublist').not(currentSublist).slideUp();
+      // currentSublist.slideToggle();
+      // $('.main-nav-sub').not($(this)).slideUp();
+      // $(this).slideDown();
 
-      $('.main-nav-sub').not($(this)).slideUp();
-      $(this).slideDown();
+      $('.main-nav__sublist').not(currentSublist).toggleClass('active');
+      currentSublist.toggleClass('active');
+
+      $('.main-nav-sub').not($(this)).toggleClass('active');
+      $(this).toggleClass('active');
     });
   }
 });

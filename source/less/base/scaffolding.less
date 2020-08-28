@@ -143,25 +143,15 @@ html .desktop-flex {
 @media (max-width: @tablet-width) {
 
   html {
-    // --container-padding-block: 3.5rem;
-  }
-
-  // .main {
-  //   overflow: hidden;
-  //   margin-top: 11rem;
-  // }
-
-  .overlay {
-    // background-color: @bg;
-    background-color: rgba(234, 241, 249, 0.5);
+    --padding-inline: 2.5rem;
   }
 
   .container,
   .container-outside,
   .container-inside {
     width: @a;
-    .padding-inline(1.6rem);
-    // .padding-inline(var(--container-padding-block));
+    // .padding-inline(2.5rem);
+    .padding-inline(var(--padding-inline));
   }
 
   html .desktop-flex,
@@ -179,9 +169,6 @@ html .desktop-flex {
 }
 
 @media (max-width: 24.4em) {
-  html {
-    // --container-padding-block: 2rem;
-  }
   .container,
   .container-outside,
   .container-inside {

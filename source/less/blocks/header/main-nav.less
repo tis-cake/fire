@@ -92,10 +92,6 @@
   opacity: 1;
 }
 
-.main-nav__search {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .main-nav__item.selected-on-tab .main-nav__sublist,
   .main-nav__item:hover .main-nav__sublist,
@@ -109,39 +105,41 @@
   .main-nav {
     display: none;
 
+    flex-direction: column;
     align-items: initial;
     width: 100%;
-    flex-direction: column;
-
-    color: #fff;
-
-    --margin-block: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   .main-nav__list {
+    flex-direction: column;
     width: auto;
-
-    &--primary {
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    &--secondary {
-      flex-direction: column;
-    }
   }
 
   .main-nav__item {
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: var(--margin-block);
-    &--primary {
-      max-width: none;
-    }
+    margin-bottom: 2rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 0.1rem solid @color-t;
   }
 
   .main-nav__link {
     padding-bottom: 0;
+  }
+
+  .main-nav-sub {
+    position: relative;
+    &::after {
+      position: absolute;
+      right: 0;
+      content: '+';
+    }
+    &.active {
+      &::after {
+        content: '-';
+      }
+    }
   }
 
   .main-nav__sublist {
@@ -151,11 +149,10 @@
     top: 0;
     left: auto;
     width: 100%;
-    margin-top: var(--margin-block);
+    margin-top: 1.8rem;
     padding: 0;
-    padding-left: 3.6rem;
 
-    font-size: inherit;
+    font-size: 1.5rem;
     border-radius: 0;
     box-shadow: none;
     background-color: transparent;
@@ -163,24 +160,30 @@
     transition: initial;
     visibility: visible;
     opacity: 1;
+
+    &.active {
+      display: block;
+    }
   }
 
   .main-nav__subitem {
-    margin-bottom: var(--margin-block);
+    padding-left: 1.7rem;
+    margin-bottom: 2.3rem;
+    padding-bottom: 1.9rem;
+    border-bottom: 0.1rem solid @color-t;
+    &:first-child {
+      padding-top: 2.5rem;
+      border-top: 0.1rem solid @color-t;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: 0;
+    }
   }
 
-  .main-nav__btn-search {
-    display: none;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
+  .main-nav__btn-callback,
   .main-nav__decoration {
     display: none;
-  }
-
-  .main-nav__search {
-    display: flex;
-    margin-bottom: 4.2rem;
   }
 }
