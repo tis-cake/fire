@@ -40,7 +40,6 @@
   align-items: center;
   font-family: @circe;
   &__icon {
-    // margin-left: 10px;
     // margin-left: 2px;
     // margin-left: 4px;
     margin-left: 10px;
@@ -51,11 +50,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 104px;
-  padding-left: 40px;
-
+  height: 83px;
+  padding-left: 30px;
+  font-size: 30px;
   font-weight: @bold;
-  font-size: 40px;
   &__icon {
     margin-left: 10px;
   }
@@ -64,8 +62,9 @@
     content: '';
     top: 0;
     left: 0;
-    width: 114px;
-    height: 94px;
+
+    width: 100px;
+    height: 83px;
 
     background-image: url('../img/svg/red-line.svg');
     background-repeat: no-repeat;
@@ -81,6 +80,16 @@
       width: 51px;
       height: 48px;
       background-image: url('../img/svg/red-line-small.svg');
+    }
+  }
+
+  &--big {
+    height: 104px;
+    padding-left: 40px;
+    font-size: 40px;
+    &::before {
+      width: 114px;
+      height: 94px;
     }
   }
 }

@@ -287,6 +287,13 @@ html .desktop-flex {
 .desc--light {
   font-weight: 300;
 }
+.caption {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.caption--red {
+  color: var(--color-second);
+}
 .icon-arrow--red {
   fill: var(--color-second);
 }
@@ -352,10 +359,10 @@ html .desktop-flex {
   position: relative;
   display: flex;
   align-items: center;
-  height: 104px;
-  padding-left: 40px;
+  height: 83px;
+  padding-left: 30px;
+  font-size: 30px;
   font-weight: 700;
-  font-size: 40px;
 }
 .btn-decor-line__icon {
   margin-left: 10px;
@@ -365,8 +372,8 @@ html .desktop-flex {
   content: '';
   top: 0;
   left: 0;
-  width: 114px;
-  height: 94px;
+  width: 100px;
+  height: 83px;
   background-image: url('../img/svg/red-line.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -381,6 +388,15 @@ html .desktop-flex {
   width: 51px;
   height: 48px;
   background-image: url('../img/svg/red-line-small.svg');
+}
+.btn-decor-line--big {
+  height: 104px;
+  padding-left: 40px;
+  font-size: 40px;
+}
+.btn-decor-line--big::before {
+  width: 114px;
+  height: 94px;
 }
 /*header*/
 .header {
@@ -656,11 +672,6 @@ html .desktop-flex {
 }
 .product__caption {
   margin-bottom: 40px;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-.product__caption--red {
-  color: var(--color-second);
 }
 .product__link {
   margin-bottom: 28px;
@@ -746,6 +757,50 @@ html .desktop-flex {
 }
 .about-preview__desc {
   padding-right: 70px;
+}
+.services {
+  position: relative;
+  margin-bottom: 615px;
+  /* для фото */
+  padding-top: 71px;
+  padding-bottom: 71px;
+}
+.services__title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 69px;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: 220px 250px 220px 220px 220px;
+  row-gap: 50px;
+  justify-content: space-between;
+}
+.services__caption {
+  margin-bottom: 44px;
+}
+.services__item-title {
+  margin-bottom: 36px;
+}
+.services__item-desc {
+  padding-right: 30px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.services__img-wrap {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: -54.895vw;
+  /* -1054px */
+  width: 100%;
+}
+.services__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*swiper*/
 .two-swipers-wrap {
