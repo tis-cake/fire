@@ -1,129 +1,10 @@
-// .swiper-container {
-//   &-vertical {
-//     --inline-coordinate: 6rem;
-
-//     box-sizing: border-box;
-//     width: 152rem;
-//     .margin-inline(@a);
-//     .padding-inline(var(--inline-coordinate));
-//   }
-
-//   &-vertical > .swiper-pagination-bullets {
-//     left: var(--inline-coordinate);
-//     right: auto;
-//   }
-
-//   &-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-//     margin: 0;
-//   }
-
-//   &-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-//     // height: 222px !important;
-//     // width: 74px;
-//   }
-// }
-
-// .swiper-wrapper {
-
-// }
-
-// .swiper-slide {
-// }
-
-// .swiper-pagination {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-between;
-
-//   width: 74px;
-//   height: 222px;
-
-//   overflow: hidden;
-// }
-
-// .swiper-pagination-bullet {
-//   display: inline-flex !important;
-//   justify-content: center;
-//   align-items: center;
-
-//   width: 60px;
-//   height: 60px;
-
-//   opacity: 1;
-//   font-size: 20px;
-//   background-color: transparent;
-//   border-radius: 0;
-
-//   // transform: scale(1) !important;
-//   flex-shrink: 0;
-
-//   i {
-//     font-style: normal;
-//   }
-
-//   &-active {
-//     color: #fff;
-//     font-size: 30px;
-//     background-color: @color-s;
-//     border-radius: 10px;
-//   }
-// }
-
-// .swiper-buttons-wrap {
-//   box-sizing: border-box;
-
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-
-//   width: 74px;
-//   height: 438px;
-
-//   background-color: #FFF;
-//   border-radius: 10px;
-//   filter: drop-shadow(20px 20px 50px rgba(0, 0, 0, 0.1));
-// }
-
-.swiper-button {
-  top: auto;
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-
-  width: 38px;
-  height: 50px;
-  margin-top: 0;
-
-  &::after {
-    content: none;
-  }
-}
-
-.swiper-button-prev {
-  top: 37px;
-}
-
-.swiper-button-next {
-  bottom: 37px;
-}
-
-// .swiper-button-icon {}
-
 .two-swipers-wrap {
   box-sizing: border-box;
   position: relative;
 
   display: flex;
-  height: 562px;
-  // width: 152rem;
-  // .margin-inline(@a);
-  // .padding-inline(6rem);
-
   width: 140rem;
   .margin-inline(@a);
-
-  // .o(blue);
 }
 
 .swiper-container {
@@ -132,24 +13,32 @@
   margin: 0;
 }
 
+.swiper-button {
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+
+  margin-top: 0;
+
+  &::after {
+    content: none;
+  }
+}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
 .pagination-swiper {
+  box-sizing: border-box;
   position: relative;
   z-index: 2;
 
   display: flex;
-  // flex-direction: column;
+  justify-content: center;
   align-items: center;
-  // justify-content: space-between;
-
-  // width: 74px;
-  // height: 222px;
-
-  box-sizing: border-box;
   align-self: center;
-  width: 74px;
-  height: 438px;
-  // height: 222px;
-
 
   background-color: #FFF;
   border-radius: 10px;
@@ -157,7 +46,7 @@
 }
 
 .pagination-swiper-container {
-  height: 222px;
+  // height: 222px;
 }
 
 .pagination-swiper-wrapper {
@@ -202,13 +91,70 @@
 }
 
 .content-swiper {
-  width: 1290px;
-  margin-left: auto;
+  // width: 1290px;
+  // margin-left: auto;
   // filter: drop-shadow(20px 40px 120px #EEE);
 }
 
-.main-swiper-container {
-  // width: 1290px;
-  // margin-left: auto;
-  // .b(orange);
+.vertical {
+  &.two-swipers-wrap {
+    height: 562px;
+  }
+  .pagination-swiper {
+    width: 74px;
+    height: 438px;
+  }
+  .pagination-swiper-container {
+    height: 222px;
+  }
+  .swiper-button {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 50px;
+  }
+  .swiper-button-prev {
+    top: 37px;
+    .swiper-button-icon {
+      transform: rotate(-90deg);
+    }
+  }
+  .swiper-button-next {
+    bottom: 37px;
+    .swiper-button-icon {
+      transform: rotate(90deg);
+    }
+  }
+  .content-swiper {
+    width: 1290px;
+    margin-left: auto;
+  }
+}
+
+.horizontal {
+  &.two-swipers-wrap {
+    flex-direction: column-reverse;
+  }
+  .pagination-swiper {
+    width: 438px;
+    height: 74px;
+  }
+  .pagination-swiper-container {
+    width: 222px;
+  }
+  .swiper-button {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 38px;
+    width: 50px;
+  }
+  .swiper-button-prev {
+    left: 37px;
+    .swiper-button-icon {
+      transform: rotate(180deg);
+    }
+  }
+  .swiper-button-next {
+    right: 37px;
+  }
 }

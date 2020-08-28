@@ -1,4 +1,4 @@
-// Как устроен двойной слайдер (пагинация-thumbs):
+// Как устроен двойной слайдер (c пагинацией-thumbs):
 //
 // 1) Рендерим параметры пагинации.
 // 2) Рендерим слайдер-пагинацию (thumbs).
@@ -6,10 +6,10 @@
 // 4) Рендерим главный слайдер с параметрами.
 
 // параметры пагинации
-function renderSwiperThumbsParam() {
+function renderSwiperThumbsParam(direction) {
   let swiperThumbsParam = {
     slidesPerView: '3',
-    direction: 'vertical',
+    direction: direction,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   }
@@ -18,10 +18,10 @@ function renderSwiperThumbsParam() {
 }
 
 // параметры главного слайдера
-function renderSwiperContentParam(id, thumbsName) {
+function renderSwiperContentParam(id, direction, thumbsName) {
   let swiperContentParam = {
     slidesPerView: '1',
-    direction: 'vertical',
+    direction: direction,
     spaceBetween: 10,
 
     navigation: {
@@ -37,38 +37,25 @@ function renderSwiperContentParam(id, thumbsName) {
   return swiperContentParam;
 }
 
-function renderSwiper(id) {
-  let swiperThumbsParam = renderSwiperThumbsParam();
+function renderSwiper(id, direction) {
+  // опционально
+  document.querySelector(id).classList.add(direction);
+
+  let swiperThumbsParam = renderSwiperThumbsParam(direction);
   let swiperThumbs = new Swiper(id + ' .pagination-swiper-container', swiperThumbsParam);
 
-  let swiperContentParam = renderSwiperContentParam(id, swiperThumbs);
+  let swiperContentParam = renderSwiperContentParam(id, direction, swiperThumbs);
   let swiperContent = new Swiper(id + ' .content-swiper-container', swiperContentParam);
 }
 
+// параметрами передаём id и направление ('vertical'/'horizontal')
+// у контейнеров с id должны быть соответствующие классы ('.vertical'/'.horizontal')
+
 // слайдер главный (index, первый экран)
-renderSwiper('#main-swiper');
+renderSwiper('#main-swiper', 'vertical');
+
 // слайдер проектов
-renderSwiper('#project-swiper');
+renderSwiper('#project-swiper', 'vertical');
 
-
-
-// let swiperThumbs = new Swiper('#main-swiper .pagination-swiper-container', {
-//   slidesPerView: '3',
-//   direction: 'vertical',
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true,
-// });
-
-// let mainSwiper = new Swiper('#main-swiper .-swiper-container', {
-//   slidesPerView: '1',
-//   direction: 'vertical',
-
-//   navigation: {
-//     nextEl: '.pagination-swiper-button-next',
-//     prevEl: '.pagination-swiper-button-prev',
-//   },
-
-//   thumbs: {
-//     swiper: swiperThumbs
-//   }
-// });
+// слайдер событий
+renderSwiper('#event-swiper', 'horizontal');
