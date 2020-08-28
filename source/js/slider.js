@@ -39,7 +39,7 @@ function renderSwiperContentParam(id, direction, thumbsName) {
 
 function renderSwiper(id, direction) {
   // опционально
-  document.querySelector(id).classList.add(direction);
+  // document.querySelector(id).classList.add(direction);
 
   let swiperThumbsParam = renderSwiperThumbsParam(direction);
   let swiperThumbs = new Swiper(id + ' .pagination-swiper-container', swiperThumbsParam);

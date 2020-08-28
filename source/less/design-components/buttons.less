@@ -42,7 +42,8 @@
   &__icon {
     // margin-left: 10px;
     // margin-left: 2px;
-    margin-left: 4px;
+    // margin-left: 4px;
+    margin-left: 10px;
   }
 }
 
@@ -70,6 +71,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  &--small {
+    height: 48px;
+    padding-left: 20px;
+    font-size: 1.8rem;
+    &::before {
+      width: 51px;
+      height: 48px;
+      background-image: url('../img/svg/red-line-small.svg');
+    }
   }
 }
 
