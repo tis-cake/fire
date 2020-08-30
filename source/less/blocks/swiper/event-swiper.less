@@ -1,5 +1,6 @@
 .event-swiper {
-  padding-top: 7.2rem;
+  padding-top: 0;
+  // padding-top: 7.2rem;
   padding-bottom: 7.2rem;
 }
 
@@ -20,6 +21,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  padding-top: 10.5rem;
 }
 
 .event-swiper__img-wrap {}
@@ -28,11 +31,13 @@
   /*опционально*/
   max-width: 55rem;
   max-height: 55rem;
-  margin-left: 4.2rem;
+  // margin-left: 4.2rem;
+
+  filter: drop-shadow(2rem 4rem 9rem rgba(0, 0, 0, 0.1));
 }
 
 .event-swiper__img-desc {
-  margin-top: -2rem;
+  margin-top: 2.2rem;
   margin-bottom: 3.2rem;
 
   font-weight: @bold;
@@ -48,4 +53,47 @@
 
 .event-swiper__desc {
   width: 77.5rem;
+}
+
+@media (max-width: @tablet-width) {
+
+  .event-swiper {
+    // padding-top: 0;
+    // padding-top: 7.2rem;
+    // padding-bottom: 7.2rem;
+    .padding-inline(0);
+  }
+
+  .event-swiper__pagination-swiper,
+  .event-swiper .event-swiper__pagination-swiper {
+    margin-top: 3rem;
+  }
+
+  .event-swiper__content-wrap {
+    padding-top: 12rem;
+  }
+
+  .event-swiper__img-wrap {}
+
+  .event-swiper__img {
+    max-width: 19.7rem;;
+    max-height: 24.4rem;;
+  }
+
+  .event-swiper__img-desc {
+    margin-top: 2.6rem;
+    margin-bottom: 3.5rem;
+
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+  }
+
+  .event-swiper__time {
+    margin-bottom: 2.4rem;
+    font-size: 1.5rem;
+  }
+
+  .event-swiper__desc {
+    width: 100%;
+  }
 }
