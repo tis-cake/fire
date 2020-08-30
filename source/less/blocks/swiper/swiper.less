@@ -164,10 +164,15 @@
 }
 
 @media (max-width: @tablet-width) {
+  html {
+    --swiper-padding-inline: 1.7rem;
+  }
+
   .two-swipers-wrap {
     width: 100%;
     flex-direction: column-reverse;
-    .padding-inline(1.7rem);
+    // .padding-inline(1.7rem);
+    .padding-inline(var(--swiper-padding-inline));
   }
 
   .pagination-swiper {
