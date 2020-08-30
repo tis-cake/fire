@@ -963,7 +963,7 @@ html .desktop-flex {
   .product__img-wrap {
     top: 0;
     width: 100%;
-    /*18.9rem*/
+    /* 189px */
     height: 50.4vw;
   }
   .product__img {
@@ -1046,7 +1046,7 @@ html .desktop-flex {
     justify-content: space-between;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 44px;
+    margin-bottom: 4.4rem;
   }
   .about-preview__img-item {
     height: 9.1rem;
@@ -1060,15 +1060,15 @@ html .desktop-flex {
     margin-bottom: 2rem;
   }
   .about-preview__title {
-    margin-bottom: 21px;
+    margin-bottom: 2.1rem;
   }
   .about-preview__go-link {
     margin-top: 2rem;
   }
   .about-preview__desc {
     padding-right: 0;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
   }
 }
 .services {
@@ -1115,6 +1115,67 @@ html .desktop-flex {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 48em) {
+  .services {
+    /* 167px */
+    margin-bottom: 44.53vw;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+  .services__title-wrap {
+    flex-direction: column;
+    align-items: initial;
+    margin-bottom: 4.9rem;
+  }
+  .services__title {
+    margin-bottom: 4.3rem;
+  }
+  .services__list {
+    -moz-column-gap: 2.4rem;
+         column-gap: 2.4rem;
+    row-gap: 4.8rem;
+    /* если в 2 колонки по макету */
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-areas: 'first thirt' 'second four' 'five six';
+    /* если по-нормальному */
+    /*grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));*/
+  }
+  /* если в 2 колонки по макету */
+  .services__item:nth-child(1) {
+    grid-area: first;
+  }
+  .services__item:nth-child(2) {
+    grid-area: second;
+  }
+  .services__item:nth-child(3) {
+    grid-area: thirt;
+  }
+  .services__item:nth-child(4) {
+    grid-area: four;
+  }
+  .services__item:nth-child(5) {
+    grid-area: five;
+  }
+  .services__item:nth-child(6) {
+    grid-area: six;
+  }
+  .services__caption {
+    margin-bottom: 2.1rem;
+  }
+  .services__item-title {
+    margin-bottom: 2.1rem;
+  }
+  .services__item-desc {
+    padding-right: 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .services__img-wrap {
+    /*-336px*/
+    bottom: auto;
+    bottom: -89.6vw;
+  }
 }
 .ways-preview {
   padding-top: 14rem;
@@ -1924,6 +1985,20 @@ html .desktop-flex {
 }
 .project-detail-swiper__btn-callback {
   margin-top: 5.6rem;
+}
+@media (max-width: 48em) {
+  .project-detail-swiper {
+    padding-top: 6.5rem;
+  }
+  .project-detail-swiper__two-swipers-wrap {
+    /*width: 157rem;*/
+  }
+  .project-detail-swiper__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 /*footer*/
 .footer {
