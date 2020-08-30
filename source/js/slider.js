@@ -9,9 +9,22 @@
 function renderSwiperThumbsParam(direction) {
   let swiperThumbsParam = {
     slidesPerView: '3',
-    direction: direction,
+    direction: 'horizontal',
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+
+    breakpoints: {
+      768: {
+        direction: direction,
+        slidesPerView: '3'
+      },
+      600: {
+        slidesPerView: '5'
+      },
+      500: {
+        slidesPerView: '4'
+      }
+    }
   }
 
   return swiperThumbsParam;
@@ -21,7 +34,7 @@ function renderSwiperThumbsParam(direction) {
 function renderSwiperContentParam(id, direction, thumbsName) {
   let swiperContentParam = {
     slidesPerView: '1',
-    direction: direction,
+    direction: 'horizontal',
     spaceBetween: 10,
 
     navigation: {
@@ -31,7 +44,14 @@ function renderSwiperContentParam(id, direction, thumbsName) {
 
     thumbs: {
       swiper: thumbsName
+    },
+
+    breakpoints: {
+      756: {
+        direction: direction
+      }
     }
+
   }
 
   return swiperContentParam;
