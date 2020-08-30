@@ -8,6 +8,7 @@
   --color-bg: #fcfcfc;
 
   --transition-main: 0.5s;
+  --border-radius: 1.5rem;
 }
 
 @color-f: var(--color-first);
@@ -20,6 +21,14 @@
 @light: 300;
 @bold: 700;
 
+@br: var(--border-radius);
+
 @circe: var(--font-text-desc);
 
 @s: var(--transition-main);
+
+@media (max-width: @tablet-width) {
+  :root {
+    --border-radius: 1rem;
+  }
+}

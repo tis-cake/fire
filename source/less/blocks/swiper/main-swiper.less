@@ -23,7 +23,7 @@
 
 .main-swiper__content-swiper {
   filter: drop-shadow(2rem 4rem 12rem #EEE);
-  border-radius: 1.5rem;
+  border-radius: @br;
 }
 
 .main-swiper__slide {
@@ -38,7 +38,7 @@
   height: 100%;
 
   background-color: #FFF;
-  border-radius: 1.5rem;
+  border-radius: @br;
 }
 
 .main-swiper__card-img {
@@ -55,7 +55,7 @@
   background-position: center;
   background-size: cover;
 
-  border-radius: 1.5rem 0 0 1.5rem;
+  border-radius: @br 0 0 @br;
 
   color: #fff;
 }
@@ -109,7 +109,7 @@
   padding-bottom: 7rem;
 
   background-color: #FFF;
-  border-radius: 0 1.5rem 1.5rem 0;
+  border-radius: 0 @br @br 0;
 }
 
 .main-swiper__column-left {
@@ -206,7 +206,7 @@
   }
 
   .main-swiper__content-swiper {
-    border-radius: 1rem;
+    // border-radius: @br;
   }
 
   .main-swiper__slide {
@@ -215,7 +215,7 @@
 
   .main-swiper__cards-wrap {
     flex-direction: column;
-    border-radius: 1rem;
+    // border-radius: @br;
   }
 
   .main-swiper__card-img {
@@ -226,7 +226,7 @@
     padding-right: 2.3rem;
     padding-bottom: 3rem;
 
-    border-radius: 1rem 1rem 0 0;
+    border-radius: @br @br 0 0;
   }
 
   .main-swiper__img-wrap {
@@ -265,12 +265,13 @@
     /*padding-right: 1.3rem;*/
     padding-bottom: 2.6rem;
 
-    border-radius: 1rem;
+    border-radius: @br;
   }
 
   .main-swiper__column-left {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
     width: auto;
     margin-top: 3rem;
   }
