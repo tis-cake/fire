@@ -16,11 +16,6 @@ $(document).ready(function () {
       evt.preventDefault();
 
       let currentSublist = $(this).closest('.main-nav__item').find('.main-nav__sublist');
-      // $('.main-nav__sublist').not(currentSublist).slideUp();
-      // currentSublist.slideToggle();
-      // $('.main-nav-sub').not($(this)).slideUp();
-      // $(this).slideDown();
-
       $('.main-nav__sublist').not(currentSublist).toggleClass('active');
       currentSublist.toggleClass('active');
 
@@ -73,13 +68,6 @@ $(document).ready(function () {
   }
 });
 
-$(document).ready(function () {
-  $('.additionally__btn-more').on('click', function(evt) {
-    $('.additionally__list').addClass('more-click');
-    $(this).addClass('more-click');
-    $('.additionally__item').fadeIn();
-  });
-});
 
 // фильтр центров над картой
 // $(document).ready(function () {
@@ -129,17 +117,25 @@ $(document).ready(function () {
   $(".js-phone-mask").mask("+7 ( 999 ) 999 - 99 - 99");
 });
 
-// для "противопоказаний", если в грид-сетке в левой колонке остаётся 1 элемент
+// зеркальный блок на странице каталога
 $(document).ready(function () {
-  if (width >= 756) {
-    $('.contraindications__list').each(function () {
-    elChildLength = $(this).children().length;
+  // var mirrorFragment = document.createDocumentFragment();
+  // var mirrorContainer = document.querySelector('#mirror-container');
+  // var mirrorBasis = document.querySelector('.main-ifno-catalog__blocks-wrap');
 
-    if (elChildLength % 3 === 1) {
-      $(this).addClass('single-grid-item');
-    }
-    })
-  }
+  // var mirror = mirrorBasis.cloneNode(true);
+
+  // mirrorFragment.appendChild(mirror);
+  // mirrorContainer.appendChild(mirrorFragment);
+
+  let mirrorFragment = $(document.createDocumentFragment());
+  let mirrorContainer = $('#mirror-container');
+  let mirrorBasis = $('.main-ifno-catalog__blocks-wrap');
+
+  let mirror = mirrorBasis.clone();
+
+  mirrorFragment.append(mirror);
+  mirrorContainer.append(mirrorFragment);
 });
 
 // модальные окна

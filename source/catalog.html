@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Очищение»">
+    <title>«Пожарная Автоматика»</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+    <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__mobile-top">
+            <button class="header__menu-toggle menu-toggle">
+              <span>Открыть меню</span>
+            </button>
+            <a class="header__logo logo" href="index.html">
+              <figure class="logo__img-wrap">
+                <img class="logo__img" src="img/svg/logo.svg" alt="Логотип ООО «Пожарная Автоматика»" width="78" height="78">
+                <figcaption class="logo__description">
+                  <span class="logo__description-item logo__description-item--bold">ООО «Пожарная Автоматика»</span>
+                  <span class="logo__description-item logo__description-item--light">Газовое пожаротушение</span>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="header__link-call-back js-modal-callback" href="#">
+              <img class="header__link-call-back-img" src="img/svg/icons/icon-phone-stroke.svg" alt="Обратный звонок" width="25" height="25">
+            </a>
+          </div>
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="ways.html">Решения</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="#">Поддержка</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="registration.html">Регистрация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="program.html">Программа “Салют”</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="order.html">Заказ расчета</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="documentation.html">Документация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="training.html">Обучение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="vacancy.html">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="database.html">Статьи</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="main-nav__decoration" id="nav-decoration"></div>
+            <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
+            Заказать звонок
+              <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </button>
+          </nav>
+          <div class="header__contacts-wrap">
+            <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
+            <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="main-info-catalog">
+        <div class="main-info-catalog__container container">
+          <div class="main-ifno-catalog__text-wrap">
+            <p class="main-ifno-catalog__caption caption">
+              Каталог продукции
+            </p>
+            <p class="main-ifno-catalog__title title title--light-bold">
+              Установки газового пожаротушения
+              <span>cобственного производства</span>
+            </p>
+          </div>
+          <div class="main-ifno-catalog__blocks-wrap">
+            <div class="main-ifno-catalog__block main-ifno-catalog__block-img-decor">
+              <figure class="main-ifno-catalog__img-decor-wrap">
+                <img class="main-ifno-catalog__img-decor" src="img/main-info/catalog1.png" alt="Декоративное изображение">
+              </figure>
+              <p class="main-ifno-catalog__img-decor-desc desc desc--light">
+                Тушение возгораний с применением газовых огнетушащих веществ
+              </p>
+            </div>
+
+            <div class="main-ifno-catalog__block main-ifno-catalog__block-detail">
+              <p class="main-ifno-catalog__feature-title title">
+                100%
+                <span class="main-ifno-catalog__feature-title-item">качество</span>
+              </p>
+              <p class="main-ifno-catalog__feature-caption">
+                c 2010 года
+              </p>
+
+              <p class="main-ifno-catalog__feature-desc">
+                Занимаемся разработками в области автоматического газового пожаротушения
+              </p>
+
+              <div class="main-ifno-catalog__feature-line"></div>
+
+              <div class="main-ifno-catalog__img-wrap">
+                <img class="main-ifno-catalog__img" src="img/main-info/1.png" alt="Товар продукции">
+              </div>
+            </div>
+
+            <div class="main-ifno-catalog__block main-ifno-catalog__block-yellow">
+              <p class="main-ifno-catalog__block-title">
+                Поставка, проектирование
+              </p>
+            </div>
+
+            <div class="main-ifno-catalog__block main-ifno-catalog__block-gray">
+              <p class="main-ifno-catalog__block-title">
+                Монтаж, обслуживание
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="mirror-container" class="main-info-catalog__mirror-container container"></div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__copyright-text">
+        &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
+      </p>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+
+    <script src="js/libs/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
