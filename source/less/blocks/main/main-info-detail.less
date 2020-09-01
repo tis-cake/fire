@@ -1,0 +1,134 @@
+.main-info-detail {
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+.main-info-detail__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-info-detail__text-wrap {
+}
+
+.main-info-detail__title {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3.9rem;
+
+    width: 5.7rem;
+    height: 0.3rem;
+
+    background-color: @color-s;
+    border-radius: 1rem;
+  }
+}
+
+.main-info-detail__text-small {
+  display: inline-block;
+  margin-top: 8.1rem;
+
+  font-family: @circe;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.main-info-detail__card-wrap {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 97.7rem;
+  height: 67.4rem;
+  padding-left: 23.4rem;
+
+  background-color: #FFFFFF;
+  box-shadow: 2rem 4rem 12rem #F1EEEE;
+  border-radius: @br;
+}
+
+.main-info-detail__img-wrap {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: -6.4rem;
+  transform: translateY(-50%);
+}
+
+.main-info-detail__img {
+  max-height: 47.5rem;
+  .no-select;
+}
+
+.main-info-detail__content-wrap {
+  width: 53rem;
+  padding-top: 9.4rem;
+}
+
+.main-info-detail__subtitle {
+  margin-bottom: 2.8rem;
+}
+
+.main-info-detail {
+  .desc,
+  .desc-light {
+    margin-bottom: 2.6rem;
+
+    font-family: @circe;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .desc-light {
+    font-weight: @light;
+  }
+}
+
+.main-info-detail__document-link-wrap {
+  margin-top: 3.8rem;
+}
+
+.main-info-detail__document-link {
+}
+
+.main-info-detail__social-list {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.6rem;
+
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+
+  border-left: 0.2rem solid @light-gray;
+}
+
+.main-info-detail__social-item {
+}
+
+.main-info-detail__social-link {
+  text-align: center;
+}
+
+.main-info-detail__social-desc {
+  margin-top: 1rem;
+  font-family: @circe;
+  font-size: 1.5rem;
+}
+
+
+.product {
+  .main-info-detail__text-wrap {
+    width: 36rem;
+    margin-top: 13.5rem;
+  }
+}

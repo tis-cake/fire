@@ -50,6 +50,8 @@
   --color-first: #2e2e2e;
   /* основной красный */
   --color-second: #FF3333;
+  /* основной жёлтый */
+  --color-third: #FFC309;
   --color-light-gray: #EDECF4;
   --color-darh-gray: #ACACAC;
   --color-bg: #fcfcfc;
@@ -264,6 +266,18 @@ html .desktop-flex {
 .text-stroke {
   text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
 }
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
 .reset-list {
   margin: 0;
   padding: 0;
@@ -297,6 +311,9 @@ html .desktop-flex {
 .subtitle {
   font-size: 4rem;
   line-height: 4.7rem;
+}
+.subtitle--light {
+  font-weight: 300;
 }
 .desc {
   font-family: var(--font-text-desc);
@@ -353,6 +370,9 @@ html .desktop-flex {
 .icon-arrow--bottom {
   transform: rotate(90deg);
 }
+.icon-message {
+  color: var(--color-third);
+}
 @media (max-width: 48em) {
   .icon-arrow--short {
     width: 1rem;
@@ -393,6 +413,10 @@ html .desktop-flex {
 .btn-callback-decor--long {
   width: 28.5rem;
   padding-left: 1.7rem;
+}
+.btn-callback-decor--small {
+  width: 20.5rem;
+  padding-left: 1.9rem;
 }
 .btn-go-link {
   display: inline-flex;
@@ -919,6 +943,9 @@ html .desktop-flex {
 .product__subtitle {
   margin-bottom: 1.6rem;
   color: var(--color-darh-gray);
+}
+.product__desc {
+  line-height: 1.4;
 }
 .product-preview {
   position: relative;
@@ -1456,7 +1483,7 @@ html .desktop-flex {
   position: absolute;
   z-index: -1;
   content: '';
-  left: -0.4rem;
+  left: 0;
   bottom: -26rem;
   width: 100%;
   height: 30.9rem;
@@ -1633,10 +1660,11 @@ html .desktop-flex {
   content: '';
   z-index: 1;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140rem;
   height: 100%;
-  background: linear-gradient(180deg, #FCFCFC 47.93%, rgba(252, 252, 252, 0) 100%);
+  background: linear-gradient(180deg, #fcfcfc 20.93%, rgba(252, 252, 252, 0.9) 70.93%, rgba(252, 252, 252, 0) 100%);
 }
 @media (min-width: 1921px) {
   .main-info-catalog::before {
@@ -1645,6 +1673,110 @@ html .desktop-flex {
   .main-ifno-catalog__blocks-wrap::before {
     content: '';
   }
+}
+.main-info-detail {
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+.main-info-detail__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.main-info-detail__title {
+  position: relative;
+}
+.main-info-detail__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3.9rem;
+  width: 5.7rem;
+  height: 0.3rem;
+  background-color: var(--color-second);
+  border-radius: 1rem;
+}
+.main-info-detail__text-small {
+  display: inline-block;
+  margin-top: 8.1rem;
+  font-family: var(--font-text-desc);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.main-info-detail__card-wrap {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 97.7rem;
+  height: 67.4rem;
+  padding-left: 23.4rem;
+  background-color: #FFFFFF;
+  box-shadow: 2rem 4rem 12rem #F1EEEE;
+  border-radius: var(--border-radius);
+}
+.main-info-detail__img-wrap {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: -6.4rem;
+  transform: translateY(-50%);
+}
+.main-info-detail__img {
+  max-height: 47.5rem;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+.main-info-detail__content-wrap {
+  width: 53rem;
+  padding-top: 9.4rem;
+}
+.main-info-detail__subtitle {
+  margin-bottom: 2.8rem;
+}
+.main-info-detail .desc,
+.main-info-detail .desc-light {
+  margin-bottom: 2.6rem;
+  font-family: var(--font-text-desc);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.main-info-detail .desc-light {
+  font-weight: 300;
+}
+.main-info-detail__document-link-wrap {
+  margin-top: 3.8rem;
+}
+.main-info-detail__social-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.6rem;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  border-left: 0.2rem solid var(--color-light-gray);
+}
+.main-info-detail__social-link {
+  text-align: center;
+}
+.main-info-detail__social-desc {
+  margin-top: 1rem;
+  font-family: var(--font-text-desc);
+  font-size: 1.5rem;
+}
+.product .main-info-detail__text-wrap {
+  width: 36rem;
+  margin-top: 13.5rem;
 }
 /*swiper*/
 .two-swipers-wrap {
