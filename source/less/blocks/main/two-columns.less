@@ -1,0 +1,81 @@
+.two-columns {
+  padding-top: 15rem;
+  // padding-bottom: 15rem;
+  padding-bottom: 7.5rem;
+
+  .title {
+    margin-bottom: 2.8rem;
+    font-family: @font-main;
+    font-weight: @bold;
+    font-size: 4rem;
+    line-height: 4.7rem;
+  }
+
+  .desc {
+    font-family: @circe;
+    line-height: 2.7rem;
+  }
+
+  .desc-light {
+    margin-bottom: 5.4rem;
+    font-family: @circe;
+    font-weight: @light;
+    line-height: 2.7rem;
+  }
+
+  dl {
+    counter-reset: dTerm;
+  }
+
+  dt {
+    position: relative;
+    width: 50rem;
+    margin-bottom: 2.8rem;
+    padding-bottom: 3rem;
+
+    font-size: 2rem;
+    line-height: 2.3rem;
+    &::before {
+      counter-increment: dTerm;
+      content: counter(dTerm) '.';
+      font-weight: @bold;
+      font-size: 2.5rem;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+
+      width: 36.2rem;
+      height: 0.1rem;
+      background-color: @light-gray;
+    }
+  }
+
+  dd {
+    width: 58rem;
+    margin: 0;
+    margin-bottom: 4rem;
+
+    font-family: @circe;
+    line-height: 2.7rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.two-columns__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__left-column {
+  width: 58rem;
+}
+
+.two-columns__right-column {
+  width: 66rem;
+}
