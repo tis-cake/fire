@@ -67,6 +67,7 @@
 }
 
 .main-info-detail__content-wrap {
+  box-sizing: border-box;
   width: 53rem;
   padding-top: 9.4rem;
 }
@@ -194,8 +195,7 @@
   .main-info-detail__content-wrap {
     width: 100%;
     padding-top: 8.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    .padding-inline(1.2rem);
   }
 
   .main-info-detail__subtitle {
@@ -230,7 +230,7 @@
   }
 
   .main-info-detail__social-item {
-    .padding-inline(1rem);
+    .padding-inline(1.2rem);
     &--youtube {
       order: -1;
     }
@@ -251,6 +251,7 @@
   .product {
     .main-info-detail__text-wrap {
       width: auto;
+      min-height: 17.7rem;
       margin-top: 0;
       margin-left: 15rem;
       margin-bottom: 2.5rem;
