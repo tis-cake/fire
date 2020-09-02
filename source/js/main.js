@@ -117,25 +117,26 @@ $(document).ready(function () {
   $(".js-phone-mask").mask("+7 ( 999 ) 999 - 99 - 99");
 });
 
-// зеркальный блок на странице каталога
+// зеркальный блок
+// .js-mirror-basis - блок, который нужно отзеркалить
+// .js-mirror-container - контейнер, куда вставляем зеркальный блок
 $(document).ready(function () {
-  // var mirrorFragment = document.createDocumentFragment();
-  // var mirrorContainer = document.querySelector('#mirror-container');
-  // var mirrorBasis = document.querySelector('.main-ifno-catalog__blocks-wrap');
+  let fragment = $(document.createDocumentFragment());
 
-  // var mirror = mirrorBasis.cloneNode(true);
+  function renderMirrorBlock(parentClass) {
+    let mirrorBasis = $(parentClass + ' .js-mirror-basis');
+    let mirrorContainer = $(parentClass + ' .js-mirror-container');
 
-  // mirrorFragment.appendChild(mirror);
-  // mirrorContainer.appendChild(mirrorFragment);
+    let mirror = mirrorBasis.clone();
+    mirror.removeClass('js-mirror-basis');
 
-  let mirrorFragment = $(document.createDocumentFragment());
-  let mirrorContainer = $('#mirror-container');
-  let mirrorBasis = $('.main-ifno-catalog__blocks-wrap');
+    fragment.append(mirror);
+    mirrorContainer.append(fragment);
+  }
 
-  let mirror = mirrorBasis.clone();
+  renderMirrorBlock('.main-info-catalog');
+  renderMirrorBlock('.main-info-ways');
 
-  mirrorFragment.append(mirror);
-  mirrorContainer.append(mirrorFragment);
 });
 
 // модальные окна
@@ -145,12 +146,6 @@ $(document).ready(function () {
   $('.js-modal-callback').click(function (evt) {
     evt.preventDefault();
     openModal('.modal-callback', '.modal__input-phone');
-  });
-
-  // оставить отзыв (модалка 2)
-  $('.js-modal-feedback').click(function (evt) {
-    evt.preventDefault();
-    openModal('.modal-feedback', '.modal__input-name');
   });
 
   // открыть модальное окно
