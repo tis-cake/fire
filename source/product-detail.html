@@ -139,7 +139,7 @@
             </div>
           </div>
           <ul class="main-info-detail__social-list">
-            <li class="main-info-detail__social-item">
+            <li class="main-info-detail__social-item main-info-detail__social-item--message">
               <button class="main-info-detail__social-link js-modal-callback" title="Оставить заявку">
                 <img class="main-info-detail__social-icon" src="img/svg/icons/icon-message.svg" alt="Оставить заявку" width="43" height="29">
                 <span class="main-info-detail__social-desc">
@@ -147,7 +147,7 @@
                 </span>
               </button>
             </li>
-            <li class="main-info-detail__social-item">
+            <li class="main-info-detail__social-item  main-info-detail__social-item--youtube">
               <a class="main-info-detail__social-link js-modal-callback" href="#" title="Наш «YouTube»">
                 <img class="main-info-detail__social-icon" src="img/svg/icons/icon-youtube.svg" alt="YouTube" width="44" height="31">
                 <span class="main-info-detail__social-desc">
@@ -155,7 +155,7 @@
                 </span>
               </a>
             </li>
-            <li class="main-info-detail__social-item">
+            <li class="main-info-detail__social-item main-info-detail__social-item--vk">
               <a class="main-info-detail__social-link js-modal-callback" href="#" title="Наш «ВКонтакте»">
                 <img class="main-info-detail__social-icon" src="img/svg/icons/icon-vk.svg" alt="ВКонтакте" width="44" height="25">
                 <span class="main-info-detail__social-desc">
@@ -181,7 +181,8 @@
             <img class="product-detail__img" src="img/product/product-detail/11.png" alt="Модули универсальные">
           </figure>
 
-          <table class="product-detail__table">
+          <!-- Если на десктопе 4 строчки в таблице, не учитывая строку с заголовком, то на телефоне это будут 4 таблицы -->
+          <table class="product-detail__table product-detail__table--desktop">
             <tr>
               <th>Наименование</th>
               <th>Давление, кгс/см² </th>
@@ -220,6 +221,115 @@
               <td>100</td>
               <td>33</td>
               <td>1278</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <!-- Таблицы под каждую строчку в дектопе -->
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
               <td>357</td>
             </tr>
           </table>
@@ -235,7 +345,7 @@
             <img class="product-detail__img" src="img/product/product-detail/22.png" alt="Модули универсальные">
           </figure>
 
-          <table class="product-detail__table">
+          <table class="product-detail__table product-detail__table--desktop">
             <tr>
               <th>Наименование</th>
               <th>Давление, кгс/см² </th>
@@ -261,6 +371,60 @@
               <td>357</td>
             </tr>
           </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
+              <td>357</td>
+            </tr>
+          </table>
         </li>
         <li class="product-detail__item">
           <figure class="product-detail__main-wrap">
@@ -273,7 +437,7 @@
             <img class="product-detail__img" src="img/product/product-detail/33.png" alt="Модули универсальные">
           </figure>
 
-          <table class="product-detail__table">
+          <table class="product-detail__table product-detail__table--desktop">
             <tr>
               <th>Наименование</th>
               <th>Давление, кгс/см² </th>
@@ -288,6 +452,33 @@
               <td>100</td>
               <td>33</td>
               <td>1278</td>
+              <td>357</td>
+            </tr>
+          </table>
+
+          <table class="product-detail__table product-detail__table--mobile">
+            <tr>
+              <td>Наименование:</td>
+              <td>МПТХ 65-50-33</td>
+            </tr>
+            <tr>
+              <td>Давление, кгс/см²:</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>Объем, литры:</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Диаметр ЗПУ, мм:</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>L, мм:</td>
+              <td>1278</td>
+            </tr>
+            <tr>
+              <td>D,мм:</td>
               <td>357</td>
             </tr>
           </table>

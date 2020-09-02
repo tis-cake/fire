@@ -39,3 +39,39 @@
   font-size: 2.4rem;
   line-height: 2.8rem;
 }
+
+@media (max-width: @tablet-width) {
+  .documents {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .documents__title {
+    margin-bottom: 3.5rem;
+  }
+
+  .documents__list {
+    grid-template-columns: repeat(auto-fill, minmax(14.6rem, 1fr));
+    column-gap: 1.6rem;
+    // row-gap: 10rem;
+  }
+
+  .documents__item {}
+
+  .documents__img-wrap {
+    margin-bottom: 1.8rem;
+  }
+
+  .documents__img {
+    max-height: 20.8rem;
+  }
+
+  .documents__category {
+    margin-bottom: 0.7rem;
+  }
+
+  .documents__desc {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+}
