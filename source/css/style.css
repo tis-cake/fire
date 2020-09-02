@@ -2365,6 +2365,16 @@ html .desktop-flex {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
   overflow: hidden;
 }
 /* блок с декоративными элементами */
@@ -2530,6 +2540,16 @@ html .desktop-flex {
   width: 39.9rem;
   height: 35rem;
   z-index: 1;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 /* блок жёлтый/серый */
 .main-info-ways__block-yellow,
@@ -2556,7 +2576,7 @@ html .desktop-flex {
 }
 .main-info-ways__mirror-container {
   position: absolute;
-  bottom: -53rem;
+  bottom: -71rem;
   left: 50%;
   transform: rotateX(180deg) translateX(-50%);
   opacity: 0.35;
@@ -2570,7 +2590,14 @@ html .desktop-flex {
   transform: translateX(-50%);
   width: 140rem;
   height: 100%;
-  background: linear-gradient(180deg, #fcfcfc 20.93%, rgba(252, 252, 252, 0.9) 70.93%, rgba(252, 252, 252, 0) 100%);
+  background: linear-gradient(180deg, #fcfcfc 75.93%, rgba(252, 252, 252, 0.8) 85.93%, rgba(252, 252, 252, 0) 100%);
+}
+.main-info-ways__mirror-container .main-info-ways__block-img-big,
+.main-info-ways__mirror-container .main-info-ways__block-main-title {
+  display: none;
+}
+.main-info-ways__mirror-container .main-info-ways__block-detail {
+  z-index: 0;
 }
 @media (min-width: 1921px) {
   .main-info-ways::before {
