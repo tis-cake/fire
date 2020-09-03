@@ -64,10 +64,35 @@ textarea {
 section,
 article {
   position: relative;
-//   z-index: 1;
 }
 
 figure {
+  margin: 0;
+}
+
+dl {
+  counter-reset: dTerm;
+}
+
+dt {
+  position: relative;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  &::before {
+    counter-increment: dTerm;
+    content: counter(dTerm) '.';
+    font-weight: @bold;
+    font-size: 2.5rem;
+  }
+}
+
+dd {
+  font-family: @circe;
+  line-height: 2.7rem;
+}
+
+dl,
+dd {
   margin: 0;
 }
 
@@ -165,6 +190,19 @@ html .desktop-flex {
 
   html .mobile-flex {
     display: flex;
+  }
+
+  dt {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    &::before {
+      font-size: 2rem;
+    }
+  }
+
+  dd {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
 }
 

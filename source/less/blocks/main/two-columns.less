@@ -23,24 +23,11 @@
     line-height: 2.7rem;
   }
 
-  dl {
-    counter-reset: dTerm;
-  }
-
   dt {
     position: relative;
     width: 50rem;
     margin-bottom: 2.8rem;
     padding-bottom: 3rem;
-
-    font-size: 2rem;
-    line-height: 2.3rem;
-    &::before {
-      counter-increment: dTerm;
-      content: counter(dTerm) '.';
-      font-weight: @bold;
-      font-size: 2.5rem;
-    }
     &::after {
       position: absolute;
       content: '';
@@ -57,9 +44,6 @@
     width: 58rem;
     margin: 0;
     margin-bottom: 4rem;
-
-    font-family: @circe;
-    line-height: 2.7rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -117,12 +101,6 @@
       width: auto;
       margin-bottom: 2rem;
       padding-bottom: 2rem;
-
-      font-size: 1.6rem;
-      line-height: 2.1rem;
-      &::before {
-        font-size: 2rem;
-      }
       &::after {
         width: 100%;
       }
@@ -130,8 +108,8 @@
 
     dd {
       width: auto;
-      font-size: 1.4rem;
-      line-height: 2.1rem;
+      // font-size: 1.4rem;
+      // line-height: 2.1rem;
     }
   }
 

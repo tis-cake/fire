@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="«Пожарная Автоматика»">
+  <title>«Пожарная Автоматика»</title>
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+  <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/libs/swiper.min.css">
+  <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <div class="header__mobile-top">
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+          <a class="header__logo logo" href="index.html">
+            <figure class="logo__img-wrap">
+              <img class="logo__img" src="img/svg/logo.svg" alt="Логотип ООО «Пожарная Автоматика»" width="78" height="78">
+              <figcaption class="logo__description">
+                <span class="logo__description-item logo__description-item--bold">ООО «Пожарная Автоматика»</span>
+                <span class="logo__description-item logo__description-item--light">Газовое пожаротушение</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="header__link-call-back js-modal-callback" href="#">
+            <img class="header__link-call-back-img" src="img/svg/icons/icon-phone-stroke.svg" alt="Обратный звонок" width="25" height="25">
+          </a>
+        </div>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="ways.html">Решения</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav-sub" href="#">Поддержка</a>
+              <ul class="main-nav__sublist">
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="registration.html">Регистрация</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="program.html">Программа “Салют”</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="order.html">Заказ расчета</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="documentation.html">Документация</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="training.html">Обучение</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="vacancy.html">Вакансии</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="database.html">Статьи</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__decoration" id="nav-decoration"></div>
+          <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
+            Заказать звонок
+            <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="header__contacts-wrap">
+          <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
+          <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="main-info-detail way container">
+      <div class="main-info-detail__wrap">
+        <div class="main-info-detail__card-wrap">
+          <div class="main-info-detail__img-wrap">
+            <img class="main-info-detail__img" src="img/main-info/detail/ways1.png" alt="Изображение 1">
+          </div>
+          <div class="main-info-detail__content-wrap">
+            <p class="main-info-detail__subtitle subtitle">
+              Тушение станков всех типов
+            </p>
+            <p class="desc">
+              Задача пожаротушения металлообрабатывающих станков связана с внедрением в авиационной, аэрокосмической и оборонной промышленности металлообрабатывающих станков для механической обработки сплавов легких металлов, в том числе магния и титана.
+            </p>
+            <p class="desc-light">
+              При механической обработке заготовок из этих сплавов образуется пожароопасная стружка различной толщины, которая накапливается в зоне обработки деталей. Возгорание такой стружки может произойти от низкоэнергетических источников загорания, что приводит к выходу обрабатывающего оборудования из строя и развитию пожара в помещении. Для тушения стружки сплавов магния и титанаиспользуют классические огнетушащие составы.
+            </p>
+            <div class="main-info-detail__document-link-wrap">
+              <a class="main-info-detail__document-link btn-callback-decor btn-callback-decor--small" href="#" target="_blank">
+                Запросить КП
+                <i class="btn-callback-decor__icon">
+                  <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                    <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </div>
+          <ul class="main-info-detail__social-list">
+            <li class="main-info-detail__social-item main-info-detail__social-item--message">
+              <a class="main-info-detail__social-link js-modal-callback" href="#" title="Скачать буклет">
+                <img class="main-info-detail__social-icon" src="img/svg/icons/icon-book.svg" alt="Скачать буклет" width="43" height="29">
+                <span class="main-info-detail__social-desc">
+                  Скачать буклет
+                </span>
+              </a>
+            </li>
+            <li class="main-info-detail__social-item  main-info-detail__social-item--youtube">
+              <a class="main-info-detail__social-link" href="#" title="Наш «YouTube»" target="_blank">
+                <img class="main-info-detail__social-icon" src="img/svg/icons/icon-youtube.svg" alt="YouTube" width="44" height="31">
+                <span class="main-info-detail__social-desc">
+                  YouTube
+                </span>
+              </a>
+            </li>
+            <li class="main-info-detail__social-item main-info-detail__social-item--vk">
+              <a class="main-info-detail__social-link" href="#" title="Наш «ВКонтакте»" target="_blank">
+                <img class="main-info-detail__social-icon" src="img/svg/icons/icon-vk.svg" alt="ВКонтакте" width="44" height="25">
+                <span class="main-info-detail__social-desc">
+                  ВКонтакте
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="article container">
+      <div class="article__columns-wrap">
+        <div class="article__column-left">
+          <div>
+            <h2>
+              Противопожарная защита станков
+            </h2>
+            <p class="light">
+              Однако применение таких составов в условиях замкнутых объемов обрабатывающего оборудования затруднено, а зачастую невозможно из-за конструктивных особенностей. Кроме того, многие огнетушащие составы обладают высокой коррозионной активностью и способны вывести из строя дорогостоящее оборудование, как в результате тушения, так и при ложном срабатывании установки.
+            </p>
+            <p>
+              Современным средством тушения стружки сплавов легких металлов являются инертные газы. При подаче в защищаемый объем они снижают уровень кислорода в атмосфере до концентраций, при которых не поддерживается горение. Вместе с тем, инертные газы не взаимодействуют с металлами, входящими в состав сплавов, являются экологически чистыми огнетушащими веществами и совершенно безопасны для человека и оборудования.
+            </p>
+            <strong>
+              В нормативно-технической документации отсутствуют сведения по выбору средств тушения сплавов магния и титана.
+              Тушение стружки с помощью инертных газов возможно только в замкнутых объемах в пределах условно герметичного защитного кожуха.
+            </strong>
+          </div>
+
+          <h3>
+            Защита электромеханического оборудования (Автономные установки пожаротушения)
+          </h3>
+
+          <p class="light">
+            Самой распространенной причиной возгорания станков на сегодняшний день является неисправность электрического оборудования. Короткое замыкание, перегрузка или перегрев оборудования – вот далеко не полный перечень причин возможного возгорания. Более того, риск возникновения и распространения  пожара многократно возрастает, когда шкафы управления и прочее электротехническое оборудование расположено в зоне, где затруднен или исключен визуальный контакт персонала с защищаемым оборудованием.
+          </p>
+
+          <p>
+            Такое оборудование отличает наличие ограждающих поверхностей, которые ограничивают объем изделия при наличии сравнительно небольших постоянно открытых проемов, а также высокая пожарная опасность из-за наличия пожарной нагрузки и потенциальных источников зажигания. Именно поэтому пожары оборудования шкафного исполнения - не редкость. Ущерб от таких пожаров определяется не только потерей материальных ценностей, но и перерывом в технологическом процессе. Последние потери оказываются весьма значительными и часто превышают первые.
+          </p>
+
+          <strong>
+            Несвоевременное техническое обслуживание, отсутствие нормальной вентиляции и несоблюдение правил пожарной безопасности – вот далеко не полный перечень причин возможного возгорания
+          </strong>
+
+          <p>
+            Компания ООО «Пожарная Автоматика» представляет компактную и полностью автономную систему газового пожаротушения, разработанную специально для электрических шкафов.
+            Для обнаружения пожара используется полимерная гибкая трубка-детектор, которая легко устанавливается непосредственно над проводами и платами. В рабочем состоянии трубка наполнена сухим азотом под давлением 16 бар. При чрезмерном нагреве или возгорании защищаемых узлов происходит размягчение и разрыв стенки трубки. Внезапная разгерметизация вызывает срабатывание специального дифференциального клапана и выпуск огнетушащего состава в защищаемый объем. Возгорание ликвидируется через несколько секунд после появления, что существенно снижает риск распространения пожара и повреждения оборудования.
+          </p>
+
+          <figure>
+            <img src="img/article/1.png" alt="Изображение 1">
+          </figure>
+
+          <h3>
+            Преимущества
+          </h3>
+
+          <dl>
+            <dt>Работа в автономном режиме</dt>
+            <dd>
+              Работая в автономном режиме, при возгорании, система самозапускается и ликвидирует пожар до того, как он сможет распространиться по всему оборудованию. При необходимости имеется возможность передавать сигнал тревоги на пульт диспетчеризации, если таковой имеется, либо включить пожарную сирену при срабатывании системы.
+            </dd>
+
+            <dt>Система обнаружения и пожаротушения</dt>
+            <dd>
+              Укомплектованная система обнаружения и пожаротушения, специально спроектированная для станков с ЧПУ и другого механического оборудования с высоким риском возгорания.
+            </dd>
+
+            <dt>Автономные установки</dt>
+            <dd>
+              Автономные установки пожаротушения способны надежно ликвидировать пожар в оборудовании шкафного исполнения различного назначения, а также в двигательных отсеках транспортных средств и в кухонном оборудовании.
+            </dd>
+
+            <dt>Компактность и низкая стоимость</dt>
+            <dd>
+              Установки отличаются компактностью и низкой стоимостью, удобны для монтажа и эксплуатации.
+            </dd>
+
+            <dt>Обеспечение защиты в местах, недоступных традиционным системам пожаротушения</dt>
+            <dd>
+              Возгорание остатков масла или стружки вследствие неисправности системы охлаждения, поломки инструмента или неправильного обслуживания. Главным достоинством систем является обеспечение защиты в местах, недоступных традиционным системам пожаротушения. Нет проекта – минимизация расходов. Один небольшой эл шкаф небольшой участок в рамках целого станкак не защищая другиек механизмы.
+            </dd>
+
+            <dt>
+              Не требует эвакуации
+            </dt>
+            <dd>
+              Эффективная система полноценная. Эвакуация персонала не надо
+            </dd>
+          </dl>
+
+          <div>
+            <h3>
+              Предотвращение рисков
+            </h3>
+            <ul>
+              <li>Трудоемкий ремонт станка</li>
+              <li>Срыв сроков вследствие простоя</li>
+              <li>Обширная очистка в случае срабатывания спринклерной системы</li>
+            </ul>
+
+            <h3>
+              Оснобенности
+            </h3>
+            <ul>
+              <li>Укомплектованная и готовая к установке система</li>
+              <li>Быстрая и простая установка непосредственно внутри станков с ЧПУ</li>
+              <li>Быстрое и эффективное пожаротушение</li>
+              <li>Высокая надежность: не используется электричество и нет движущихся деталей</li>
+              <li>Раннее обнаружение возгорания</li>
+              <li>Высокая экономичность</li>
+            </ul>
+          </div>
+          <h3>
+            Защита всего объема станка
+            (Локальное пожаротушение по объему)
+          </h3>
+          <p class="light">
+            Защита всего объема станка (Локальное пожаротушение по объему)
+            Зачастую, помещения, в которых располагаются станки, имеют внушительные размеры и свои конструктивные особенности. Поэтому может оказаться, что защищать весь объем помещения экономически нецелесообразно. Более того, при «классическом» расположении насадков под потолком зона возгорания может быть сильно экранирована, что затрудняет быстрый доступ огнетушащего вещества к месту возгорания. Одновременно с этим, существуют рабочие зоны, где из-за особенностей оборудования вообще невозможно разместить насадки системы пожаротушения.
+          </p>
+          <p>
+            Когда применение установок объемного пожаротушения технически невозможно или экономически нецелесообразно, на помощь приходят установки локального пожаротушения. В чем заключается особенность локального тушения? Насадки установки располагаются непосредственно над защищаемым оборудованием. Огнетушащее вещество в утроенном объеме подается в зону возгорания, достигая сразу трех основных целей пожаротушения: сбивает пламя, вытесняет кислород из зоны горения и охлаждает не только окружающий воздух, но и поверхности горения. Как результат, реакции горения замедляются либо прекращаются вовсе.
+          </p>
+        </div>
+
+        <div class="article__column-right ways-list article__ways-list">
+          <ul class="ways-list__list ways-list__list--column">
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/1.png" alt="Решение 1">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 1
+                </p>
+                <p class="ways__item-title">
+                  Тушение серверных комнат
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/2.png" alt="Решение 2">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 2
+                </p>
+                <p class="ways__item-title">
+                  Тушение станков всех типов
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/3.png" alt="Решение 3">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 3
+                </p>
+                <p class="ways__item-title">
+                  Тушение электрошкафов
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/4.png" alt="Решение 4">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 4
+                </p>
+                <p class="ways__item-title">
+                  Тушение кухонь и ресторанов
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/5.png" alt="Решение 5">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 5
+                </p>
+                <p class="ways__item-title">
+                  Установки Sinorix Compact
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/6.png" alt="Решение 6">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 6
+                </p>
+                <p class="ways__item-title">
+                  Тушение помещений архивов
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/7.png" alt="Решение 7">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 7
+                </p>
+                <p class="ways__item-title">
+                  Тушение музеев, библиотек
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/8.png" alt="Решение 8">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 8
+                </p>
+                <p class="ways__item-title">
+                  Тушение трансформаторов
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/9.png" alt="Решение 9">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 9
+                </p>
+                <p class="ways__item-title">
+                  Тушение окрасочных камер
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/10.png" alt="Решение 10">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 10
+                </p>
+                <p class="ways__item-title">
+                  Тушение объектов авиации
+                </p>
+              </a>
+            </li>
+
+            <li class="ways__item">
+              <a class="ways__link" href="ways-detail.html">
+                <p class="ways__img-wrap">
+                  <img class="ways__img" src="img/ways/11.png" alt="Решение 11">
+                </p>
+                <p class="ways__item-caption">
+                  Решение 11
+                </p>
+                <p class="ways__item-title">
+                  Тушение электрощитовых
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer container">
+    <p class="footer__copyright-text">
+      &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
+    </p>
+  </footer>
+  <div class="overlay"></div>
+  <script src="js/libs/jquery-3.4.1.min.js"></script>
+  <script src="js/libs/jquery.maskedinput.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+</body>
