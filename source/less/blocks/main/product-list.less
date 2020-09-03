@@ -1,18 +1,18 @@
-.product {
+.product-list {
   padding-top: 9.3rem;
   padding-bottom: 9.3rem;
 }
 
-.product__list {
+.product-list__list {
   display: grid;
   grid-template-columns: repeat(4, 32rem);
   justify-content: space-between;
   row-gap: 20.8rem;
 }
 
-.product__item {}
+.product-list__item {}
 
-.product__link {
+.product-list__link {
   box-sizing: border-box;
   position: relative;
   height: 44.2rem;
@@ -26,7 +26,7 @@
   border-radius: 1.5rem;
 }
 
-.product__img-wrap {
+.product-list__img-wrap {
   position: absolute;
   top: -12.3rem;
   left: 2rem;
@@ -35,41 +35,41 @@
   text-align: center;
 }
 
-.product__img {
+.product-list__img {
   max-height: 33rem;
 }
 
-.product__item-title {
+.product-list__item-title {
   margin-bottom: 1.8rem;
   font-weight: @bold;
   font-size: 3rem;
 }
 
-.product__subtitle {
+.product-list__subtitle {
   margin-bottom: 1.6rem;
   color: @dark-gray;
 }
 
-.product__desc {
+.product-list__desc {
   line-height: 1.4;
 }
 
 @media (max-width: @tablet-width) {
-  .product {
+  .product-list {
     // padding-top: 9.3rem;
     padding-top: 5.9rem;
     padding-bottom: 5.9rem;
   }
 
-  .product__list {
+  .product-list__list {
     grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
     column-gap: 2rem;
     row-gap: 12.4rem;
   }
 
-  .product__item {}
+  .product-list__item {}
 
-  .product__link {
+  .product-list__link {
     min-height: 30rem;
     height: auto;
     padding-top: 13rem;
@@ -78,35 +78,35 @@
     padding-bottom: 1rem;
   }
 
-  .product__img-wrap {
+  .product-list__img-wrap {
     top: -5.2rem;
     left: 0rem;
   }
 
-  .product__img {
+  .product-list__img {
     max-height: 16.2rem;
   }
 
-  .product__item-title {
+  .product-list__item-title {
     font-size: 2rem;
     line-height: 2.3rem;
     margin-bottom: 1.5rem;
   }
 
-  .product__subtitle {
+  .product-list__subtitle {
     font-size: 1.4rem;
     line-height: 1.6rem;
     margin-bottom: 1.3rem;
   }
 
-  .product__desc {
+  .product-list__desc {
     font-size: 1.4rem;
     line-height: 1.9rem;
   }
 }
 
 @media (max-width: @iphone-small) {
-  .product__list {
+  .product-list__list {
     column-gap: 1.2rem;
   }
 }
