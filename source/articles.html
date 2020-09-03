@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Пожарная Автоматика»">
+    <title>«Пожарная Автоматика»</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+    <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__mobile-top">
+            <button class="header__menu-toggle menu-toggle">
+              <span>Открыть меню</span>
+            </button>
+            <a class="header__logo logo" href="index.html">
+              <figure class="logo__img-wrap">
+                <img class="logo__img" src="img/svg/logo.svg" alt="Логотип ООО «Пожарная Автоматика»" width="78" height="78">
+                <figcaption class="logo__description">
+                  <span class="logo__description-item logo__description-item--bold">ООО «Пожарная Автоматика»</span>
+                  <span class="logo__description-item logo__description-item--light">Газовое пожаротушение</span>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="header__link-call-back js-modal-callback" href="#">
+              <img class="header__link-call-back-img" src="img/svg/icons/icon-phone-stroke.svg" alt="Обратный звонок" width="25" height="25">
+            </a>
+          </div>
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="products.html">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="ways.html">Решения</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="#">Поддержка</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="registration.html">Регистрация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="program.html">Программа “Салют”</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="order.html">Заказ расчета</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="documentation.html">Документация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="training.html">Обучение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="vacancy.html">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="articles.html">Статьи</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="main-nav__decoration" id="nav-decoration"></div>
+            <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
+            Заказать звонок
+              <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </button>
+          </nav>
+          <div class="header__contacts-wrap">
+            <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
+            <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="article-preview container">
+        <div class="article-preview__main-text-wrap">
+          <p class="article-preview__main-caption caption caption--light">
+            База знаний
+          </p>
+          <p class="article-preview__main-title title title--light-bold">
+            <span>Статьи</span> от экспертов компании ООО «Пожарная Автоматика»
+          </p>
+        </div>
+
+        <ul class="article-preview__list">
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/2.jpg" alt="Статья 1">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/3.jpg" alt="Статья 2">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/2.jpg" alt="Статья 1">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/2.jpg" alt="Статья 1">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/3.jpg" alt="Статья 2">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="article-preview__item">
+            <a class="article-preview__link" href="article-detail.html">
+              <p class="article-preview__img-wrap">
+                <img class="article-preview__img" src="img/article/2.jpg" alt="Статья 1">
+              </p>
+              <p class="article-preview__category">
+                Пожаротушение
+              </p>
+              <p class="article-preview__title">
+                Спецификации применяемого оборудования
+              </p>
+              <p class="article-preview__desc">
+                На любом этапе расчетов программа «Салют» автоматически подбирает оптимальный комплект оборудования, учитывая уже введенные параметры ...
+              </p>
+              <p class="article-preview__go-link btn-go-link">
+                Чиатать статью
+                <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                  <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container">
+      <p class="footer__copyright-text">
+        &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
+      </p>
+    </footer>
+    <div class="overlay"></div>
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+
+    <script src="js/libs/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+
+</html>
