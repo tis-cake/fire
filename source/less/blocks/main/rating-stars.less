@@ -1,0 +1,53 @@
+.rating-stars {
+  display: flex;
+  align-items: center;
+}
+
+.rating-stars__title {
+  margin-right: 1.9rem;
+  font-family: inherit;
+}
+
+.rating-stars__area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  width: 12.6rem;
+}
+
+.rating-stars__area input {
+  display: none;
+}
+
+.rating-stars__area label,
+.rating-stars__area label::before {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.rating-stars__area label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+}
+
+.rating-stars__area label::before {
+  content: '';
+  position: absolute;
+
+  background-image: url("../img/svg/icons/icon-star-stroke.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rating-stars__area input:checked ~ label::before,
+.rating-stars__area label:hover,
+.rating-stars__area label:hover ~ label {
+  background-image: url("../img/svg/icons/icon-star-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

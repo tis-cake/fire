@@ -1,0 +1,35 @@
+.breadcrumbs {
+  padding-top: 6.5rem;
+  padding-bottom: 1.3rem;
+  // padding-bottom: 6.5rem;
+
+  font-family: @circe;
+  font-weight: @light;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+
+  color: #949393;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 2rem;
+  &::before {
+    position: absolute;
+    content: '/';
+    left: -1.2rem;
+  }
+  &:first-child {
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.breadcrumbs__link {}
+
+.breadcrumbs-current {}
