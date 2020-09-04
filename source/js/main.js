@@ -138,6 +138,19 @@ $(document).ready(function () {
 
 });
 
+// плавное перемещение к форме регистрации и фокус на ней
+$(document).ready(function() {
+  $(".main-info-registration__go-form-link" ).on("click", function (evt) {
+    // evt.preventDefault();
+    let id  = $(this).attr('href'),
+        top = $(id).offset().top;
+
+    $('body,html').animate({scrollTop: top}, 1000, function() {
+      $('.form__name').focus();
+    });
+  });
+});
+
 // модальные окна
 $(document).ready(function () {
 

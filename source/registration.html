@@ -124,7 +124,7 @@
 
             <div class="main-info-registration__block main-info-registration__block-yellow">
               <p class="main-info-registration__block-title">
-                Зарегестрируйтесь сейчас!
+                Зарегистрируйтесь сейчас!
               </p>
               <p class="main-info-registration__caption">
                 Заполните форму на сайте
@@ -158,6 +158,48 @@
         </div>
 
         <div class="main-info-registration__mirror-container container js-mirror-container"></div>
+      </section>
+
+      <section class="registration container">
+        <form id="registration-form" class="registration__form form" action=".php" method="POST">
+          <p class="form__title title title--light-bold">
+            <span>Заявка</span> на регистрацию
+          </p>
+
+          <div class="form__columns-wrap">
+            <fieldset class="form__wrap">
+              <p class="form__subtitle">
+                Заявитель
+              </p>
+              <input class="form__input form__name" type="text" name="PERSON-NAME" placeholder="Ф.И.О." required="">
+              <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="PERSON-TEL" placeholder="Телефон" required="">
+              <input class="form__input form__input--half form__mail" type="email" name="PERSON-MAIL" placeholder="E-mail" required="">
+              <input class="form__input form__city" type="text" name="PERSON-CITY" placeholder="Город" required="">
+              <textarea class="form__input form__text" name="PERSON-TEXT" placeholder="Комментарий"></textarea>
+            </fieldset>
+
+            <fieldset class="form__wrap">
+              <p class="form__subtitle">
+                Компания
+              </p>
+              <input class="form__input form__input--half form__company-name" type="text" name="COMPANY-NAME" placeholder="Наименование" required="">
+              <input class="form__input form__input--half form__post" type="text" name="COMPANY-POSITION" placeholder="Должность" required="">
+              <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="COMPANY-TEL" placeholder="Телефон" required="">
+              <input class="form__input form__input--half form__site" type="url" name="COMPANY-SITE" placeholder="Сайт" required="">
+              <input class="form__input form__address" type="text" name="COMPANY-ADDRESS" placeholder="Адрес" required="">
+              <textarea class="form__input form__text" name="COMPANY-TEXT" placeholder="Комментарий"></textarea>
+            </fieldset>
+          </div>
+
+          <button class="registration__btn-submit form__btn-submit btn-callback-decor" type="submit">
+            Отправить
+            <i class="btn-callback-decor__icon">
+              <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </i>
+          </button>
+        </form>
       </section>
 
     </main>

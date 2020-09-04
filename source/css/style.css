@@ -2822,7 +2822,7 @@ html .desktop-flex {
 }
 .main-info-registration__block-gray {
   padding-top: 6.5rem;
-  background-image: url('../img/main-info-bg-line2.png');
+  background-image: url('../img/bg/main-info-registration-bg-gray-d.png');
 }
 .main-info-registration__block-title {
   width: 30rem;
@@ -3660,26 +3660,39 @@ html .desktop-flex {
 .form__title {
   margin-bottom: 4.9rem;
 }
+.form__columns-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 61.6rem);
+  justify-content: space-between;
+}
 .form__wrap {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-family: var(--font-text-desc);
   font-weight: 300;
+}
+.form__subtitle {
+  width: 100%;
+  margin-bottom: 2.6rem;
+  font-size: 3rem;
 }
 .form__input {
   box-sizing: border-box;
   width: 100%;
+  margin-bottom: 2rem;
   padding: 1.1rem 2.2rem;
   font-family: inherit;
   font-weight: inherit;
   border: 1px solid #DBDBDB;
   border-radius: 1rem;
+  background-color: var(--color-bg);
 }
 .form__input:-moz-ui-invalid {
   box-shadow: none;
 }
-.form__name {
-  margin-bottom: 2.5rem;
+.form__input--half {
+  width: 48.5%;
 }
 .form__text {
   height: 15rem;
@@ -3688,6 +3701,13 @@ html .desktop-flex {
   width: 18.2rem;
   margin-top: 5.8rem;
   padding-left: 2rem;
+}
+.registration {
+  padding-top: 5.4rem;
+  padding-bottom: 13.8rem;
+}
+.registration__btn-submit {
+  margin-top: 4.1rem;
 }
 /*swiper*/
 .two-swipers-wrap {
