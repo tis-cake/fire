@@ -61,9 +61,7 @@ $(document).ready(function () {
     });
 
     $('.main-nav').on('mouseleave', () => {
-      // setTimeout(() => {
-        $('.main-nav').removeClass('decor');
-      // }, 600)
+      $('.main-nav').removeClass('decor');
     })
   }
 });
@@ -136,6 +134,7 @@ $(document).ready(function () {
 
   renderMirrorBlock('.main-info-catalog');
   renderMirrorBlock('.main-info-ways');
+  renderMirrorBlock('.main-info-registration');
 
 });
 

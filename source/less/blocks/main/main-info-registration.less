@@ -1,0 +1,240 @@
+.main-info-registration {
+  position: relative;
+  margin-top: 9.6rem;
+  margin-bottom: 24rem;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+
+    left: 0;
+    bottom: -26rem;
+    width: 100%;
+    height: 30.9rem;
+
+    background-image: url('../img/bg/main-info-bg-line2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.main-info-registration__container {}
+
+.main-info-registration__blocks-wrap {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 51.9rem 63.1rem;
+  grid-template-rows: repeat(2, 23.7rem);
+
+  grid-template-areas:
+    'detail yellow'
+    'detail gray';
+
+  justify-content: space-between;
+  // align-content: space-between;
+  row-gap: 0.4rem;
+
+  width: 116.4rem;
+  margin-left: 13.4rem;
+  // margin-right: auto;
+
+  &::before {
+    content: none;
+
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+
+    background-color: #838C95;
+    border-radius: @br;
+    filter: blur(3rem);
+  }
+}
+
+.main-info-registration__block {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #FFF;
+  box-shadow: 1rem 3rem 8rem #EAEAEA;
+  border-radius: @br;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-detail {
+    grid-area: detail;
+  }
+
+  &-yellow {
+    grid-area: yellow;
+  }
+
+  &-gray {
+    grid-area: gray;
+  }
+}
+
+/* блок красный */
+
+.main-info-registration__block-detail {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 7.1rem;
+  padding-left: 14.1rem;
+  padding-right: 2.7rem;
+  padding-bottom: 4.5rem;
+
+  color: #fff;
+  background-color: @color-s;
+  background-image: url('../img/bg/main-info-catalog-bg-red.png');
+  box-shadow: none;
+}
+
+.main-info-registration__main-title {
+  margin-bottom: 5.2rem;
+}
+
+.main-info-registration__list-title {
+  margin-bottom: 2.2rem;
+  font-weight: @bold;
+  font-size: 2rem;
+}
+
+.main-info-registration__list {
+  counter-reset: regItem;
+}
+
+.main-info-registration__item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  &::before {
+    counter-increment: regItem;
+    content: counter(regItem);
+    margin-right: 1rem;
+    font-weight: @bold;
+    font-size: 2.2rem;
+  }
+}
+
+.main-info-registration__detail-img-wrap {
+  position: absolute;
+  top: -3rem;
+  left: -6.5rem;
+  width: 21rem;
+  height: 49.8rem;
+}
+
+.main-info-registration__detail-img {
+  .img-contain;
+  .no-select;
+}
+
+
+/* блок жёлтый/серый */
+
+.main-info-registration__block-yellow,
+.main-info-registration__block-gray {
+  padding-left: 5.2rem;
+  padding-right: 6rem;
+  padding-bottom: 4rem;
+}
+
+.main-info-registration__block-yellow {
+  padding-top: 5.2rem;
+  position: relative;
+  box-shadow: none;
+  background-color: #FFC700;
+}
+
+.main-info-registration__block-gray {
+  padding-top: 6.5rem;
+  background-image: url('../img/main-info-bg-line2.png');
+}
+
+.main-info-registration__block-title {
+  width: 30rem;
+  margin-bottom: 0.8rem;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+}
+
+.main-info-registration__caption {
+  font-family: @circe;
+  font-weight: @light;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.main-info-registration__mail-link {
+  margin-top: 0.3rem;
+  font-family: @circe;
+  font-size: 1.6rem;
+  color: @color-s;
+}
+
+.main-info-registration__go-form-link {
+  margin-top: 2.9rem;
+}
+
+.main-info-registration__img-wrap {
+  position: absolute;
+  top: -7.4rem;
+  right: -8.8rem;
+}
+
+.main-info-registration__img {
+  .no-select;
+}
+
+.main-info-registration__mirror-container {
+  position: absolute;
+  bottom: -48.3rem;
+  left: 50%;
+  transform: rotateX(180deg) translateX(-50%);
+  opacity: 0.35;
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(252, 252, 252, 1) 75.93%, rgba(252, 252, 252, 0.8) 85.93%, rgba(252, 252, 252, 0) 100%);
+  }
+
+  .main-info-registration__block-detail {
+    z-index: 0;
+  }
+
+  .main-info-registration__img-wrap {
+    display: none;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .main-info-registration {
+    &::before {
+      background-image: linear-gradient(180deg, #E1E4E7 0%, #FCFCFC 100%);
+    }
+  }
+
+  .main-info-registration__blocks-wrap {
+    &::before {
+      content: '';
+    }
+  }
+}

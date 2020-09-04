@@ -8,6 +8,8 @@
 }
 
 .btn-callback-decor {
+  --current-color: @color-s;
+
   position: relative;
   box-sizing: border-box;
   display: inline-flex;
@@ -19,7 +21,7 @@
 
   font-family: @circe;
 
-  border: 0.2rem solid @color-s;
+  border: 2px solid var(--current-color);
   box-sizing: border-box;
   border-radius: 1rem;
 
@@ -33,7 +35,7 @@
     height: 5.4rem;
     margin-left: auto;
 
-    background-color: @color-s;
+    background-color: var(--current-color);
     border-radius: 1rem 0 0 1rem;
   }
 
@@ -45,6 +47,10 @@
   &--small {
     width: 20.5rem;
     padding-left: 1.9rem;
+  }
+
+  &--white {
+    --current-color: #fff;
   }
 }
 
