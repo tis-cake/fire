@@ -43,7 +43,8 @@ p {
 }
 
 input,
-button {
+button,
+textarea {
   box-sizing: border-box;
   padding: 0;
   border: none;
@@ -61,12 +62,25 @@ textarea {
   color: @color-f;
 }
 
+textarea {
+  resize: none;
+}
+
 section,
 article {
   position: relative;
 }
 
-figure {
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+blockquote,
+figure,
+fieldset,
+dl,
+dd {
   margin: 0;
 }
 
@@ -89,11 +103,6 @@ dt {
 dd {
   font-family: @circe;
   line-height: 2.7rem;
-}
-
-dl,
-dd {
-  margin: 0;
 }
 
 .noscroll {
