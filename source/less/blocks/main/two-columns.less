@@ -1,7 +1,12 @@
 .two-columns {
-  padding-top: 15rem;
+  // padding-top: 15rem;
+  padding-top: 10rem;
   // padding-bottom: 15rem;
   padding-bottom: 7.5rem;
+
+  &--pb {
+    padding-bottom: 15rem;
+  }
 
   .title {
     margin-bottom: 2.8rem;
@@ -17,10 +22,20 @@
   }
 
   .desc-light {
+    position: relative;
     margin-bottom: 5.4rem;
     font-family: @circe;
     font-weight: @light;
     line-height: 2.7rem;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -2.6rem;
+      left: 0;
+      width: 36.3rem;
+      height: 0.2rem;
+      background-color: @light-gray;
+    }
   }
 
   dt {
@@ -48,6 +63,10 @@
     &:last-of-type {
       margin-bottom: 0;
     }
+  }
+
+  ol li {
+    margin-bottom: 2.7rem;
   }
 }
 
@@ -87,13 +106,13 @@
       position: relative;
       margin-bottom: 4.5rem;
       &::after {
-        position: absolute;
-        content: '';
+        // position: absolute;
+        // content: '';
         bottom: -2.2rem;
-        left: 0;
+        // left: 0;
         width: 50%;
         height: 0.1rem;
-        background-color: @light-gray;
+        // background-color: @light-gray;
       }
     }
 
@@ -110,6 +129,10 @@
       width: auto;
       // font-size: 1.4rem;
       // line-height: 2.1rem;
+    }
+
+    ol li {
+      // margin-bottom: 2.7rem;
     }
   }
 

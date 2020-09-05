@@ -89,19 +89,25 @@ dd {
   margin: 0;
 }
 
-dl {
-  counter-reset: dTerm;
-}
-
+ol li,
 dt {
   position: relative;
   font-size: 2rem;
   line-height: 2.3rem;
   &::before {
-    counter-increment: dTerm;
-    content: counter(dTerm) '.';
     font-weight: @bold;
     font-size: 2.5rem;
+  }
+}
+
+dl {
+  counter-reset: dTerm;
+}
+
+dt {
+  &::before {
+    counter-increment: dTerm;
+    content: counter(dTerm) '.';
   }
 }
 
@@ -109,6 +115,18 @@ dd {
   font-family: @circe;
   line-height: 2.7rem;
 }
+
+ol {
+  counter-reset: olItem;
+}
+
+ol li {
+  &::before {
+    counter-increment: olItem;
+    content: counter(olItem) '.';
+  }
+}
+
 
 .noscroll {
   overflow: hidden !important;
@@ -205,6 +223,7 @@ html .desktop-flex {
     display: flex;
   }
 
+  ol li,
   dt {
     font-size: 1.6rem;
     line-height: 2.1rem;
