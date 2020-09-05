@@ -344,6 +344,35 @@
         &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
       </p>
     </footer>
+
+    <section class="modal modal-callback">
+      <div class="modal-wrapper">
+        <button class="modal__close" title="Закрыть">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <p class="modal__title title title--bold">Заказать звонок</p>
+
+        <form class="modal__form form" action=".php" method="POST">
+          <fieldset class="form__wrap">
+            <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
+            <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
+            <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
+          </fieldset>
+          <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
+            Отправить
+            <i class="btn-callback-decor__icon">
+              <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+      <div class="modal-wrapper-reply">
+        <p class="modal__desc">Ваша заявка отправлена!</p>
+      </div>
+    </section>
+
     <div class="overlay"></div>
 
     <script src="js/libs/jquery-3.4.1.min.js"></script>
@@ -355,3 +384,5 @@
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
   </body>
+
+</html>

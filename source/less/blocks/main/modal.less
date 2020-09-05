@@ -1,0 +1,149 @@
+.modal {
+  --modal-padding-block: 2.6rem;
+
+  box-sizing: border-box;
+  display: none;
+
+  z-index: 100;
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 86rem;
+  max-width: 135rem;
+  padding-top: 8.4rem;
+  padding-left: 12.3rem;
+  padding-right: 12.3rem;
+  padding-bottom: 7rem;
+
+  background: #fff;
+  border-radius: @br;
+
+  transition-duration: @s;
+  transition-property: opacity;
+
+  &.active {
+    display: block;
+  }
+
+  &.reply {
+    .modal-wrapper {
+      opacity: 0;
+    }
+    .modal-wrapper-reply {
+      z-index: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 2.7rem;
+  right: 3rem;
+
+  display: flex;
+  justify-content: center;
+
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 1.5rem;
+
+    width: 100%;
+    height: 0.1rem;
+    background-color: #000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__title {
+  margin-bottom: 5.8rem;
+}
+
+.modal__form {
+  width: 61.7rem;
+}
+
+.modal__name {}
+
+.modal__btn-submit {
+  margin-top: 4.2rem;
+}
+
+.modal-wrapper,
+.modal-wrapper-reply {
+  transition-duration: @s;
+  transition-property: opacity;
+}
+
+.modal-wrapper-reply {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  transition-delay: 0.3s;
+
+  .modal__desc {
+    // margin-bottom: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .modal {
+    --modal-padding-block: 2rem;
+
+    width: 90%;
+    min-height: 45.5rem;
+    margin-bottom: 0;
+    padding: 4.5rem 1.5rem;
+
+    font-size: 1.5rem;
+  }
+
+  .modal__close {
+    top: 2.2rem;
+    right: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+
+    &::before,
+    &::after {
+      top: 1rem;
+      right: 0;
+      height: 0.2rem;
+    }
+  }
+
+  .modal__title {
+    // margin-bottom: 5.8rem;
+  }
+
+  .modal__form {
+    // width: 61.7rem;
+  }
+
+  .modal__name {}
+
+  .modal__btn-submit {
+    // margin-top: 4.2rem;
+  }
+
+}

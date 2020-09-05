@@ -177,7 +177,7 @@ dd {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .overlay.active {
   display: block;
@@ -359,6 +359,9 @@ html .desktop-flex {
 }
 .title--light {
   font-weight: 300;
+}
+.title--bold {
+  font-weight: 700;
 }
 .subtitle {
   font-size: 4rem;
@@ -3757,9 +3760,6 @@ html .desktop-flex {
 .comments__desc {
   line-height: 2.3rem;
 }
-.form {
-  width: 100%;
-}
 .form__title {
   margin-bottom: 4.9rem;
 }
@@ -3772,6 +3772,7 @@ html .desktop-flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   font-family: var(--font-text-desc);
   font-weight: 300;
 }
@@ -3811,6 +3812,108 @@ html .desktop-flex {
 }
 .registration__btn-submit {
   margin-top: 4.1rem;
+}
+.modal {
+  --modal-padding-block: 2.6rem;
+  box-sizing: border-box;
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 86rem;
+  max-width: 135rem;
+  padding-top: 8.4rem;
+  padding-left: 12.3rem;
+  padding-right: 12.3rem;
+  padding-bottom: 7rem;
+  background: #fff;
+  border-radius: var(--border-radius);
+  transition-duration: var(--transition-main);
+  transition-property: opacity;
+}
+.modal.active {
+  display: block;
+}
+.modal.reply .modal-wrapper {
+  opacity: 0;
+}
+.modal.reply .modal-wrapper-reply {
+  z-index: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.modal__close {
+  position: absolute;
+  top: 2.7rem;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+}
+.modal__close::before,
+.modal__close::after {
+  position: absolute;
+  content: "";
+  top: 1.5rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #000;
+}
+.modal__close::before {
+  transform: rotate(45deg);
+}
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+.modal__title {
+  margin-bottom: 5.8rem;
+}
+.modal__form {
+  width: 61.7rem;
+}
+.modal__btn-submit {
+  margin-top: 4.2rem;
+}
+.modal-wrapper,
+.modal-wrapper-reply {
+  transition-duration: var(--transition-main);
+  transition-property: opacity;
+}
+.modal-wrapper-reply {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  transition-delay: 0.3s;
+}
+@media (max-width: 48em) {
+  .modal {
+    --modal-padding-block: 2rem;
+    width: 90%;
+    min-height: 45.5rem;
+    margin-bottom: 0;
+    padding: 4.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+  .modal__close {
+    top: 2.2rem;
+    right: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .modal__close::before,
+  .modal__close::after {
+    top: 1rem;
+    right: 0;
+    height: 0.2rem;
+  }
 }
 /*swiper*/
 .two-swipers-wrap {
