@@ -192,14 +192,14 @@
   .main-info-detail__card-wrap {
     margin-left: 18rem;
   }
-  .main-info-detail__content-wrap {
-    width: 75rem;
-  }
   .main-info-detail__img-wrap {
     left: -21.2rem;
   }
   .main-info-detail__img {
     max-height: 32.2rem;
+  }
+  .main-info-detail__content-wrap {
+    width: 75rem;
   }
 }
 
@@ -313,16 +313,27 @@
   }
 
   .main-info-detail__subtitle {
-    display: none;
-    // margin-bottom: 2.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: @light;
   }
 
   .main-info-detail {
+    // .desc,
+    // .desc-light {
+    //   margin-bottom: 1.8rem;
+    //   font-size: 1.4rem;
+    //   line-height: 1.8rem;
+    // }
+
     .desc,
     .desc-light {
       margin-bottom: 1.8rem;
       font-size: 1.4rem;
-      line-height: 1.8rem;
+      line-height: 2.1rem;
+    }
+
+    .desc {
+      line-height: 2.5rem;
     }
   }
 
@@ -383,5 +394,28 @@
     .main-info-detail__content-wrap {
       width: 100%;
     }
+    .main-info-detail__subtitle {
+      display: none;
+    }
   }
+
+  .way {
+    padding-bottom: 5rem;
+    .main-info-detail__card-wrap {
+      margin-left: 0;
+      padding-top: 13.8rem;
+    }
+    .main-info-detail__img-wrap {
+      left: auto;
+      right: -3rem;
+      height: auto;
+    }
+    .main-info-detail__img {
+      // max-height: 32.2rem;
+    }
+    .main-info-detail__content-wrap {
+      width: 100%;
+    }
+  }
+
 }
