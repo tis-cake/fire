@@ -2567,6 +2567,9 @@ html .desktop-flex {
 .main-info-detail__title {
   position: relative;
 }
+.main-info-detail__title span {
+  display: block;
+}
 .main-info-detail__title::before {
   content: '';
   position: absolute;
@@ -2629,18 +2632,19 @@ html .desktop-flex {
 .main-info-detail__content-wrap {
   box-sizing: border-box;
 }
-.main-info-detail__subtitle {
-  margin-bottom: 2.8rem;
-}
-.main-info-detail .desc,
-.main-info-detail .desc-light {
+.main-info-detail__content-wrap p,
+.main-info-detail__content-wrap .desc,
+.main-info-detail__content-wrap .desc-light {
   margin-bottom: 2.6rem;
   font-family: var(--font-text-desc);
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-.main-info-detail .desc-light {
+.main-info-detail__content-wrap .desc-light {
   font-weight: 300;
+}
+.main-info-detail__subtitle {
+  margin-bottom: 2.8rem;
 }
 .main-info-detail__inline-link {
   display: inline;
@@ -2678,12 +2682,12 @@ html .desktop-flex {
 }
 .product .main-info-detail__text-wrap,
 .order .main-info-detail__text-wrap {
-  width: 36rem;
+  width: 35rem;
   margin-top: 13.5rem;
 }
 .product .main-info-detail__card-wrap,
 .order .main-info-detail__card-wrap {
-  margin-left: 6.4rem;
+  margin-left: 7.4rem;
 }
 .product .main-info-detail__content-wrap,
 .order .main-info-detail__content-wrap {
@@ -2785,18 +2789,19 @@ html .desktop-flex {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
   }
-  .main-info-detail__subtitle {
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-  }
-  .main-info-detail .desc,
-  .main-info-detail .desc-light {
+  .main-info-detail__content-wrap p,
+  .main-info-detail__content-wrap .desc,
+  .main-info-detail__content-wrap .desc-light {
     margin-bottom: 1.8rem;
     font-size: 1.4rem;
     line-height: 2.1rem;
   }
-  .main-info-detail .desc {
+  .main-info-detail__content-wrap .desc {
     line-height: 2.5rem;
+  }
+  .main-info-detail__subtitle {
+    margin-bottom: 2.5rem;
+    font-weight: 300;
   }
   .main-info-detail__document-link-wrap {
     margin-top: 2.8rem;
@@ -4004,6 +4009,18 @@ html .desktop-flex {
   margin-top: 5.8rem;
   padding-left: 2rem;
 }
+@media (max-width: 48em) {
+  .form {
+    font-size: 1.4rem;
+  }
+  .form__input {
+    margin-bottom: 1.5rem;
+    padding: 1.4rem 1.8rem;
+  }
+  .form__btn-submit {
+    padding-left: 2.5rem;
+  }
+}
 .registration {
   padding-top: 5.4rem;
   padding-bottom: 13.8rem;
@@ -4100,21 +4117,38 @@ html .desktop-flex {
     --modal-padding-block: 2rem;
     width: 90%;
     min-height: 45.5rem;
+    height: auto;
     margin-bottom: 0;
-    padding: 4.5rem 1.5rem;
+    padding-top: 6.9rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-bottom: 7.5rem;
     font-size: 1.5rem;
   }
   .modal__close {
-    top: 2.2rem;
-    right: 2.2rem;
-    width: 2.2rem;
-    height: 2.2rem;
+    top: 1.6rem;
+    right: 1.8rem;
+    width: 3rem;
+    height: 3rem;
   }
   .modal__close::before,
   .modal__close::after {
-    top: 1rem;
-    right: 0;
+    top: 1.6rem;
     height: 0.2rem;
+  }
+  .modal__title {
+    margin-bottom: 3.6rem;
+    text-align: center;
+  }
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .modal__btn-submit {
+    margin-top: 2.7rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*swiper*/

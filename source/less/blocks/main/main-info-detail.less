@@ -14,6 +14,10 @@
 .main-info-detail__title {
   position: relative;
 
+  span {
+    display: block;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -81,13 +85,8 @@
 .main-info-detail__content-wrap {
   box-sizing: border-box;
   // padding-top: 9.4rem;
-}
 
-.main-info-detail__subtitle {
-  margin-bottom: 2.8rem;
-}
-
-.main-info-detail {
+  p,
   .desc,
   .desc-light {
     margin-bottom: 2.6rem;
@@ -100,6 +99,10 @@
   .desc-light {
     font-weight: @light;
   }
+}
+
+.main-info-detail__subtitle {
+  margin-bottom: 2.8rem;
 }
 
 .main-info-detail__inline-link {
@@ -158,11 +161,11 @@
 .product,
 .order {
   .main-info-detail__text-wrap {
-    width: 36rem;
+    width: 35rem;
     margin-top: 13.5rem;
   }
   .main-info-detail__card-wrap {
-    margin-left: 6.4rem;
+    margin-left: 7.4rem;
   }
   .main-info-detail__content-wrap {
     width: 53rem;
@@ -271,6 +274,9 @@
   .main-info-detail__text-wrap {}
 
   .main-info-detail__title {
+    span {
+      // display: inline;
+    }
     &::before {
       bottom: -2rem;
       width: 2.05rem;
@@ -310,14 +316,7 @@
     width: 100%;
     // padding-top: 8.5rem;
     .padding-inline(1.2rem);
-  }
 
-  .main-info-detail__subtitle {
-    margin-bottom: 2.5rem;
-    font-weight: @light;
-  }
-
-  .main-info-detail {
     // .desc,
     // .desc-light {
     //   margin-bottom: 1.8rem;
@@ -325,6 +324,7 @@
     //   line-height: 1.8rem;
     // }
 
+    p,
     .desc,
     .desc-light {
       margin-bottom: 1.8rem;
@@ -335,6 +335,11 @@
     .desc {
       line-height: 2.5rem;
     }
+  }
+
+  .main-info-detail__subtitle {
+    margin-bottom: 2.5rem;
+    font-weight: @light;
   }
 
   .main-info-detail__document-link-wrap {
