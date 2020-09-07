@@ -1460,7 +1460,6 @@ html .desktop-flex {
          column-gap: 1.2rem;
   }
 }
-/* .ways-list и .ways находятся в одном файле ways-list.less */
 .ways-list {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -1475,7 +1474,7 @@ html .desktop-flex {
   grid-template-columns: 1fr;
   row-gap: 12.3rem;
 }
-.ways__link {
+.ways-list__link {
   box-sizing: border-box;
   position: relative;
   min-height: 30rem;
@@ -1487,24 +1486,24 @@ html .desktop-flex {
   background-color: #FFF;
   border-radius: 1.5rem;
 }
-.ways__img-wrap {
+.ways-list__img-wrap {
   position: absolute;
   top: -6.5rem;
   left: 2.5rem;
   width: 20rem;
   height: 20rem;
 }
-.ways__img {
+.ways-list__img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.ways__item-caption {
+.ways-list__item-caption {
   margin-bottom: 2.6rem;
   font-size: 1.6rem;
 }
-.ways__item-title {
+.ways-list__item-title {
   font-size: 3rem;
   line-height: 3.5rem;
 }
@@ -1520,24 +1519,24 @@ html .desktop-flex {
     row-gap: 8rem;
     width: 100%;
   }
-  .ways__link {
+  .ways-list__link {
     height: 100%;
     min-height: 12rem;
     padding-top: 5.2rem;
     padding-left: 1.9rem;
     padding-right: 1.9rem;
   }
-  .ways__img-wrap {
+  .ways-list__img-wrap {
     top: -3.6rem;
     left: 2rem;
     width: 10rem;
     height: 8rem;
   }
-  .ways__item-caption {
+  .ways-list__item-caption {
     margin-bottom: 1.6rem;
     font-size: 1rem;
   }
-  .ways__item-title {
+  .ways-list__item-title {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
