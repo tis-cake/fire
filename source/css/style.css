@@ -1670,9 +1670,15 @@ html .desktop-flex {
   width: 100%;
   height: auto;
 }
-.main-bg--short {
-  max-height: 1000px;
+.main-bg--100vh,
+.main-bg--150vh {
   overflow: hidden;
+}
+.main-bg--100vh {
+  max-height: 110vh;
+}
+.main-bg--150vh {
+  max-height: 150vh;
 }
 .main-bg-img {
   width: 100%;
@@ -3920,6 +3926,10 @@ html .desktop-flex {
 }
 .modal__form {
   width: 61.7rem;
+}
+.modal__form textarea,
+.modal__form input {
+  background-color: #fff;
 }
 .modal__btn-submit {
   margin-top: 4.2rem;

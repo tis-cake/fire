@@ -158,6 +158,12 @@ $('.js-modal-callback').click(function(evt) {
   openModal('.modal-callback', '.modal__name');
 });
 
+// коммерческое предложение (модалка 2)
+$('.js-modal-business').click(function(evt) {
+  evt.preventDefault();
+  openModal('.modal-business', '.modal__name');
+});
+
 // открыть модальное окно
 function openModal(modalClass, focusClass) {
   $('.overlay').fadeIn();
