@@ -53,3 +53,52 @@
   font-size: 3rem;
   line-height: 3.5rem;
 }
+
+@media (max-width: @tablet-width) {
+  .ways-list {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+  }
+
+  .ways-list__list {
+    grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 8rem;
+    width: 100%;
+
+    &--column {
+      // grid-template-columns: 1fr;
+      // row-gap: 12.3rem;
+    }
+  }
+
+  .ways__item {}
+
+  .ways__link {
+    height: 100%;
+    min-height: 12rem;
+    padding-top: 5.2rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+  }
+
+  .ways__img-wrap {
+    top: -3.6rem;
+    left: 2rem;
+
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .ways__img {}
+
+  .ways__item-caption {
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+  }
+
+  .ways__item-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
