@@ -167,7 +167,7 @@
           </p>
 
           <div class="form__columns-wrap">
-            <fieldset class="form__wrap">
+            <div class="form__wrap">
               <p class="form__subtitle">
                 Заявитель
               </p>
@@ -176,9 +176,9 @@
               <input class="form__input form__input--half form__mail" type="email" name="PERSON-MAIL" placeholder="E-mail" required="">
               <input class="form__input form__city" type="text" name="PERSON-CITY" placeholder="Город" required="">
               <textarea class="form__input form__text" name="PERSON-TEXT" placeholder="Комментарий"></textarea>
-            </fieldset>
+            </div>
 
-            <fieldset class="form__wrap">
+            <div class="form__wrap">
               <p class="form__subtitle">
                 Компания
               </p>
@@ -188,7 +188,7 @@
               <input class="form__input form__input--half form__site" type="url" name="COMPANY-SITE" placeholder="Сайт" required="">
               <input class="form__input form__address" type="text" name="COMPANY-ADDRESS" placeholder="Адрес" required="">
               <textarea class="form__input form__text" name="COMPANY-TEXT" placeholder="Комментарий"></textarea>
-            </fieldset>
+            </div>
           </div>
 
           <button class="registration__btn-submit form__btn-submit btn-callback-decor" type="submit">
@@ -217,11 +217,11 @@
         <p class="modal__title title title--bold">Заказать звонок</p>
 
         <form class="modal__form form" action=".php" method="POST">
-          <fieldset class="form__wrap">
+          <div class="form__wrap">
             <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
             <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
             <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
-          </fieldset>
+          </div>
           <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
             Отправить
             <i class="btn-callback-decor__icon">

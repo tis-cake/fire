@@ -1670,6 +1670,10 @@ html .desktop-flex {
   width: 100%;
   height: auto;
 }
+.main-bg--short {
+  max-height: 1000px;
+  overflow: hidden;
+}
 .main-bg-img {
   width: 100%;
   height: 100%;
@@ -1678,6 +1682,7 @@ html .desktop-flex {
 }
 .main-bg.product-detail {
   top: 13rem;
+  padding: 0;
 }
 .main-info-catalog {
   position: relative;
@@ -2646,6 +2651,9 @@ html .desktop-flex {
   width: 36rem;
   margin-top: 10.5rem;
 }
+.training .main-info-detail__title span {
+  display: block;
+}
 .training .main-info-detail__card-wrap {
   margin-left: 6.4rem;
   padding-bottom: 11.7rem;
@@ -2906,6 +2914,7 @@ html .desktop-flex {
 .main-info-registration__mail-link {
   margin-top: 0.3rem;
   font-family: var(--font-text-desc);
+  font-weight: 700;
   font-size: 1.6rem;
   color: var(--color-second);
 }
@@ -3815,6 +3824,7 @@ html .desktop-flex {
 .form__subtitle {
   width: 100%;
   margin-bottom: 2.6rem;
+  font-family: var(--font-main);
   font-size: 3rem;
 }
 .form__input {

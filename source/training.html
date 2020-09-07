@@ -93,7 +93,7 @@
   </header>
   <main class="main">
 
-    <div class="main-bg product-detail" aria-hidden="true">
+    <div class="main-bg main-bg--short product-detail" aria-hidden="true">
       <picture>
         <!-- <source media="(max-width: 768px)" srcset="img/bg/smoke-index-m.png"> -->
         <img class="main-bg-img" src="img/bg/smoke-product-detail-d.png" alt="Декоративное изображение" role="presentation">
@@ -107,7 +107,7 @@
             <span>Обучение</span> в компании Пожарная Автоматика
           </p>
           <small class="main-info-detail__text-small">
-            Проекты газового пожаротушения
+            Проводим обучающие семинары
           </small>
         </div>
         <div class="main-info-detail__card-wrap">
@@ -125,7 +125,7 @@
               Проведение обучающих семинаров по заявкам организаций. Место проведения — офисы ООО «Пожарная Автоматика» в Москве и Санкт-Петербурге. Организация семинаров в других городах и на площадках заказчика — по договорённости. Подать заявку можно через форму. В примечаниях следует указать желаемую дату, место и название семинара.
             </p>
             <div class="main-info-detail__document-link-wrap">
-              <a class="main-info-detail__document-link btn-callback-decor btn-callback-decor--small btn-callback-decor--small" href="#">
+              <a class="main-info-detail__document-link btn-callback-decor btn-callback-decor--small btn-callback-decor--small" href="registration.html">
                 Подать заявку
                 <i class="btn-callback-decor__icon">
                   <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
@@ -221,11 +221,11 @@
       <p class="modal__title title title--bold">Заказать звонок</p>
 
       <form class="modal__form form" action=".php" method="POST">
-        <fieldset class="form__wrap">
+        <div class="form__wrap">
           <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
           <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
           <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
-        </fieldset>
+        </div>
         <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
           Отправить
           <i class="btn-callback-decor__icon">

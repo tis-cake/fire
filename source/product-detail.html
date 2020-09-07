@@ -585,11 +585,11 @@
         <p class="modal__title title title--bold">Заказать звонок</p>
 
         <form class="modal__form form" action=".php" method="POST">
-          <fieldset class="form__wrap">
+          <div class="form__wrap">
             <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
             <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
             <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
-          </fieldset>
+          </div>
           <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
             Отправить
             <i class="btn-callback-decor__icon">
