@@ -66,50 +66,6 @@ $(document).ready(function() {
   }
 });
 
-
-// фильтр центров над картой
-// $(document).ready(function () {
-//   $('.filter__handler').on('click', function() {
-
-//     $data = $(this).data('id');
-
-//     // закрываем все списки, кроме текущего
-//     $('.filter__handler').not($(this)).removeClass('active');
-//     $('.filter__options').not($(this).closest('.filter__options')).removeClass('active');
-//     $('.filter__list').not($('.filter__list[data-id='+$data+']')).slideUp();
-
-//     // открываем текущий список
-//     $(this).toggleClass('active');
-//     $(this).closest('.filter__options').toggleClass('active');
-//     $(this).find($('.filter__list[data-id='+$data+']').slideToggle());
-
-//     // закрываем все списки при клике вне элемента
-//     $(document).on('mouseup touchstart', function (evt) {
-//       let currentEl = $(".filter__options.active");
-//       if (!currentEl.is(evt.target) && currentEl.has(evt.target).length === 0) {
-//         $('.filter__handler').removeClass('active');
-//         $('.filter__options').removeClass('active');
-//         $('.filter__list').slideUp();
-//       }
-//     });
-
-//     // ловим клик внутри списка и подставляем выбранное значение
-//     $('.filter__item').click(function () {
-//       $value = $(this).text();
-//       $(this).addClass('active');
-
-//       $(this).closest('.filter__options').find('.filter__handler').text($value);
-
-//       $(this).closest('.filter__options').find('input').val($value);
-//       if ($(this).closest('.filter__options').find('input').change()) {
-//         $(this).closest('.filter__options').removeClass('active');
-//         $(this).closest('.filter__options').find('.filter__handler').removeClass('active');
-//         $(this).closest('.filter__options').find('.filter__list').slideUp();
-//       }
-//     });
-//   });
-// });
-
 // маска для поля ввода номера
 $(document).ready(function() {
   $(".js-phone-mask").mask("+7 ( 999 ) 999 - 99 - 99");

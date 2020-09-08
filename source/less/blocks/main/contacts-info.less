@@ -1,0 +1,63 @@
+.contacts-info {
+  padding-top: 11.4rem;
+  padding-bottom: 11.4rem;
+}
+
+.contacts-info__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  justify-content: space-between;
+}
+
+.contacts-info__column {
+}
+
+.contacts-info__column-title {
+  min-height: 5.8rem;
+  margin-bottom: 5.2rem;
+
+  font-weight: @light;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  span {
+    display: block;
+    font-weight: @bold;
+  }
+
+  &--inline {
+    span {
+      display: inline;
+    }
+  }
+}
+
+.contacts-info__list {
+  font-family: @circe;
+}
+
+.contacts-info__item {
+  margin-bottom: 2.7rem;
+  padding-bottom: 2.1rem;
+  border-bottom: 0.2rem solid @light-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+  }
+}
+
+.contacts-info__category {
+  margin-bottom: 1.3rem;
+  font-size: 1.6rem;
+}
+
+.contacts-info__desc {
+  display: inline;
+  font-weight: @light;
+  line-height: 2.6rem;
+}
+
+.contacts-info__go-link {
+  margin-top: 5.6rem;
+}
