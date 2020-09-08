@@ -1,0 +1,143 @@
+.main-info-vacancy {
+  padding-top: 13.6rem;
+  padding-bottom: 7rem;
+}
+
+.main-info-vacancy__wrap {
+  display: flex;
+
+  box-shadow: 2rem 4rem 12rem #EEEEEE;
+  background-color: #fff;
+  border-radius: @br;
+}
+
+.main-info-vacancy__red-block {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 40rem;
+  height: 44.7rem;
+  padding-left: 3.7rem;
+  padding-right: 3rem;
+  padding-bottom: 7.8rem;
+
+  color: #fff;
+  background-color: @color-s;
+  background-image: url('../img/bg/main-info-catalog-bg-red.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: @br 0 0 @br;
+}
+
+.main-info-vacancy__caption {
+  margin-bottom: 2.2rem;
+  font-size: 2.5rem;
+}
+
+.main-info-vacancy__caption-desc {
+  font-weight: @light;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.main-info-vacancy__img-wrap {
+  position: absolute;
+  top: -11.4rem;
+  right: -8.5rem;
+
+  width: 40.4rem;
+  height: 35.6rem;
+}
+
+.main-info-vacancy__img {
+  .img-cover;
+  .no-select;
+}
+
+.main-info-vacancy__content-block {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100rem;
+  padding-top: 7.7rem;
+  padding-left: 9.2rem;
+  padding-right: 8.6rem;
+  padding-bottom: 7rem;
+}
+
+.main-info-vacancy__column-left {
+  width: 40rem;
+}
+
+.main-info-vacancy__column-right {
+  width: 30rem;
+}
+
+.main-info-vacancy__title {
+  margin-bottom: 4rem;
+}
+
+.main-info-vacancy__desc {
+  position: relative;
+  font-weight: @light;
+  &--decor {
+    margin-top: 5.4rem;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -3rem;
+      left: 0;
+      width: 23rem;
+      height: 0.2rem;
+      background-color: @light-gray;
+    }
+  }
+}
+
+.main-info-vacancy__link {
+  &-red {
+    color: @color-s;
+    font-weight: @bold;
+  }
+  &-black {
+    font-weight: @bold;
+  }
+}
+
+.main-info-vacancy__feature-title {
+  margin-top: 0.6rem;
+  margin-bottom: 4rem;
+  &-item {
+    display: block;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.main-info-vacancy__decor-img-wrap {
+  position: relative;
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-bottom: 4rem;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -5.4rem;
+    transform: translateY(-50%);
+    width: 3.1rem;
+    height: 3.1rem;
+
+    background-image: url('../img/svg/icons/icon-builder.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.main-info-vacancy__decor-img {}

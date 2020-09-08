@@ -7,6 +7,11 @@
   &--pb {
     padding-bottom: 15rem;
   }
+}
+
+.two-columns__wrap {
+  display: flex;
+  justify-content: space-between;
 
   .title {
     margin-bottom: 2.8rem;
@@ -68,25 +73,75 @@
   ol li {
     margin-bottom: 2.7rem;
   }
-}
 
-.two-columns__wrap {
-  display: flex;
-  justify-content: space-between;
+  ul {
+    margin-bottom: 3.9rem;
+    font-family: @circe;
+    line-height: 2.7rem;
+  }
+
+  ul li {
+    position: relative;
+    // margin-bottom: 0.6rem;
+    padding-left: 0.9rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      position: absolute;
+      content: '•';
+      left: 0;
+    }
+  }
 }
 
 .two-columns__left-column {
   width: 58rem;
+  width: 58.4rem;
 }
 
 .two-columns__right-column {
   width: 66rem;
 }
 
+.two-columns__block {
+  margin-bottom: 18.7rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.two-columns__title {
+  width: 68rem;
+  margin-bottom: 4.5rem;
+}
+
+.two-columns__subtitle {
+  position: relative;
+  margin-bottom: 5.5rem;
+  font-weight: @bold;
+  font-size: 2rem;
+  // line-height: 2.3rem;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -2.7rem;
+    left: 0;
+    width: 47.8rem;
+    height: 0.2rem;
+
+    background-color: @light-gray;
+  }
+}
+
 @media (max-width: @tablet-width) {
   .two-columns {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .two-columns__wrap {
+    flex-direction: column;
 
     .title {
       padding-right: 2.7rem;
@@ -134,10 +189,26 @@
     ol li {
       // margin-bottom: 2.7rem;
     }
-  }
 
-  .two-columns__wrap {
-    flex-direction: column;
+    // ul {
+    //   margin-bottom: 3.9rem;
+    //   font-family: @circe;
+    //   line-height: 2.7rem;
+    // }
+
+    // ul li {
+    //   position: relative;
+    //   // margin-bottom: 0.6rem;
+    //   padding-left: 0.9rem;
+    //   &:last-child {
+    //     margin-bottom: 0;
+    //   }
+    //   &::before {
+    //     position: absolute;
+    //     content: '•';
+    //     left: 0;
+    //   }
+    // }
   }
 
   .two-columns__left-column {

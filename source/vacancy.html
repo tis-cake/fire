@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="«Пожарная Автоматика»">
+  <title>«Пожарная Автоматика»</title>
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+  <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/libs/swiper.min.css">
+  <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <div class="header__mobile-top">
+          <button class="header__menu-toggle menu-toggle">
+            <span>Открыть меню</span>
+          </button>
+          <a class="header__logo logo" href="index.html">
+            <figure class="logo__img-wrap">
+              <img class="logo__img" src="img/svg/logo.svg" alt="Логотип ООО «Пожарная Автоматика»" width="78" height="78">
+              <figcaption class="logo__description">
+                <span class="logo__description-item logo__description-item--bold">ООО «Пожарная Автоматика»</span>
+                <span class="logo__description-item logo__description-item--light">Газовое пожаротушение</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a class="header__link-call-back" href="tel:+74957300202">
+            <img class="header__link-call-back-img" src="img/svg/icons/icon-phone-stroke.svg" alt="Обратный звонок" width="25" height="25">
+          </a>
+        </div>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="about.html">О компании</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="products.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="ways.html">Решения</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav-sub" href="#">Поддержка</a>
+              <ul class="main-nav__sublist">
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="registration.html">Регистрация</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="program.html">Программа “Салют”</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="order.html">Заказ расчета</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="documentation.html">Документация</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="training.html">Обучение</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__sublink" href="vacancy.html">Вакансии</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="articles.html">Статьи</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__decoration" id="nav-decoration"></div>
+          <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
+            Заказать звонок
+            <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="header__contacts-wrap">
+          <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
+          <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+    <div class="main-bg product-detail" aria-hidden="true">
+      <picture>
+        <!-- <source media="(max-width: 768px)" srcset="img/bg/smoke-index-m.png"> -->
+        <img class="main-bg-img" src="img/bg/smoke-product-detail-d.png" alt="Декоративное изображение" role="presentation">
+      </picture>
+    </div>
+
+    <section class="main-info-vacancy container">
+      <div class="main-info-vacancy__wrap">
+        <div class="main-info-vacancy__red-block">
+          <p class="main-info-vacancy__caption">
+            Вакансии
+          </p>
+          <p class="main-info-vacancy__caption-desc">
+            В настоящий момент открыты вакансии представленные на странице
+          </p>
+          <div class="main-info-vacancy__img-wrap">
+            <img class="main-info-vacancy__img" src="img/main-info/ways/1-d.png" alt="Вакансии">
+          </div>
+        </div>
+
+        <div class="main-info-vacancy__content-block">
+          <div class="main-info-vacancy__column-left">
+            <p class="main-info-vacancy__title subtitle">
+              Вакансии компании Пожарная Автоматика
+            </p>
+            <p class="main-info-vacancy__desc desc">
+              Ваши резюме направляйте на эл. почту: <a class="main-info-vacancy__link-red" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+            </p>
+            <p class="main-info-vacancy__desc main-info-vacancy__desc--decor desc">
+              Телефон отдела кадров: <a class="main-info-vacancy__link-black" href="tel:+74957300202">+7 (495) 730–02–02  (доб. 107)</a>
+            </p>
+          </div>
+          <div class="main-info-vacancy__column-right">
+            <p class="main-info-vacancy__feature-title title">
+              100%
+              <span class="main-info-vacancy__feature-title-item">
+                лучшие специалисты
+              </span>
+            </p>
+            <figure class="main-info-vacancy__decor-img-wrap">
+              <img class="main-info-vacancy__decor-img" src="img/main-info/vacancy/vacancy1.png" alt="Декоративное изображение">
+            </figure>
+            <p class="main-info-vacancy__desc desc">
+              Мы заинтересованы в долгосрочном сотрудничестве с работниками
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="two-columns two-columns--pb container">
+      <div class="two-columns__block">
+        <p class="two-columns__title subtitle subtitle--bold">
+          Инженер пускналадочных работ противопожарных систем (технолог)
+        </p>
+        <div class="two-columns__wrap">
+          <div class="two-columns__left-column">
+            <p class="two-columns__subtitle">
+              Обязанности
+            </p>
+
+            <ul>
+              <li>
+                Монтаж, регулировка, пусконаладка
+              </li>
+              <li>
+                Техническое обслуживание систем охранно-пожарной безопасности
+              </li>
+            </ul>
+
+            <p class="two-columns__subtitle">
+              Условия
+            </p>
+            <ul>
+              <li>
+                Оформление по ТК РФ
+              </li>
+              <li>
+                График: 5/2, 9:00 – 17:30
+              </li>
+              <li>
+                Оклад: по результатам собеседования
+              </li>
+              <li>
+                Испытательный срок: 3 мес.
+              </li>
+              <li>
+                Место работы: на объектах заказчика и в офисе компании (м. Таганская)
+              </li>
+            </ul>
+          </div>
+
+          <div class="two-columns__right-column">
+            <p class="two-columns__subtitle">
+              Требования
+            </p>
+
+            <ul>
+              <li>
+                Гражданство РФ
+              </li>
+              <li>
+                Образование высшее (техническое), желательно профильное
+              </li>
+              <li>
+                Опыт работы обязателен
+              </li>
+              <li>
+                Знание строительных ном и правил, технических условий на производство и приемку  строительно-монтажных  и пусконаладочных работ по разделам: автоматические установки пожарной сигнализации, системы оповещения о пожаре, охранная сигнализация, СКУД и видеонаблюдение
+              </li>
+              <li>
+                Знание технических характеристик, конструктивных особенностей, назначения и режимов работы оборудования («Bolid», «Плазма-Т»), правил их технической эксплуатации
+              </li>
+              <li>
+                Программы «Орион Про»,«Орион»
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-columns__block">
+        <p class="two-columns__title subtitle subtitle--bold">
+          Инженер (техник) по обслуживанию систем противопожарной защиты
+        </p>
+        <div class="two-columns__wrap">
+          <div class="two-columns__left-column">
+            <p class="two-columns__subtitle">
+              Условия
+            </p>
+            <ul>
+              <li>
+                Оформление по ТК РФ
+              </li>
+              <li>
+                График: 5/2
+              </li>
+              <li>
+                Оклад: по результатам собеседования
+              </li>
+              <li>
+                Испытательный срок: 3 мес.
+              </li>
+            </ul>
+          </div>
+
+          <div class="two-columns__right-column">
+            <p class="two-columns__subtitle">
+              Требования
+            </p>
+
+            <ul>
+              <li>
+                Гражданство РФ
+              </li>
+              <li>
+                Знание оборудования «Болид», «Сфера безопасности», «Стрелец-Интеграл» и др.
+              </li>
+              <li>
+                Опыт работы по обслуживанию систем противопожарной защиты
+              </li>
+              <li>
+                Образование высшее техническое (желательно)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-columns__block">
+        <p class="two-columns__title subtitle subtitle--bold">
+          Инженер-проектировщик слаботочных систем (АПС, СОУЭ, АУПТ)
+        </p>
+        <div class="two-columns__wrap">
+          <div class="two-columns__left-column">
+            <p class="two-columns__subtitle">
+              Обязанности
+            </p>
+            <ul>
+              <li>
+                Разработка проектной, рабочей и исполнительной документации по слаботочным системам
+              </li>
+              <li>
+                Расчет систем, подбор оборудования и составление спецификаций
+              </li>
+              <li>
+                Взаимодействие с заказчиками в части уточнения технических заданий и решения вопросов сдачи-приемки проектных работ
+              </li>
+              <li>
+                Предпроектное обследование и авторский надзор
+              </li>
+            </ul>
+
+            <p class="two-columns__subtitle">
+              Условия
+            </p>
+            <ul>
+              <li>
+                Оформление по ТК РФ
+              </li>
+              <li>
+                График: 5/2, 9:00 – 17:30
+              </li>
+              <li>
+                Оклад: по результатам собеседования
+              </li>
+              <li>
+                Испытательный срок: 3 мес.
+              </li>
+              <li>
+                Место работы: офис компании (м. Таганская), возможна удаленная работ
+              </li>
+            </ul>
+          </div>
+
+          <div class="two-columns__right-column">
+            <p class="two-columns__subtitle">
+              Требования
+            </p>
+
+            <ul>
+              <li>
+                Гражданство РФ
+              </li>
+              <li>
+                Образование высшее (техническое), желательно профильное
+              </li>
+              <li>
+                Опыт работы по проектированию слаботочных систем более 2 лет. Готовы рассматривать кандидатов с небольшим опытом, но с желанием развиваться
+              </li>
+              <li>
+                Знание действующей нормативной базы, специализированных расчетных программ и современного оборудования
+              </li>
+              <li>
+                Знание систем и установок АПС, СОУЭ, АУПТ и пр.
+              </li>
+              <li>
+                AutoCad — на уровне опытного пользователя
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-columns__block">
+        <p class="two-columns__title subtitle subtitle--bold">
+          Инженер-проектировщик систем пожаротушения (технолог)
+        </p>
+        <div class="two-columns__wrap">
+          <div class="two-columns__left-column">
+            <p class="two-columns__subtitle">
+              Обязанности
+            </p>
+            <ul>
+              <li>
+                Разработка проектной, рабочей и исполнительной документации
+              </li>
+              <li>
+                Расчет систем, подбор оборудования и составление спецификаций
+              </li>
+              <li>
+                Взаимодействие с заказчиками в части уточнения технических заданий и решения вопросов сдачи-приемки проектных работ
+              </li>
+              <li>
+                Предпроектное обследование и авторский надзор
+              </li>
+            </ul>
+
+            <p class="two-columns__subtitle">
+              Условия
+            </p>
+            <ul>
+              <li>
+                Оформление по ТК РФ
+              </li>
+              <li>
+                График: 5/2, 9:00 – 17:30
+              </li>
+              <li>
+                Оклад: по результатам собеседования
+              </li>
+              <li>
+                Испытательный срок: 3 мес.
+              </li>
+              <li>
+                Место работы: офис компании (м. Таганская), возможна удаленная работ
+              </li>
+            </ul>
+          </div>
+
+          <div class="two-columns__right-column">
+            <p class="two-columns__subtitle">
+              Требования
+            </p>
+
+            <ul>
+              <li>
+                Гражданство РФ
+              </li>
+              <li>
+                Образование высшее (техническое), желательно профильное
+              </li>
+              <li>
+                Опыт работы по проектированию слаботочных систем более 2 лет. Готовы рассматривать кандидатов с небольшим опытом, но с желанием развиваться
+              </li>
+              <li>
+                Знание действующей нормативной базы, специализированных расчетных программ и современного оборудования
+              </li>
+              <li>
+                Знание систем и установок водяного (пенного), газового, порошкового пожаротушения
+              </li>
+              <li>
+                AutoCad — на уровне опытного пользователя
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer container">
+    <p class="footer__copyright-text">
+      &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
+    </p>
+  </footer>
+
+  <section class="modal modal-callback">
+    <div class="modal-wrapper">
+      <button class="modal__close" title="Закрыть">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <p class="modal__title title title--bold">Заказать звонок</p>
+
+      <form class="modal__form form" action=".php" method="POST">
+        <div class="form__wrap">
+          <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
+          <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
+          <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
+        </div>
+        <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
+          Отправить
+          <i class="btn-callback-decor__icon">
+            <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+              <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+            </svg>
+          </i>
+        </button>
+      </form>
+    </div>
+    <div class="modal-wrapper-reply">
+      <p class="modal__desc">Ваша заявка отправлена!</p>
+    </div>
+  </section>
+
+  <div class="overlay"></div>
+
+  <script src="js/libs/jquery-3.4.1.min.js"></script>
+  <script src="js/libs/jquery.maskedinput.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+
+  <script src="js/libs/swiper.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>
