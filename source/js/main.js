@@ -120,6 +120,13 @@ $('.js-modal-business').click(function(evt) {
   openModal('.modal-business', '.modal__name');
 });
 
+// маленькая модалка при успешной отправке формы на странице регистрации
+$('.registration__btn-submit').click(function(evt) {
+  evt.preventDefault();
+  resetRegistrationForm();
+  showModalForRegistrationForm();
+})
+
 // открыть модальное окно
 function openModal(modalClass, focusClass) {
   $('.overlay').fadeIn();
@@ -172,3 +179,16 @@ function showMessageAfterRequest(current) {
     $('.modal').removeClass('reply');
   }, 3000);
 }
+
+function showModalForRegistrationForm() {
+  $('.modal-notify').addClass('active');
+  setTimeout(function() {
+    $('.modal-notify').removeClass('active');
+  }, 3000);
+}
+
+function resetRegistrationForm() {
+  $('#registration-form').find('.form__input').each(function() {
+    $('.form__input').val('');
+  });
+};

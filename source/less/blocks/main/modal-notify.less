@@ -1,0 +1,25 @@
+.modal-notify {
+  position: fixed;
+  z-index: -1;
+  right: 2rem;
+  bottom: 2rem;
+
+  padding: 4rem 8rem;
+
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+
+  transition: @s;
+
+  visibility: hidden;
+  opacity: 0;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+.modal-notify__text {}
