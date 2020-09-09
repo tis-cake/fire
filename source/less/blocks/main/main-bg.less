@@ -7,19 +7,6 @@
   width: 100%;
   height: auto;
 
-  &--110vh,
-  &--150vh {
-    overflow: hidden;
-  }
-
-  &--110vh {
-    max-height: 110vh;
-  }
-
-  &--150vh {
-    max-height: 150vh;
-  }
-
   &-img {
     .img-cover;
   }
@@ -27,6 +14,23 @@
   &.product-detail {
     top: 13rem;
     padding: 0;
+  }
+}
+
+@media (min-width: @max-desktop-width) {
+  .main-bg {
+    &--110vh,
+    &--150vh {
+      overflow: hidden;
+    }
+
+    &--110vh {
+      max-height: 110vh;
+    }
+
+    &--150vh {
+      max-height: 150vh;
+    }
   }
 }
 
