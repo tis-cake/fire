@@ -14,6 +14,9 @@
 }
 
 .article-preview__main-title {
+  &--mb {
+    margin-bottom: 4.7rem;
+  }
 }
 
 .article-preview__list {
@@ -29,7 +32,8 @@
 
 .article-preview__link {
   box-sizing: border-box;
-  height: 65.2rem;
+  min-height: 65.2rem;
+  height: 100%;
   padding: 4.5rem;
 
   background-color: #FFFFFF;
@@ -60,9 +64,15 @@
   font-weight: @bold;
   font-size: 2.5rem;
   line-height: 2.9rem;
+
+  span {
+    display: block;
+    font-weight: @light;
+  }
 }
 
 .article-preview__desc {
+  font-family: @circe;
   margin-bottom: 3.2rem;
   line-height: 2.7rem;
 }
