@@ -1,5 +1,13 @@
 const width = $(window).width();
 
+// спиннер чисел
+$(document).ready(function(){
+  $('.js-spin-num').spincrement({
+    thousandSeparator: "",
+    duration: 2500,
+  });
+});
+
 // мобильное меню
 $(document).ready(function() {
   $('.menu-toggle').click(function() {
@@ -91,7 +99,7 @@ $(document).ready(function() {
   renderMirrorBlock('.main-info-catalog');
   renderMirrorBlock('.main-info-ways');
   renderMirrorBlock('.main-info-registration');
-
+  renderMirrorBlock('.main-info-program');
 });
 
 // плавное перемещение к форме регистрации и фокус на ней
@@ -121,11 +129,11 @@ $('.js-modal-business').click(function(evt) {
 });
 
 // маленькая модалка при успешной отправке формы на странице регистрации
-$('.registration__btn-submit').click(function(evt) {
-  evt.preventDefault();
-  resetRegistrationForm();
-  showModalForRegistrationForm();
-})
+// $('.registration__btn-submit').click(function(evt) {
+//   evt.preventDefault();
+//   resetRegistrationForm();
+//   showModalForRegistrationForm();
+// })
 
 // открыть модальное окно
 function openModal(modalClass, focusClass) {
@@ -167,7 +175,7 @@ $('.modal__close').click(function(evt) {
   closeModal();
 });
 
-// !NB добавить а ajax-запрос
+// !NB добавить в ajax-запрос
 // сообщение об успешной отправке
 // showMessageAfterRequest($(this));
 

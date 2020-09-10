@@ -76,6 +76,8 @@
   line-height: 3.6rem;
 }
 
+/* блок с декоративными элементами */
+
 .main-info-catalog__block-img-decor {
   width: 37.9rem;
   height: 25.5rem;
@@ -110,9 +112,9 @@
   border-radius: @br;
 }
 
-.main-info-catalog__img-decor-desc {
+.main-info-catalog__img-decor-desc {}
 
-}
+/* красный блок */
 
 .main-info-catalog__block-detail {
   position: relative;
@@ -195,8 +197,11 @@
   max-height: 39rem;
 }
 
-.main-info-catalog__img {}
+.main-info-catalog__img {
+  .no-select;
+}
 
+/* блок жёлтый/серый */
 
 .main-info-catalog__block-yellow,
 .main-info-catalog__block-gray {
@@ -317,6 +322,8 @@
     line-height: 2.6rem;
   }
 
+  /* блок с декоративными элементами */
+
   .main-info-catalog__block-img-decor {
     display: flex;
     width: 100%;
@@ -348,6 +355,8 @@
     font-size: 1.3rem;
     line-height: 2rem;
   }
+
+  /* красный блок */
 
   .main-info-catalog__block-detail {
     order: -1;
@@ -411,6 +420,7 @@
 
   .main-info-catalog__img {}
 
+  /* блок жёлтый/серый */
 
   .main-info-catalog__block-yellow,
   .main-info-catalog__block-gray {

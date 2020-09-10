@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="«Пожарная Автоматика»">
+    <title>«Пожарная Автоматика»</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./fav.ico">-->
+    <link rel="preload" href="fonts/RobotoCondensed/regular/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/libs/swiper.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__mobile-top">
+            <button class="header__menu-toggle menu-toggle">
+              <span>Открыть меню</span>
+            </button>
+            <a class="header__logo logo" href="index.html">
+              <figure class="logo__img-wrap">
+                <img class="logo__img" src="img/svg/logo.svg" alt="Логотип ООО «Пожарная Автоматика»" width="78" height="78">
+                <figcaption class="logo__description">
+                  <span class="logo__description-item logo__description-item--bold">ООО «Пожарная Автоматика»</span>
+                  <span class="logo__description-item logo__description-item--light">Газовое пожаротушение</span>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="header__link-call-back" href="tel:+74957300202">
+              <img class="header__link-call-back-img" src="img/svg/icons/icon-phone-stroke.svg" alt="Обратный звонок" width="25" height="25">
+            </a>
+          </div>
+          <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="products.html">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="ways.html">Решения</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav-sub" href="#">Поддержка</a>
+                <ul class="main-nav__sublist">
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="registration.html">Регистрация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="program.html">Программа “Салют”</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="order.html">Заказ расчета</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="documentation.html">Документация</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="training.html">Обучение</a>
+                  </li>
+                  <li class="main-nav__subitem">
+                    <a class="main-nav__sublink" href="vacancy.html">Вакансии</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="articles.html">Статьи</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="main-nav__decoration" id="nav-decoration"></div>
+            <button class="main-nav__btn-callback btn-callback js-modal-callback" title="Заказать звонок">
+            Заказать звонок
+              <svg class="btn-callback__icon icon-arrow icon-arrow--short icon-arrow--right icon-arrow--red" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </button>
+          </nav>
+          <div class="header__contacts-wrap">
+            <a class="header__phone" href="tel:+74957300202">495 730–02–02</a>
+            <a class="header__mail" href="mailto:info@pozhavt.ru">info@pozhavt.ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-bg program mobile-block">
+        <img class="main-bg-img" src="img/main-info/program/1-d.png" alt="Программа «Салют»">
+      </div>
+
+      <section class="main-info-program">
+        <div class="main-info-program__container container">
+          <div class="main-info-program__text-wrap">
+            <p class="main-info-program__caption caption">
+              Статистика
+            </p>
+            <p class="main-info-program__title title title--light-bold">
+              Программа «Салют»
+              <span>в цифрах</span>
+            </p>
+          </div>
+
+          <div class="main-info-program__blocks-wrap js-mirror-basis">
+
+            <div class="main-info-program__block main-info-program__block-img-decor">
+              <p class="main-info-program__block-title title">
+                <span class="js-spin-num">8</span>
+                <span class="main-info-program__block-title-item">лет в игре</span>
+              </p>
+              <figure class="main-info-program__img-decor-wrap">
+                <img class="main-info-program__img-decor" src="img/main-info/program/program1.png" alt="Декоративное изображение">
+              </figure>
+              <p class="main-info-program__img-decor-desc desc desc--light">
+                На протяжении 8 лет наша программа помогает проектировщикам
+              </p>
+            </div>
+
+            <div class="main-info-program__block main-info-program__block-detail">
+              <p class="main-info-program__feature-title title">
+                <span class="js-spin-num">1500</span>
+                <span class="main-info-program__feature-title-item">пользователей</span>
+              </p>
+              <p class="main-info-program__feature-caption">
+                c 2012 года
+              </p>
+
+              <p class="main-info-program__feature-desc">
+                Компания является разработчиком программного комплекса «Салют», широко используемого проектировщиками на всей территории России.
+              </p>
+
+              <div class="main-info-program__img-wrap">
+                <picture>
+                  <!-- <source media="(max-width: 768px)" srcset="img/main-info/program/1-m.png"> -->
+                  <img class="main-info-program__img" src="img/main-info/program/1-d.png" alt="Программа «Салют»">
+                </picture>
+              </div>
+            </div>
+
+            <div class="main-info-program__block main-info-program__block-white">
+              <p class="main-info-program__block-desc desc">
+                Программа существенно упрощает и ускоряет наиболее сложную расчетную часть
+              </p>
+              <p class="main-info-program__block-title title">
+                <span class="js-spin-num">20</span>
+                <span class="main-info-program__block-title-item">расчетов в день</span>
+              </p>
+            </div>
+
+            <div class="main-info-program__block main-info-program__block-img-big">
+              <p class="main-info-program__block-title title">
+                <span class="js-spin-num">14</span>
+                <span class="main-info-program__block-title-item">стран</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-info-program__mirror-container container js-mirror-container"></div>
+      </section>
+
+      <section class="project-detail-swiper">
+
+        <p class="project-detail-swiper__title title title--light-bold container">
+          Проектирование газового пожаротушения <span>в программе «Салют»</span>
+        </p>
+
+
+        <div class="two-swipers-wrap project-detail-swiper__two-swipers-wrap horizontal">
+          <div class="project-detail-swiper__columns-wrap">
+            <figure class="project-detail-swiper__img-wrap">
+              <img class="project-detail-swiper__img" src="img/swiper/10.png" alt="Детальное фото 1">
+            </figure>
+            <div class="project-detail-swiper__content-wrap project-detail-swiper__content-wrap--mt">
+              <p class="project-detail-swiper__item-title">
+                Программа компании «Пожарная Автоматика»
+              </p>
+
+              <p>
+                Разработана специалистами компании ООО «Пожарная Автоматика» и предназначена для расчета установок, в которых используются наиболее распространенные газовые огнетушащие вещества: хладон 125, хладон 227 и СО2.
+              </p>
+
+              <p>
+                Программа «Салют» позволяет выполнять все необходимые расчеты для проектирования технологической части автоматической установки газового пожаротушения:
+              </p>
+
+              <ol>
+                <li>
+                  Расчет массы ГОТВ в установке газового пожаротушения
+                </li>
+                <li>
+                  Расчет диаметров участков трубопровода и площади отверстий насадков (гидравлический расчет)
+                </li>
+                <li>
+                  Площади проёма для сброса избыточного давления в защищаемом помещении при подаче ГОТВ
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="program-preview container">
+        <div class="program-preview__column-wrap">
+          <div class="program-preview__text-wrap">
+            <p class="program-preview__title title">
+              <span class="program-preview__title-item">Скачать</span> программу «Салют»
+            </p>
+            <p class="program-preview__desc-light desc desc--light">
+              Программа распространяется бесплатно. Загрузите программу «Салют» на свой компьютер прямо сейчас!
+            </p>
+            <p class="program-preview__desc desc">
+              Чтобы получить доступ к программе, необходимо пройти регистрацию. Подать заявку можно здесь
+            </p>
+            <a class="program-preview__go-link btn-go-link" href="registration.html">
+              Регистрация
+              <svg class="btn-go-link__icon icon-arrow icon-arrow--short icon-arrow--right" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="program-preview__list">
+            <li class="program-preview__item">
+              <figure class="program-preview__img-wrap">
+                <img class="program-preview__img" src="img/program/logo-salut.png" alt="Логотип программы «Салют»">
+              </figure>
+              <p class="program-preview__item-title">
+                Салют 3
+              </p>
+              <p class="program-preview__item-caption">
+                Текущая версия: Салют 3.0.0β
+              </p>
+              <p class="program-preview__item-desc">
+                Мы рады представить третье поколение программы для проектирования и расчета автоматических установок газового пожаротушения — «Салют 3». Программа имеет улучшенный функционал
+              </p>
+
+              <a class="program-preview__download-link btn-callback-decor" href="#">
+                Загрузить
+                <i class="btn-callback-decor__icon">
+                  <svg class="icon-arrow icon-arrow--short icon-arrow--bottom icon-arrow--white" width="18" height="12" role="img">
+                    <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                  </svg>
+                </i>
+              </a>
+            </li>
+
+            <li class="program-preview__item">
+              <figure class="program-preview__img-wrap">
+                <img class="program-preview__img" src="img/program/logo-salut.png" alt="Логотип программы «Салют»">
+              </figure>
+              <p class="program-preview__item-title">
+                Салют 2
+              </p>
+              <p class="program-preview__item-caption">
+                Текущая версия: Салют 2.4.0.22
+              </p>
+              <p class="program-preview__item-desc">
+                Классическая версия программы для проектных расчетов автоматических установок газового пожаротушения. Проста в использовании и обладает всем необходимым базовым функционалом.
+              </p>
+
+              <a class="program-preview__download-link btn-callback-decor" href="#">
+                Загрузить
+                <i class="btn-callback-decor__icon">
+                  <svg class="icon-arrow icon-arrow--short icon-arrow--bottom icon-arrow--white" width="18" height="12" role="img">
+                    <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+                  </svg>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__copyright-text">
+        &#169; 2004 – 2020 ООО «Пожарная Автоматика». Газовое пожаротушение
+      </p>
+    </footer>
+
+    <section class="modal modal-callback">
+      <div class="modal-wrapper">
+        <button class="modal__close" title="Закрыть">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <p class="modal__title title title--bold">Заказать звонок</p>
+
+        <form class="modal__form form" action=".php" method="POST">
+          <div class="form__wrap">
+            <input class="form__input form__name modal__name" type="text" name="NAME" placeholder="Ф.И.О." required="">
+            <input class="form__input form__tel js-phone-mask" type="tel" name="TEL" placeholder="Телефон" required="">
+            <textarea class="form__input form__text" name="TEXT" placeholder="Комментарий"></textarea>
+          </div>
+          <button class="form__btn-submit modal__btn-submit btn-callback-decor" type="submit">
+            Отправить
+            <i class="btn-callback-decor__icon">
+              <svg class="icon-arrow icon-arrow--short icon-arrow--right icon-arrow--white" width="18" height="12" role="img">
+                <use xlink:href="img/sprite.svg#icon-arrow-short"></use>
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+      <div class="modal-wrapper-reply">
+        <p class="modal__desc">Ваша заявка отправлена!</p>
+      </div>
+    </section>
+
+    <div class="overlay"></div>
+
+    <script src="js/libs/jquery-3.4.1.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+    <script src="js/libs/jquery.spincrement.min.js"></script>
+
+    <script src="js/libs/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+
+</html>
