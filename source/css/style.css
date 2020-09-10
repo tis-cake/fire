@@ -3920,7 +3920,6 @@ html .desktop-flex {
 }
 .article-preview__link {
   box-sizing: border-box;
-  min-height: 65.2rem;
   height: 100%;
   padding: 4.5rem;
   background-color: #FFFFFF;
@@ -5861,5 +5860,3 @@ html .desktop-flex {
     line-height: 1.6rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
