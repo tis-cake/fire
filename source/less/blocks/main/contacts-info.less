@@ -61,3 +61,51 @@
 .contacts-info__go-link {
   margin-top: 5.6rem;
 }
+
+@media (max-width: @tablet-width) {
+  .contacts-info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .contacts-info__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-info__column {
+    margin-bottom: 10.5rem;
+  }
+
+  .contacts-info__column-title {
+    min-height: 0;
+    margin-bottom: 2.8rem;
+  }
+
+  .contacts-info__list {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .contacts-info__item {
+    margin-bottom: 1.9rem;
+    // padding-bottom: 2.1rem;
+  }
+
+  .contacts-info__category,
+  .contacts-info__desc {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .contacts-info__category {
+    margin-bottom: 0.9rem;
+  }
+
+  .contacts-info__desc {
+    display: block;
+  }
+
+  .contacts-info__go-link {
+    margin-top: 4rem;
+  }
+}

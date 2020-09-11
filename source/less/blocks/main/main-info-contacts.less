@@ -14,7 +14,7 @@
 }
 .main-info-contacts__title {
   position: relative;
-  line-height: 6.5rem;
+  // line-height: 6.5rem;
   span {
     display: block;
   }
@@ -86,9 +86,7 @@
   }
 }
 
-.main-info-contacts__item-desc {
-
-}
+.main-info-contacts__item-desc {}
 
 .main-info-contacts__img-wrap {
   z-index: -1;
@@ -121,3 +119,67 @@
     // height: 37.5vw;
   // }
 // }
+
+@media (max-width: @tablet-width) {
+  .main-info-contacts {
+    margin-bottom: 15.8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .main-info-contacts__wrap {
+    // display: flex;
+    flex-direction: column;
+  }
+
+  .main-info-contacts__title-wrap {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4.3rem;
+  }
+  .main-info-contacts__title {
+    span {
+      display: inline;
+    }
+    &::before {
+      bottom: -2.3rem;
+      width: 3.7rem;
+    }
+  }
+
+  .main-info-contacts__text-small {
+    margin-top: 4.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .main-info-contacts__list {
+    margin-top: 0;
+  }
+
+  .main-info-contacts_item {
+    margin-bottom: 2.1rem;
+    padding-left: 3.9rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+
+    &::before {
+      width: 1.8rem;
+      height: 2.2rem;
+    }
+  }
+
+  .main-info-contacts__item-desc {}
+
+  .main-info-contacts__img-wrap {
+    transform: none;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: -21rem;
+
+    width: 100%;
+    /* ~ 314px */
+    height: 89.714vw;
+  }
+}

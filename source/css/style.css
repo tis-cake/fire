@@ -3388,7 +3388,6 @@ html .desktop-flex {
 }
 .main-info-contacts__title {
   position: relative;
-  line-height: 6.5rem;
 }
 .main-info-contacts__title span {
   display: block;
@@ -3461,6 +3460,56 @@ html .desktop-flex {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 48em) {
+  .main-info-contacts {
+    margin-bottom: 15.8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .main-info-contacts__wrap {
+    flex-direction: column;
+  }
+  .main-info-contacts__title-wrap {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 4.3rem;
+  }
+  .main-info-contacts__title span {
+    display: inline;
+  }
+  .main-info-contacts__title::before {
+    bottom: -2.3rem;
+    width: 3.7rem;
+  }
+  .main-info-contacts__text-small {
+    margin-top: 4.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .main-info-contacts__list {
+    margin-top: 0;
+  }
+  .main-info-contacts_item {
+    margin-bottom: 2.1rem;
+    padding-left: 3.9rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .main-info-contacts_item::before {
+    width: 1.8rem;
+    height: 2.2rem;
+  }
+  .main-info-contacts__img-wrap {
+    transform: none;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: -21rem;
+    width: 100%;
+    /* ~ 314px */
+    height: 89.714vw;
+  }
 }
 .main-info-vacancy {
   padding-top: 13.6rem;
@@ -4995,6 +5044,24 @@ html .desktop-flex {
   background-color: var(--color-bg);
   border-radius: 10px;
 }
+@media (max-width: 48em) {
+  .map {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .map__wrap {
+    width: 100%;
+    height: 38.3rem;
+    border-radius: 0;
+  }
+  .map__balloon {
+    min-width: 20.6rem;
+    min-height: 2.6rem;
+    padding: 0.2rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+  }
+}
 .contacts-info {
   padding-top: 11.4rem;
   padding-bottom: 11.4rem;
@@ -5042,6 +5109,43 @@ html .desktop-flex {
 }
 .contacts-info__go-link {
   margin-top: 5.6rem;
+}
+@media (max-width: 48em) {
+  .contacts-info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .contacts-info__wrap {
+    grid-template-columns: 1fr;
+  }
+  .contacts-info__column {
+    margin-bottom: 10.5rem;
+  }
+  .contacts-info__column-title {
+    min-height: 0;
+    margin-bottom: 2.8rem;
+  }
+  .contacts-info__list {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .contacts-info__item {
+    margin-bottom: 1.9rem;
+  }
+  .contacts-info__category,
+  .contacts-info__desc {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .contacts-info__category {
+    margin-bottom: 0.9rem;
+  }
+  .contacts-info__desc {
+    display: block;
+  }
+  .contacts-info__go-link {
+    margin-top: 4rem;
+  }
 }
 .about-team {
   padding-top: 15.8rem;
