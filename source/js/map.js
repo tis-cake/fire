@@ -1,9 +1,17 @@
 ymaps.ready(init);
 
+var mapCenter = []
+if (width > 768) {
+  mapCenter = [55.737405, 37.649148];
+} else if (width <= 768) {
+  mapCenter = [55.737405, 37.651948];
+}
+
 function init() {
   // первичные данные для карты
   var map = new ymaps.Map('map', {
-    center: [55.737405, 37.649148],
+    // center: [55.737405, 37.649148],
+    center: mapCenter,
     zoom: 16,
     controls: [],
     behaviors: ['drag', 'dblClickZoom', 'scrollZoom']
@@ -39,6 +47,10 @@ function init() {
       hideIconOnBalloonOpen: false,              // не скрываем иконку при открытом балуне
       balloonOffset: [20, -30],                  // смещение балуна относительно иконки
       // balloonShadow: false,                   // тень балуна
+
+      // Если карта имеет маленькие размеры, то балун отображается в виде панели в нижней части карты,
+      // но кастомный балун может вообще не отображаться. Фикс в {balloonPanelMaxMapArea: 0}
+      balloonPanelMaxMapArea: 0,
     });
 
   // добавляем маркер на карту
