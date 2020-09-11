@@ -380,6 +380,11 @@
     &--youtube {
       order: -1;
     }
+    &--vk {
+      .main-info-detail__social-icon {
+        height: 2rem;
+      }
+    }
   }
 
   .main-info-detail__social-link {}
@@ -396,9 +401,14 @@
 
   .product,
   .order,
-  .way {
+  .way,
+  .training {
+    .main-info-detail__text-wrap {
+      width: auto;
+    }
     .main-info-detail__card-wrap {
       margin-left: 0;
+      padding-bottom: 3.4rem;
     }
     .main-info-detail__content-wrap {
       width: 100%;
@@ -471,6 +481,48 @@
     .main-info-detail__img {
       // max-height: 32.2rem;
     }
+  }
+
+  .training {
+    padding-bottom: 3.8rem;
+    .main-info-detail__text-wrap {
+      min-height: 19.8rem;
+      margin-left: 15rem;
+    }
+    .main-info-detail__subtitle {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+    .main-info-detail__card-wrap {
+      padding-top: 2.8rem;
+    //   margin-left: 6.4rem;
+    }
+    .main-info-detail__img-wrap {
+      top: -2.6rem;
+      left: -1rem;
+      transform: none;
+      width: 27.8rem;
+      height: 28rem;
+    }
+    .main-info-detail__img {
+      max-height: none;
+      .img-cover;
+    }
+  }
+
+  .about{
+    // .main-info-detail__text-wrap {
+    //   // margin-top: 19.3rem;
+    // }
+    // .main-info-detail__card-wrap {
+    //   margin-left: 7.4rem;
+    // }
+    // .main-info-detail__img-wrap {
+    //   left: -16rem;
+    // }
+    // .main-info-detail__img {
+    //   max-height: 45.5rem;
+    // }
   }
 
 }

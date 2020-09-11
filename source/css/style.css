@@ -2876,6 +2876,9 @@ html .desktop-flex {
   .main-info-detail__social-item--youtube {
     order: -1;
   }
+  .main-info-detail__social-item--vk .main-info-detail__social-icon {
+    height: 2rem;
+  }
   .main-info-detail__social-icon {
     width: 3.6rem;
     height: 2.6rem;
@@ -2884,14 +2887,23 @@ html .desktop-flex {
     margin-top: 1rem;
     font-size: 1.4rem;
   }
+  .product .main-info-detail__text-wrap,
+  .order .main-info-detail__text-wrap,
+  .way .main-info-detail__text-wrap,
+  .training .main-info-detail__text-wrap {
+    width: auto;
+  }
   .product .main-info-detail__card-wrap,
   .order .main-info-detail__card-wrap,
-  .way .main-info-detail__card-wrap {
+  .way .main-info-detail__card-wrap,
+  .training .main-info-detail__card-wrap {
     margin-left: 0;
+    padding-bottom: 3.4rem;
   }
   .product .main-info-detail__content-wrap,
   .order .main-info-detail__content-wrap,
-  .way .main-info-detail__content-wrap {
+  .way .main-info-detail__content-wrap,
+  .training .main-info-detail__content-wrap {
     width: 100%;
   }
   .product .main-info-detail__text-wrap {
@@ -2952,6 +2964,34 @@ html .desktop-flex {
     left: auto;
     right: -3rem;
     height: auto;
+  }
+  .training {
+    padding-bottom: 3.8rem;
+  }
+  .training .main-info-detail__text-wrap {
+    min-height: 19.8rem;
+    margin-left: 15rem;
+  }
+  .training .main-info-detail__subtitle {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .training .main-info-detail__card-wrap {
+    padding-top: 2.8rem;
+  }
+  .training .main-info-detail__img-wrap {
+    top: -2.6rem;
+    left: -1rem;
+    transform: none;
+    width: 27.8rem;
+    height: 28rem;
+  }
+  .training .main-info-detail__img {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .main-info-registration {
@@ -4493,7 +4533,7 @@ html .desktop-flex {
   }
   .two-columns__left-column {
     width: 100%;
-    margin-bottom: 12.4rem;
+    margin-bottom: 7.8rem;
   }
   .two-columns__right-column {
     width: 100%;
