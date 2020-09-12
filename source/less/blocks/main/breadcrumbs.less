@@ -33,3 +33,35 @@
 .breadcrumbs__link {}
 
 .breadcrumbs-current {}
+
+@media (max-width: @tablet-width) {
+  .breadcrumbs {
+    padding-top: 11.2rem;
+    // padding-bottom: 1.3rem;
+
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .breadcrumbs__list {
+    flex-wrap: wrap;
+  }
+
+  .breadcrumbs__item {
+    // margin-right: 2rem;
+    &::before {}
+    &:last-child {
+      &::before {
+        content: none;
+      }
+    }
+    &:nth-last-child(2) {
+      &::after {
+        position: absolute;
+        content: '/';
+        top: 0;
+        right: -1.2rem;
+      }
+    }
+  }
+}

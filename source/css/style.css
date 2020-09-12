@@ -4032,7 +4032,7 @@ html .desktop-flex {
   padding-bottom: 4.7rem;
   font-style: normal;
   line-height: 2.5rem;
-  border-radius: var(--border-radius);
+  border-radius: 1.5rem;
   background-color: #ffffff;
   box-shadow: 1rem 3rem 8rem #EAEAEA;
 }
@@ -4105,6 +4105,9 @@ html .desktop-flex {
   margin-bottom: 10rem;
 }
 @media (max-width: 48em) {
+  .article {
+    padding-top: 1.8rem;
+  }
   .article__columns-wrap {
     flex-wrap: wrap;
   }
@@ -4114,6 +4117,23 @@ html .desktop-flex {
   .article__column-right {
     display: none;
     width: 100%;
+  }
+  .article__detail-top {
+    flex-wrap: wrap;
+    margin-bottom: 5.6rem;
+    font-size: 1.4rem;
+  }
+  .article__share-panel {
+    order: -1;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3.6rem;
+  }
+  .article__detail-bottom {
+    font-size: 1.4rem;
+  }
+  .article__date-strong {
+    margin-right: 3rem;
   }
   .article__content {
     font-size: 1.4rem;
@@ -4135,11 +4155,16 @@ html .desktop-flex {
     line-height: inherit;
   }
   .article__content strong {
+    margin-left: 0;
     font-size: 1.6rem;
     line-height: 1.8rem;
   }
+  .article__content strong::before {
+    left: -0.8rem;
+    width: 0.2rem;
+  }
   .article__content dl {
-    margin-bottom: 7.8rem;
+    margin-bottom: 5rem;
   }
   .article__content dt {
     margin-bottom: 1.8rem;
@@ -4151,11 +4176,49 @@ html .desktop-flex {
   .article__content dd:last-of-type {
     margin-bottom: 0;
   }
+  .article__content blockquote {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 8.3rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    padding-bottom: 3.1rem;
+    line-height: 2.1rem;
+  }
+  .article__content blockquote p {
+    margin-bottom: 2.5rem;
+  }
+  .article__content blockquote cite {
+    font-size: inherit;
+  }
+  .article__content blockquote::before {
+    top: 2.4rem;
+    left: 1rem;
+  }
   .article__content ul {
     margin-bottom: 1.7rem;
   }
   .article__content li {
     margin-bottom: 0;
+  }
+  .article__reviewer-list {
+    grid-template-columns: repeat(2, 14rem);
+    justify-content: initial;
+    margin-top: 4.2rem;
+    font-size: 1.4rem;
+  }
+  .article__reviewer-item {
+    width: auto;
+  }
+  .article__reviewer-post {
+    margin-bottom: 0.8rem;
+  }
+  .article__comments {
+    margin-top: 9.3rem;
+  }
+  .article__form {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
   }
 }
 .article-preview {
@@ -4750,6 +4813,25 @@ html .desktop-flex {
 .breadcrumbs__item:first-child::before {
   content: none;
 }
+@media (max-width: 48em) {
+  .breadcrumbs {
+    padding-top: 11.2rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  .breadcrumbs__list {
+    flex-wrap: wrap;
+  }
+  .breadcrumbs__item:last-child::before {
+    content: none;
+  }
+  .breadcrumbs__item:nth-last-child(2)::after {
+    position: absolute;
+    content: '/';
+    top: 0;
+    right: -1.2rem;
+  }
+}
 .rating-stars {
   display: flex;
   align-items: center;
@@ -4794,6 +4876,14 @@ html .desktop-flex {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 48em) {
+  .rating-stars__title {
+    margin-right: 1.2rem;
+  }
+  .rating-stars__area {
+    width: 12rem;
+  }
+}
 .share-panel {
   display: flex;
   align-items: center;
@@ -4832,6 +4922,19 @@ html .desktop-flex {
 .ya-share2__item_service_twitter .ya-share2__icon {
   background-image: url('../img/svg/icons/icon-share-tt.svg') !important;
 }
+@media (max-width: 48em) {
+  .share-panel__item {
+    margin-left: 1.9rem;
+  }
+  .ya-share2__icon {
+    width: 2rem!important;
+    height: 2rem!important;
+  }
+  .ya-share2__item_service_vkontakte .ya-share2__icon {
+    width: 2.8rem !important;
+    height: 2rem!important;
+  }
+}
 .comments__title {
   margin-bottom: 5.5rem;
 }
@@ -4854,6 +4957,29 @@ html .desktop-flex {
 }
 .comments__desc {
   line-height: 2.3rem;
+}
+@media (max-width: 48em) {
+  .comments {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .comments__title {
+    margin-bottom: 3.2rem;
+  }
+  .comments__block {
+    margin-bottom: 5rem;
+  }
+  .comments__date {
+    margin-bottom: 0.4rem;
+  }
+  .comments__name {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .comments__desc {
+    line-height: inherit;
+  }
 }
 .form__title {
   margin-bottom: 4.9rem;
@@ -4935,6 +5061,7 @@ html .desktop-flex {
     line-height: 2rem;
   }
   .form__btn-submit {
+    margin-top: 1.4rem;
     padding-left: 2.5rem;
   }
 }
