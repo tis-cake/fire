@@ -4,7 +4,8 @@ var mapCenter = []
 if (width > 768) {
   mapCenter = [55.737405, 37.649148];
 } else if (width <= 768) {
-  mapCenter = [55.737405, 37.651948];
+  // mapCenter = [55.737405, 37.651948];
+  mapCenter = [55.737405, 37.651348];
 }
 
 function init() {
