@@ -5528,6 +5528,7 @@ html .desktop-flex {
 .modal-notify.active {
   visibility: visible;
   opacity: 1;
+  z-index: 0;
 }
 .map {
   padding-top: 6rem;

@@ -128,11 +128,11 @@ $('.js-modal-business').click(function(evt) {
   openModal('.modal-business', '.modal__name');
 });
 
-// маленькая модалка при успешной отправке формы на странице регистрации
-// $('.registration__btn-submit').click(function(evt) {
+// маленькая модалка при успешной отправке формы на странице статьи
+// $('.form__btn-submit').click(function(evt) {
 //   evt.preventDefault();
 //   resetRegistrationForm();
-//   showModalForRegistrationForm();
+//   showModalForCommentsForm();
 // })
 
 // открыть модальное окно
@@ -179,6 +179,7 @@ $('.modal__close').click(function(evt) {
 // сообщение об успешной отправке
 // showMessageAfterRequest($(this));
 
+// сообщение об успешной отправке в модальном окне (для пользователя)
 function showMessageAfterRequest(current) {
   current.closest('.modal').addClass('reply');
 
@@ -188,6 +189,7 @@ function showMessageAfterRequest(current) {
   }, 3000);
 }
 
+// сообщение об успешной отправке формы регистрации (для пользователя)
 function showModalForRegistrationForm() {
   $('.modal-notify').addClass('active');
   setTimeout(function() {
@@ -195,8 +197,17 @@ function showModalForRegistrationForm() {
   }, 3000);
 }
 
+// сброс полей в форме
 function resetRegistrationForm() {
   $('#registration-form').find('.form__input').each(function() {
     $('.form__input').val('');
   });
 };
+
+// сообщение об успешной отправке формы с комментарием (для пользователя)
+function showModalForCommentsForm() {
+  $('.modal-notify-comment').addClass('active');
+  setTimeout(function() {
+    $('.modal-notify-comment').removeClass('active');
+  }, 3000);
+}
