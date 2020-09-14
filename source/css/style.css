@@ -3742,6 +3742,7 @@ html .desktop-flex {
     padding-right: 2.4rem;
     padding-bottom: 5.7rem;
     background-color: #fff;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
   .main-info-vacancy__column-left,
   .main-info-vacancy__column-right {
@@ -4028,6 +4029,159 @@ html .desktop-flex {
   }
   .main-info-program__blocks-wrap::before {
     content: '';
+  }
+}
+@media (max-width: 48em) {
+  .main-info-program {
+    --padding-inline-inside: 1.9rem;
+    margin-top: 12rem;
+    margin-bottom: 3.2rem;
+  }
+  .main-info-program__text-wrap {
+    padding-left: 0;
+  }
+  .main-info-program__caption {
+    margin-bottom: 1.1rem;
+  }
+  .main-info-program__blocks-wrap {
+    align-items: initial;
+    flex-wrap: wrap;
+    margin-top: 6.3rem;
+  }
+  .main-info-program__block {
+    justify-content: flex-start;
+    height: auto;
+    margin-bottom: 0.4rem;
+    padding-left: var(--padding-inline-inside);
+    padding-right: var(--padding-inline-inside);
+    -webkit-filter: drop-shadow(1rem 3rem 8rem #EAEAEA);
+            filter: drop-shadow(1rem 3rem 8rem #EAEAEA);
+    box-shadow: none;
+  }
+  .main-info-program__block-title-item {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .main-info-program__block-img-decor,
+  .main-info-program__block-detail {
+    width: 100%;
+  }
+  /* блок с декоративными элементами */
+  .main-info-program__block-img-decor {
+    position: relative;
+    min-height: 19rem;
+    padding-top: 2.7rem;
+    padding-bottom: 3rem;
+  }
+  .main-info-program__img-decor-wrap {
+    position: absolute;
+    bottom: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .main-info-program__img-decor-wrap::after {
+    right: -4.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .main-info-program__img-decor-desc {
+    margin-top: 3.9rem;
+    margin-left: 15.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  /* блок синий */
+  .main-info-program__block-detail {
+    order: -1;
+    padding-top: 3.7rem;
+    padding-bottom: 2.2rem;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .main-info-program__feature-title {
+    margin-bottom: 5.8rem;
+  }
+  .main-info-program__feature-title-item {
+    display: inline;
+    font-size: 1.5rem;
+  }
+  .main-info-program__feature-title::before,
+  .main-info-program__feature-title::after {
+    bottom: -2.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .main-info-program__feature-title::after {
+    left: 3.3rem;
+  }
+  .main-info-program__feature-caption {
+    margin-bottom: 1.9rem;
+    margin-left: 0;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .main-info-program__feature-desc {
+    margin-left: 0;
+    margin-right: 7rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .main-info-program__feature-desc::after {
+    width: 80%;
+  }
+  .main-info-program__img-wrap {
+    top: -3.7rem;
+    right: -5.9rem;
+    width: 22.8rem;
+    height: 25.5rem;
+  }
+  .main-info-program__block-white,
+  .main-info-program__block-img-big {
+    justify-content: flex-end;
+    width: 49%;
+    height: 11.1rem;
+    padding: 1rem;
+  }
+  .main-info-program__block-white .main-info-program__block-desc,
+  .main-info-program__block-img-big .main-info-program__block-desc {
+    display: none;
+  }
+  .main-info-program__block-white .main-info-program__block-title-item,
+  .main-info-program__block-img-big .main-info-program__block-title-item {
+    display: block;
+  }
+  /* блок c особенностями */
+  .main-info-program__block-white {
+    background-image: url('../img/bg/main-info-program-bg-white-m.png');
+  }
+  /* блок с большим изображением */
+  .main-info-program__block-img-big {
+    background-image: url('../img/bg/main-info-program-bg-big-m.png');
+  }
+  .main-info-program__block-img-big .main-info-program__block-title {
+    display: none;
+  }
+  .main-info-program__mirror-container {
+    box-sizing: border-box;
+    bottom: -11.2rem;
+    width: 100%;
+  }
+  .main-info-program__mirror-container::before {
+    width: 100%;
+    background-image: linear-gradient(180deg, #FCFCFC 47.93%, rgba(252, 252, 252, 0) 100%);
+  }
+  .main-info-program__mirror-container .main-info-program__blocks-wrap {
+    margin-top: 0;
+  }
+  .main-info-program__mirror-container .main-info-program__block {
+    display: none;
+  }
+  .main-info-program__mirror-container .main-info-program__block-white,
+  .main-info-program__mirror-container .main-info-program__block-img-big {
+    display: flex;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 .article {
@@ -5665,6 +5819,78 @@ html .desktop-flex {
   margin-top: 2.9rem;
   padding-left: 1.7rem;
 }
+@media (max-width: 48em) {
+  .program-preview {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+  .program-preview__column-wrap {
+    flex-direction: column;
+  }
+  .program-preview__text-wrap {
+    width: 100%;
+    margin-bottom: 7.8rem;
+  }
+  .program-preview__title {
+    margin-bottom: 2.7rem;
+  }
+  .program-preview__desc-light {
+    margin-bottom: 5.4rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .program-preview__desc-light::after {
+    bottom: -2.8rem;
+    width: 100%;
+  }
+  .program-preview__desc {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .program-preview__go-link {
+    margin-top: 2.7rem;
+  }
+  .program-preview__list {
+    grid-template-columns: 1fr;
+    row-gap: 8.4rem;
+    width: 100%;
+  }
+  .program-preview__item {
+    min-height: 0;
+    padding-top: 3rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    padding-bottom: 3.4rem;
+  }
+  .program-preview__img-wrap {
+    top: -3.4rem;
+    left: 0;
+    width: 11.9rem;
+    height: 11.9rem;
+  }
+  .program-preview__item-title,
+  .program-preview__item-caption {
+    margin-left: 12.4rem;
+  }
+  .program-preview__item-title {
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .program-preview__item-caption {
+    margin-bottom: 2.8rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .program-preview__item-desc {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .program-preview__download-link {
+    margin-top: 1.5rem;
+    padding-left: 2.6rem;
+  }
+}
 /*swiper*/
 .two-swipers-wrap {
   box-sizing: border-box;
@@ -6472,6 +6698,19 @@ html .desktop-flex {
   .project-detail-swiper__content-wrap p {
     font-size: 1.5rem;
     line-height: 2.2rem;
+  }
+  .project-detail-swiper__content-wrap ol {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .project-detail-swiper__content-wrap ol li {
+    margin-bottom: 1.7rem;
+    font-size: inherit;
+  }
+  .project-detail-swiper__content-wrap ol li::before {
+    font-size: 1.8rem;
   }
   .project-detail-swiper__btn-callback {
     margin-top: 3.5rem;
