@@ -141,3 +141,118 @@
 }
 
 .main-info-vacancy__decor-img {}
+
+@media (max-width: @tablet-width) {
+  .main-info-vacancy {
+    padding-top: 16.8rem;
+    padding-bottom: 0;
+  }
+
+  .main-info-vacancy__wrap {
+    flex-direction: column;
+  }
+
+  .main-info-vacancy__red-block {
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 17rem;
+    height: auto;
+    padding-top: 3.3rem;
+    padding-left: 2.4rem;
+    padding-right: 10rem;
+    padding-bottom: 3.3rem;
+
+    border-radius: @br @br 0 0;
+  }
+
+  .main-info-vacancy__caption {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .main-info-vacancy__caption-desc {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+
+  .main-info-vacancy__img-wrap {
+    z-index: 1;
+    top: 0;
+    right: -4rem;
+    width: 20.1rem;
+    height: 17.6rem;
+  }
+
+  .main-info-vacancy__content-block {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -2.5rem;
+    padding-top: 4.6rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 5.7rem;
+    background-color: #fff;
+  }
+
+  .main-info-vacancy__column-left,
+  .main-info-vacancy__column-right {
+    width: 100%;
+  }
+
+  .main-info-vacancy__column-right {
+    min-height: 20rem;
+  }
+
+  .main-info-vacancy__title {
+    margin-bottom: 1.8rem;
+  }
+
+  .main-info-vacancy__desc {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    &--decor {
+      margin-top: 2.8rem;
+      &::before {
+        top: -1.5rem;
+        width: 63%;
+      }
+    }
+  }
+
+  .main-info-vacancy__link {
+    &-red {}
+    &-black {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .main-info-vacancy__feature-title {
+    margin-top: 4.4rem;
+    margin-bottom: 3.6rem;
+    &-item {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  .main-info-vacancy__decor-img-wrap {
+    position: absolute;
+    bottom: 7.2rem;
+    margin-bottom: 0;
+    &::before {
+      right: -3.2rem;
+      width: 1.8rem;
+      height: 2.2rem;
+    }
+  }
+
+   .main-info-vacancy__column-right {
+    .main-info-vacancy__desc {
+      margin-left: 11.8rem;
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+    }
+  }
+
+}

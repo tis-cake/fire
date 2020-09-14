@@ -17,7 +17,8 @@
   }
 }
 
-@media (min-width: @max-desktop-width) {
+// @max-desktop-width
+@media (min-width: @tablet-width) {
   .main-bg {
     &--110vh,
     &--150vh {
@@ -48,5 +49,9 @@
 
   .program.main-bg {
     z-index: 2;
+  }
+
+  .vacancy.main-bg {
+    top: 0;
   }
 }
