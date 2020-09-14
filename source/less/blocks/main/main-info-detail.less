@@ -427,7 +427,8 @@
   .product,
   .order,
   .way,
-  .training {
+  .training,
+  .about {
     .main-info-detail__text-wrap {
       width: auto;
     }
@@ -540,19 +541,30 @@
     }
   }
 
-  .about{
-    // .main-info-detail__text-wrap {
-    //   // margin-top: 19.3rem;
-    // }
-    // .main-info-detail__card-wrap {
-    //   margin-left: 7.4rem;
-    // }
-    // .main-info-detail__img-wrap {
-    //   left: -16rem;
-    // }
-    // .main-info-detail__img {
-    //   max-height: 45.5rem;
-    // }
+  .about {
+    padding-bottom: 3rem;
+    .main-info-detail__text-wrap {
+      min-height: 15rem;
+      margin-top: 2.2rem;
+      margin-left: 15rem;
+    }
+    .main-info-detail__card-wrap {
+      padding-top: 9.7rem;
+    }
+    .main-info-detail__img-wrap {
+      top: 2.3rem;
+      left: -3.2rem;
+      transform: none;
+      width: 18.8rem;
+      height: 22.4rem;
+    }
+    .main-info-detail__img {
+      max-height: none;
+      .img-cover;
+    }
+    .main-info-detail__subtitle {
+      display: none;
+    }
   }
 
 }

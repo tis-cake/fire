@@ -2910,20 +2910,23 @@ html .desktop-flex {
   .product .main-info-detail__text-wrap,
   .order .main-info-detail__text-wrap,
   .way .main-info-detail__text-wrap,
-  .training .main-info-detail__text-wrap {
+  .training .main-info-detail__text-wrap,
+  .about .main-info-detail__text-wrap {
     width: auto;
   }
   .product .main-info-detail__card-wrap,
   .order .main-info-detail__card-wrap,
   .way .main-info-detail__card-wrap,
-  .training .main-info-detail__card-wrap {
+  .training .main-info-detail__card-wrap,
+  .about .main-info-detail__card-wrap {
     margin-left: 0;
     padding-bottom: 3.4rem;
   }
   .product .main-info-detail__content-wrap,
   .order .main-info-detail__content-wrap,
   .way .main-info-detail__content-wrap,
-  .training .main-info-detail__content-wrap {
+  .training .main-info-detail__content-wrap,
+  .about .main-info-detail__content-wrap {
     width: 100%;
   }
   .product .main-info-detail__text-wrap {
@@ -3017,6 +3020,34 @@ html .desktop-flex {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .about {
+    padding-bottom: 3rem;
+  }
+  .about .main-info-detail__text-wrap {
+    min-height: 15rem;
+    margin-top: 2.2rem;
+    margin-left: 15rem;
+  }
+  .about .main-info-detail__card-wrap {
+    padding-top: 9.7rem;
+  }
+  .about .main-info-detail__img-wrap {
+    top: 2.3rem;
+    left: -3.2rem;
+    transform: none;
+    width: 18.8rem;
+    height: 22.4rem;
+  }
+  .about .main-info-detail__img {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about .main-info-detail__subtitle {
+    display: none;
   }
 }
 .main-info-registration {
@@ -4827,6 +4858,10 @@ html .desktop-flex {
   .two-columns__wrap ul:last-of-type {
     margin-bottom: 0;
   }
+  .two-columns__wrap figcaption {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
   .two-columns__left-column {
     width: 100%;
     margin-bottom: 6rem;
@@ -5508,7 +5543,7 @@ html .desktop-flex {
   width: 100%;
   height: 53.4rem;
   box-shadow: 1rem 3rem 8rem #EAEAEA;
-  border-radius: var(--border-radius);
+  border-radius: 1.5rem;
   overflow: hidden;
 }
 .about-team__img {
@@ -5516,6 +5551,38 @@ html .desktop-flex {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 48em) {
+  .about-team {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .about-team__wrap {
+    flex-direction: column;
+  }
+  .about-team__left-column,
+  .about-team__right-column {
+    width: 100%;
+  }
+  .about-team__left-column {
+    margin-bottom: 3rem;
+  }
+  .about-team__title {
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+  }
+  .about-team__desc--light {
+    margin-bottom: 4.4rem;
+  }
+  .about-team__desc--light::after {
+    width: 50%;
+  }
+  .about-team__go-lnk {
+    margin-top: 3.1rem;
+  }
+  .about-team__img-wrap {
+    height: 22.4rem;
+  }
 }
 .program-preview {
   padding-top: 16rem;
@@ -6489,6 +6556,57 @@ html .desktop-flex {
   position: absolute;
   content: '•';
   left: 0;
+}
+@media (max-width: 48em) {
+  .reward-swiper__pagination-swiper,
+  .reward-swiper .reward-swiper__pagination-swiper {
+    margin-top: 1.8rem;
+  }
+  .reward-swiper__button-prev,
+  .reward-swiper__button-next {
+    display: flex;
+  }
+  .reward-swiper .reward-swiper__button-prev {
+    left: 2.2rem;
+  }
+  .reward-swiper .reward-swiper__button-next {
+    right: 2.2rem;
+  }
+  .reward-swiper__img-wrap,
+  .reward-swiper__content-wrap {
+    width: 100%;
+  }
+  .reward-swiper__cards-wrap {
+    flex-direction: column;
+    padding-top: 2.7rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.7rem;
+  }
+  .reward-swiper__img-wrap {
+    height: 20.5rem;
+    margin-bottom: 5rem;
+    border-radius: 0.7rem;
+  }
+  .reward-swiper__title-wrap {
+    flex-direction: column;
+    align-items: initial;
+    margin-bottom: 2rem;
+  }
+  .reward-swiper__title {
+    margin-bottom: 2.2rem;
+  }
+  .reward-swiper__text-wrap {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+  .reward-swiper__text-wrap p {
+    margin-bottom: 1.9rem;
+  }
+  .reward-swiper__text-wrap ul li {
+    padding-left: 0.8rem;
+  }
 }
 /*footer*/
 .footer {

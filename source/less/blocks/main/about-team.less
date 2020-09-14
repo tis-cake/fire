@@ -53,10 +53,57 @@
   height: 53.4rem;
 
   box-shadow: 1rem 3rem 8rem #EAEAEA;
-  border-radius: @br;
+  border-radius: 1.5rem;
   overflow: hidden;
 }
 
 .about-team__img {
   .img-cover;
+}
+
+@media (max-width: @tablet-width) {
+  .about-team {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-team__wrap {
+    flex-direction: column;
+  }
+
+  .about-team__left-column,
+  .about-team__right-column {
+    width: 100%;
+  }
+
+  .about-team__left-column {
+    margin-bottom: 3rem;
+  }
+
+  .about-team__title {
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+  }
+
+  .about-team__desc {
+    &--light {
+      margin-bottom: 4.4rem;
+      &::after {
+        // bottom: -2.7rem;
+        width: 50%;
+      }
+    }
+  }
+
+  .about-team__mail-link {}
+
+  .about-team__go-lnk {
+    margin-top: 3.1rem;
+  }
+
+  .about-team__img-wrap {
+    height: 22.4rem;
+  }
+
+  .about-team__img {}
 }
