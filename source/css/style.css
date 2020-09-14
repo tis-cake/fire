@@ -242,6 +242,7 @@ html .desktop-flex {
 @media (max-width: 48em) {
   html {
     --padding-inline: 2.5rem;
+    --padding-inline-deep: 1.6rem;
   }
   .container,
   .container-outside,
@@ -2805,6 +2806,8 @@ html .desktop-flex {
   .main-info-detail {
     padding-top: 9.2rem;
     padding-bottom: 7.9rem;
+    padding-left: var(--padding-inline-deep);
+    padding-right: var(--padding-inline-deep);
   }
   .main-info-detail__wrap {
     position: relative;
@@ -2843,8 +2846,8 @@ html .desktop-flex {
   }
   .main-info-detail__content-wrap {
     width: 100%;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .main-info-detail__content-wrap p:not(.main-info-detail__subtitle),
   .main-info-detail__content-wrap .desc,
@@ -2874,6 +2877,8 @@ html .desktop-flex {
     width: 100%;
     margin-top: 2.9rem;
     padding-top: 3.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     padding-bottom: 0;
     border-left: 0;
     border-top: 0.2rem solid var(--color-light-gray);
@@ -3700,7 +3705,7 @@ html .desktop-flex {
 }
 @media (max-width: 48em) {
   .main-info-vacancy {
-    padding-top: 16.8rem;
+    padding-top: 10rem;
     padding-bottom: 0;
   }
   .main-info-vacancy__wrap {
@@ -4081,13 +4086,13 @@ html .desktop-flex {
     margin-bottom: 0;
   }
   .main-info-program__img-decor-wrap::after {
-    right: -4.4rem;
+    right: -3.9rem;
     width: 2.4rem;
     height: 2.4rem;
   }
   .main-info-program__img-decor-desc {
     margin-top: 3.9rem;
-    margin-left: 15.2rem;
+    margin-left: 12.2rem;
     font-size: 1.4rem;
     line-height: 2.1rem;
   }
@@ -4158,9 +4163,6 @@ html .desktop-flex {
   /* блок с большим изображением */
   .main-info-program__block-img-big {
     background-image: url('../img/bg/main-info-program-bg-big-m.png');
-  }
-  .main-info-program__block-img-big .main-info-program__block-title {
-    display: none;
   }
   .main-info-program__mirror-container {
     box-sizing: border-box;
@@ -5337,6 +5339,24 @@ html .desktop-flex {
   margin-top: 5.8rem;
   padding-left: 2rem;
 }
+.form__label {
+  position: relative;
+  width: 100%;
+}
+.form__label--half {
+  width: 48.5%;
+}
+.form__label--required::before {
+  position: absolute;
+  content: '*';
+  top: 1.4rem;
+  left: 1rem;
+  font-family: var(--font-main);
+  color: var(--color-second);
+}
+.form__label .form__input {
+  width: 100%;
+}
 @media (max-width: 48em) {
   .form {
     font-size: 1.4rem;
@@ -5859,8 +5879,8 @@ html .desktop-flex {
   .program-preview__item {
     min-height: 0;
     padding-top: 3rem;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 3.4rem;
   }
   .program-preview__img-wrap {

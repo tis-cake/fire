@@ -171,10 +171,18 @@
               <p class="form__subtitle">
                 Заявитель
               </p>
-              <input class="form__input form__name" type="text" name="PERSON-NAME" placeholder="Ф.И.О." required="">
-              <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="PERSON-TEL" placeholder="Телефон" required="">
-              <input class="form__input form__input--half form__mail" type="email" name="PERSON-MAIL" placeholder="E-mail" required="">
-              <input class="form__input form__city" type="text" name="PERSON-CITY" placeholder="Город" required="">
+              <label class="form__label form__label--required">
+                <input class="form__input form__name" type="text" name="PERSON-NAME" placeholder="Ф.И.О." required="">
+              </label>
+              <label class="form__label form__label--half form__label--required">
+                <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="PERSON-TEL" placeholder="Телефон" required="">
+              </label>
+              <label class="form__label form__label--half form__label--required">
+                <input class="form__input form__input--half form__mail" type="email" name="PERSON-MAIL" placeholder="E-mail" required="">
+              </label>
+              <label class="form__label">
+                <input class="form__input form__city" type="text" name="PERSON-CITY" placeholder="Город" required="">
+              </label>
               <textarea class="form__input form__text" name="PERSON-TEXT" placeholder="Комментарий"></textarea>
             </div>
 
@@ -182,11 +190,21 @@
               <p class="form__subtitle">
                 Компания
               </p>
-              <input class="form__input form__input--half form__company-name" type="text" name="COMPANY-NAME" placeholder="Наименование" required="">
-              <input class="form__input form__input--half form__post" type="text" name="COMPANY-POSITION" placeholder="Должность" required="">
-              <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="COMPANY-TEL" placeholder="Телефон" required="">
-              <input class="form__input form__input--half form__site" type="url" name="COMPANY-SITE" placeholder="Сайт" required="">
-              <input class="form__input form__address" type="text" name="COMPANY-ADDRESS" placeholder="Адрес" required="">
+              <label class="form__label form__label--half form__label--required">
+                <input class="form__input form__input--half form__company-name" type="text" name="COMPANY-NAME" placeholder="Наименование" required="">
+              </label>
+              <label class="form__label form__label--half">
+                <input class="form__input form__input--half form__post" type="text" name="COMPANY-POSITION" placeholder="Должность" required="">
+              </label>
+              <label class="form__label form__label--half form__label--required">
+                <input class="form__input form__input--half form__tel js-phone-mask" type="tel" name="COMPANY-TEL" placeholder="Телефон" required="">
+              </label>
+              <label class="form__label form__label--half">
+                <input class="form__input form__input--half form__site" type="url" name="COMPANY-SITE" placeholder="Сайт" required="">
+              </label>
+              <label class="form__label">
+                <input class="form__input form__address" type="text" name="COMPANY-ADDRESS" placeholder="Адрес" required="">
+              </label>
               <textarea class="form__input form__text" name="COMPANY-TEXT" placeholder="Комментарий"></textarea>
             </div>
           </div>
@@ -237,9 +255,15 @@
       </div>
     </section>
 
-    <div class="modal-notify">
+    <div class="modal-notify modal-notify-registration">
       <p class="modal-notify__text">
         Ваша заявка отправлена!
+      </p>
+    </div>
+
+    <div class="modal-notify modal-notify-comment">
+      <p class="modal-notify__text">
+        Ваш комментарий отправлен!
       </p>
     </div>
 

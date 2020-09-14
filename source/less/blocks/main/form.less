@@ -72,6 +72,28 @@
   padding-left: 2rem;
 }
 
+.form__label {
+  position: relative;
+  width: 100%;
+  &--half {
+    width: 48.5%;
+  }
+  &--required {
+    &::before {
+      position: absolute;
+      content: '*';
+      top: 1.4rem;
+      left: 1rem;
+
+      font-family: @font-main;
+      color: @color-s;
+    }
+  }
+  .form__input {
+    width: 100%;
+  }
+}
+
 @media (max-width: @tablet-width) {
   .form {
     font-size: 1.4rem;
@@ -119,5 +141,15 @@
     // width: 18.2rem;
     margin-top: 1.4rem;
     padding-left: 2.5rem;
+  }
+
+  .form__label {
+    // width: 100%;
+    &--half {
+      // width: 48.5%;
+    }
+    .form__input {
+      // width: 100%;
+    }
   }
 }

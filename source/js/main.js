@@ -128,13 +128,6 @@ $('.js-modal-business').click(function(evt) {
   openModal('.modal-business', '.modal__name');
 });
 
-// маленькая модалка при успешной отправке формы на странице статьи
-// $('.form__btn-submit').click(function(evt) {
-//   evt.preventDefault();
-//   resetRegistrationForm();
-//   showModalForCommentsForm();
-// })
-
 // открыть модальное окно
 function openModal(modalClass, focusClass) {
   $('.overlay').fadeIn();
@@ -189,20 +182,20 @@ function showMessageAfterRequest(current) {
   }, 3000);
 }
 
-// сообщение об успешной отправке формы регистрации (для пользователя)
-function showModalForRegistrationForm() {
-  $('.modal-notify').addClass('active');
-  setTimeout(function() {
-    $('.modal-notify').removeClass('active');
-  }, 3000);
-}
-
 // сброс полей в форме
 function resetRegistrationForm() {
   $('#registration-form').find('.form__input').each(function() {
     $('.form__input').val('');
   });
 };
+
+// сообщение об успешной отправке формы регистрации (для пользователя)
+function showModalForRegistrationForm() {
+  $('.modal-notify-registration').addClass('active');
+  setTimeout(function() {
+    $('.modal-notify').removeClass('active');
+  }, 3000);
+}
 
 // сообщение об успешной отправке формы с комментарием (для пользователя)
 function showModalForCommentsForm() {
@@ -211,3 +204,10 @@ function showModalForCommentsForm() {
     $('.modal-notify-comment').removeClass('active');
   }, 3000);
 }
+
+// маленькая модалка при успешной отправке формы на странице статьи (тест)
+// $('.registration__btn-submit').click(function(evt) {
+//   evt.preventDefault();
+//   resetRegistrationForm();
+//   showModalForRegistrationForm();
+// })
