@@ -1128,6 +1128,7 @@ html .desktop-flex {
   left: -47%;
   max-width: 20rem;
   max-height: 42rem;
+  height: 100%;
 }
 .product-detail__title {
   margin-bottom: 2.4rem;
@@ -1200,6 +1201,7 @@ html .desktop-flex {
     left: 0;
     max-width: 9rem;
     max-height: 16rem;
+    height: auto;
     left: -11.3rem;
   }
   .product-detail__title {
