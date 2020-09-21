@@ -41,14 +41,36 @@
 
 .project-detail-swiper__img-wrap {
   width: 86rem;
-  max-height: 52rem;
+  height: 52rem;
   text-align: center;
 
-  transform: scale(1.2);
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: 0;
+    top: 0.5rem;
+    left: -0.7rem;
+    width: 87.2rem;
+    height: 51.4rem;
+
+    background-image: url('../img/bg/iMac-mockup.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .project-detail-swiper__img {
-  .img-contain;
+  // .img-contain;
+
+  position: relative;
+  z-index: 1;
+  width: 65.6rem;
+  height: 41.2rem;
+  margin-top: 3.5rem;
+  border-radius: 1rem;
+
+  object-fit: cover;
 }
 
 .project-detail-swiper__content-wrap {
@@ -152,6 +174,26 @@
     transform: none;
     width: 100%;
     .padding-inline(1rem);
+  }
+
+  .project-detail-swiper__img-wrap {
+    height: 21.2rem;
+
+    &::before {
+      top: 0.6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      // left: 1.2rem;
+      width: 35rem;
+      height: 21rem;
+    }
+  }
+
+  .project-detail-swiper__img {
+    width: 26.2rem;
+    height: 16.5rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
   }
 
   .project-detail-swiper__img {}
