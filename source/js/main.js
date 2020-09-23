@@ -211,3 +211,8 @@ function showModalForCommentsForm() {
 //   resetRegistrationForm();
 //   showModalForRegistrationForm();
 // })
+
+// очень-очень-очень плохой костыль для мобильных таблиц на детальной статьи
+if ($('.article').length >= 1 && width <= 756) {
+  $('.main').addClass('no-overflow');
+}
