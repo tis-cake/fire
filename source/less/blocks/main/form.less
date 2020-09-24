@@ -5,14 +5,20 @@
 }
 
 .form__columns-wrap {
+  display: flex;
   display: grid;
   grid-template-columns: repeat(2, 61.6rem);
   justify-content: space-between;
+  align-items: flex-start;
+  // .form__wrap {
+  //   width: 61.6rem;
+  // }
 }
 
 .form__wrap {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   width: 100%;
@@ -26,6 +32,33 @@
   margin-bottom: 2.6rem;
   font-family: @font-main;
   font-size: 3rem;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  &--half {
+    width: 48.5%;
+  }
+  &--required {
+    &::before {
+      position: absolute;
+      content: '*';
+      top: 1.4rem;
+      left: 1rem;
+
+      font-family: @font-main;
+      color: @color-s;
+    }
+  }
+
+  .form__input {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .form__input {
@@ -72,28 +105,6 @@
   padding-left: 2rem;
 }
 
-.form__label {
-  position: relative;
-  width: 100%;
-  &--half {
-    width: 48.5%;
-  }
-  &--required {
-    &::before {
-      position: absolute;
-      content: '*';
-      top: 1.4rem;
-      left: 1rem;
-
-      font-family: @font-main;
-      color: @color-s;
-    }
-  }
-  .form__input {
-    width: 100%;
-  }
-}
-
 @media (max-width: @tablet-width) {
   .form {
     font-size: 1.4rem;
@@ -115,6 +126,10 @@
     font-size: 1.8rem;
   }
 
+  .form__label {
+    margin-bottom: 1.5rem;
+  }
+
   .form__input {
     margin-bottom: 1.5rem;
     padding: 1.4rem 1.8rem;
@@ -123,33 +138,15 @@
     &::placeholder {
       line-height: 2rem;
     }
-
-    &--half {
-      // width: 48.5%;
-    }
   }
 
-  .form__name {
-    // margin-bottom: 2.5rem;
-  }
+  .form__name {}
 
-  .form__text {
-    // height: 15rem;
-  }
+  .form__text {}
 
   .form__btn-submit {
     // width: 18.2rem;
     margin-top: 1.4rem;
     padding-left: 2.5rem;
-  }
-
-  .form__label {
-    // width: 100%;
-    &--half {
-      // width: 48.5%;
-    }
-    .form__input {
-      // width: 100%;
-    }
   }
 }

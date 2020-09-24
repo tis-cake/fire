@@ -90,10 +90,10 @@
   position: relative;
   z-index: 1;
 
-  padding-top: 7.1rem;
+  padding-top: 2.8rem;
   padding-left: 14.1rem;
   padding-right: 2.7rem;
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.8rem;
 
   color: #fff;
   background-color: @color-s;
@@ -102,13 +102,24 @@
 }
 
 .main-info-registration__main-title {
-  margin-bottom: 5.2rem;
+  margin-bottom: 0.9rem;
 }
 
 .main-info-registration__list-title {
+  position: relative;
+  margin-top: 5.6rem;
   margin-bottom: 2.2rem;
   font-weight: @bold;
   font-size: 2rem;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -3.3rem;
+    left: 0;
+    width: 18.4rem;
+    height: 0.1rem;
+    background-color: #fff;
+  }
 }
 
 .main-info-registration__list {
@@ -161,8 +172,18 @@
 }
 
 .main-info-registration__block-gray {
-  padding-top: 6.5rem;
+  padding-top: 4.3rem;
   background-image: url('../img/bg/main-info-registration-bg-gray-d.png');
+  .main-info-registration__block-title {
+    width: auto;
+    margin-bottom: 2rem;
+    font-weight: @light;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+    span {
+      font-weight: @bold;
+    }
+  }
 }
 
 .main-info-registration__block-title {
@@ -281,20 +302,25 @@
 
   .main-info-registration__block-detail {
     z-index: 0;
-    padding-top: 3.7rem;
-    padding-left: 9.2rem;
+    padding-top: 2.2rem;
+    padding-left: 8.7rem;
     padding-right: 1.7rem;
     padding-bottom: 3.9rem;
   }
 
   .main-info-registration__main-title {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .main-info-registration__list-title {
+    margin-top: 4.1rem;
     margin-bottom: 1.6rem;
     font-size: 1.4rem;
     line-height: 1.6rem;
+    &::before {
+      top: -2.1rem;
+      width: 57%;
+    }
   }
 
   .main-info-registration__list {
@@ -333,9 +359,15 @@
   }
 
   .main-info-registration__block-gray {
-    padding-top: 4.3rem;
-    padding-bottom: 4.7rem;
+    padding-top: 3.6rem;
+    padding-bottom: 4.3rem;
     background-image: url('../img/bg/main-info-catalog-bg-gray-m.png');
+    .main-info-registration__block-title {
+      margin-bottom: 1.2rem;
+      padding-right: 0;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+    }
   }
 
   .main-info-registration__block-title {
@@ -369,8 +401,8 @@
 
   .main-info-registration__mirror-container {
     box-sizing: border-box;
-    // bottom: -68rem;
-    bottom: -19.5rem;
+    bottom: -26.4rem;
+    // bottom: -19.5rem;
     width: 100%;
 
     &::before {
@@ -384,5 +416,12 @@
       // z-index: -1;
       // opacity: 0;
     }
+  }
+}
+
+/*388px*/
+@media (max-width: 24.25em) {
+  .main-info-registration__mirror-container {
+    bottom: -28.8rem;
   }
 }
