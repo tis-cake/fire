@@ -236,6 +236,14 @@ input[type="radio"].visually-hidden {
 .container {
   width: 140rem;
 }
+.link__text-inline {
+  display: inline-block;
+  font-weight: 700;
+}
+.link__text-inline:hover,
+.link__text-inline:focus {
+  text-decoration: underline;
+}
 html .mobile-flex,
 html .mobile-block {
   display: none;
@@ -2787,13 +2795,14 @@ html .desktop-flex {
   padding-left: 1.8rem;
 }
 .way .main-info-detail__card-wrap {
+  min-height: 50rem;
   margin-left: 18rem;
 }
 .way .main-info-detail__img-wrap {
   left: -21.2rem;
 }
 .way .main-info-detail__img {
-  max-height: 32.2rem;
+  max-height: 30.2rem;
 }
 .way .main-info-detail__content-wrap {
   width: 75rem;
@@ -3020,11 +3029,12 @@ html .desktop-flex {
     padding-bottom: 5rem;
   }
   .way .main-info-detail__card-wrap {
+    min-height: 0;
     padding-top: 13.8rem;
   }
   .way .main-info-detail__img-wrap {
     left: auto;
-    right: -3rem;
+    right: 0;
     height: auto;
   }
   .training {
